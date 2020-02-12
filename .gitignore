@@ -1,0 +1,15 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/.pryrc
+/.rubocop-https*
+
+.rspec_status
+.vscode/
+.byebug_history
+Gemfile.lock
