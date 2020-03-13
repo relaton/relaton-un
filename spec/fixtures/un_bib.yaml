@@ -1,0 +1,35 @@
+---
+id: TRADE/CEFACT/2004/32
+title:
+  type: main
+  content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
+  language: en
+  script: Latn
+  format: text/plain
+link:
+- type: pdf
+  content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement
+- type: word
+  content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement
+docid:
+  id: TRADE/CEFACT/2004/32
+  type: UN
+docnumber: TRADE/CEFACT/2004/32
+date:
+- type: published
+  value: '2004-01-01'
+- type: issued
+  value: '2004-01-01'
+revdate: '2004-01-01'
+language: en
+script: Latn
+fetched: '2020-03-13'
+keyword:
+- TRADE DATA INTERCHANGE
+- CODES
+- PORTS
+- TRANSPORT TERMINALS
+- TRADE FACILITATION
+- PROJECT EVALUATION
+- DATABASES
+- WEBSITES
