@@ -28,13 +28,13 @@ RSpec.describe RelatonUn do
 
   it "get document" do
     VCR.use_cassette "trade_cefact_2004_32" do
-      result = RelatonUn::UnBibliography.get "TRADE/CEFACT/2004/32"
+      result = RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
       expect(result).to be_instance_of RelatonUn::UnBibliographicItem
       xml = result.to_xml bibdata: true
       file = "spec/fixtures/un_bib.xml"
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
       expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
-        .gsub(/(?<=<fetched>)\d{4}-\d{2}\d{2}/, Date.today.to_s)
+        .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
       schema = Jing.new "spec/fixtures/bibdata.rng"
       errors = schema.validate file
       expect(errors).to eq []

@@ -13,6 +13,7 @@ module RelatonUn
 
     def un_bib_item
       UnBibliographicItem.new(
+        type: "standard",
         fetched: Date.today.to_s,
         docid: docid,
         docnumber: hit[:ref],

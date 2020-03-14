@@ -20,7 +20,8 @@ module RelatonUn
       # @return [RelatonUn::UnBibliographicItem]
       def get(ref, _year = nil, _opts = {})
         warn "[relaton-un] (\"#{ref}\") fetching..."
-        result = isobib_search_filter(ref)
+        /^(UN\s)?(?<code>.*)/ =~ ref
+        result = isobib_search_filter(code)
         if result
           warn "[relaton-un] (\"#{ref}\") found #{result.fetch.docidentifier.first.id}"
           result.fetch
@@ -31,11 +32,11 @@ module RelatonUn
 
       # Search for hits.
       #
-      # @param ref [String] reference without correction
+      # @param code [String] reference without correction
       # @return [RelatonUn::HitCollection]
-      def isobib_search_filter(ref)
-        result = search(ref)
-        result.select { |i| i.hit[:ref] == ref }.first
+      def isobib_search_filter(code)
+        result = search(code)
+        result.select { |i| i.hit[:ref] == code }.first
       end
     end
   end

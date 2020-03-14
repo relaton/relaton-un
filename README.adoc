@@ -1,5 +1,115 @@
 = Relaton for UN documents
 
-TODO.
+RelatonCalconnect is a Ruby gem that implements the https://github.com/metanorma/metanorma-model-iso#iso-bibliographic-item[IsoBibliographicItem model].
 
+You can use it to retrieve metadata of Calconnect Standards from https://standards.calconnect.org, and access such metadata through the `CcBibliographicItem` object.
 
+== Installation
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'relaton-un'
+----
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install relaton-un
+
+== Usage
+
+=== Search for a standard using keywords
+
+[source]
+----
+require 'relaton_un'
+
+hits = RelatonUn::UnBibliography.search("TRADE/CEFACT/2004/32")
+=> <RelatonUn::HitCollection:0x007fc4e6ec2018 @ref=TRADE/CEFACT/2004/32 @fetched=false>
+
+item = hits[0].fetch
+=> #<RelatonUn::UnBibliographicItem:0x007fc4e6ac3138
+...
+----
+
+=== XML serialization
+
+[source]
+----
+item.to_xml
+=> '<bibitem id="TRADE/CEFACT/2004/32">
+      <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
+      <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
+      <uri type="word">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement</uri>
+      <docidentifier type="UN">TRADE/CEFACT/2004/32</docidentifier>
+      <docnumber>TRADE/CEFACT/2004/32</docnumber>
+      ...
+    </bibitem>'
+----
+With argument `bibdata: true` it ouputs XML wrapped by `bibdata` element and adds flavour `ext` element.
+[source]
+----
+item.to_xml bibdata: true
+=> '<bibdata type="standard">
+      <fetched>2020-03-13</fetched>
+      <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
+      <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
+      <uri type="word">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement</uri>
+      <docidentifier type="UN">TRADE/CEFACT/2004/32</docidentifier>
+      <docnumber>TRADE/CEFACT/2004/32</docnumber>
+      ...
+    </bibdata>'
+----
+
+=== Get code, and year
+[source]
+----
+RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
+[relaton-un] ("UN TRADE/CEFACT/2004/32") fetching...
+[relaton-un] ("UN TRADE/CEFACT/2004/32") found TRADE/CEFACT/2004/32
+=> #<RelatonUn::UnBibliographicItem:0x007fdc5f1c3a20
+...
+----
+
+=== Create bibliographic item from XML
+[source]
+----
+RelatonUn::XMLParser.from_xml File.read('spec/fixtures/un_bib.xml')
+=> #<RelatonUn::UnBibliographicItem:0x007fdc5e7ab678
+...
+----
+
+=== Create bibliographic item from YAML
+[source]
+----
+hash = YAML.load_file 'spec/fixtures/un_bib.yaml'
+=> {"id"=>"TRADE/CEFACT/2004/32",
+...
+
+bib_hash = RelatonUn::HashConverter.hash_to_bib hash
+=> {:id=>"TRADE/CEFACT/2004/32",
+...
+
+RelatonUn::UnBibliographicItem.new bib_hash
+=> #<RelatonUn::UnBibliographicItem:0x007fdc5e061908
+...
+----
+
+== Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+== Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/calconnect/relaton_un.
+
+== License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
