@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
 
-  spec.add_dependency "unf_ext", "= 0.0.7.2" # temporaly https://github.com/knu/ruby-unf_ext/issues/52
+  spec.add_dependency "unf_ext", ">= 0.0.7.7"
   spec.add_dependency "faraday"
   spec.add_dependency "http-cookie"
   spec.add_dependency "relaton-bib", "~> 0.8.0"
