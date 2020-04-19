@@ -6,7 +6,8 @@ require "http-cookie"
 module RelatonUn
   # Page of hit collection.
   class HitCollection < RelatonBib::HitCollection
-    AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+    AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) "\
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
     DOMAIN = "https://documents.un.org"
     BOUNDARY = "----WebKitFormBoundary6hkaBvITDck8dHCn"
 
@@ -17,52 +18,10 @@ module RelatonUn
       @jar = HTTP::CookieJar.new
       @http = Net::HTTP.new @uri.host, @uri.port
       @http.use_ssl = true
+      @http.read_timeout = 120
       if (form_resp = get_page)
-        form = Nokogiri::HTML form_resp.body
-        form_data = form.xpath(
-          "//input[@type!='radio']",
-          "//input[@type='radio'][@checked]",
-          "//select[@name!='view:_id1:_id2:cbLang']",
-          "//textarea"
-        ).reduce([]) do |m, i|
-          v = case i[:name]
-              when "view:_id1:_id2:txtSymbol" then text
-              when "view:_id1:_id2:cbType" then "FP"
-              when "view:_id1:_id2:cbSort" then "R"
-              when "$$xspsubmitid" then "view:_id1:_id2:_id130"
-              when "$$xspsubmitscroll" then "0|167"
-              else i[:value]
-              end
-          m << %{--#{BOUNDARY}}
-          m << %{Content-Disposition: form-data; name="#{i[:name]}"\r\n\r\n#{v}}
-        end
-        form_data << %{--#{BOUNDARY}--\r\n}
-        req = Net::HTTP::Post.new form.at("//form")[:action]
-        set_headers req
-        req["Content-Type"] = "multipart/form-data, boundary=#{BOUNDARY}"
-        req.body = form_data.join("\r\n")
-        resp = @http.request req
-        page_resp = get_page URI.parse(resp["location"]).request_uri
-        doc = Nokogiri::HTML page_resp.body
-        @array = doc.css("div.viewHover").map do |item|
-          ref = item.at("div/div/a")&.text&.sub "\u00A0", ""
-          title = item.at("div/div/span")&.text
-          keyword = item.at("div[3]/div[5]/span")&.text
-          date_pub = item.at("//label[.='Publication Date: ']/following-sibling::span")&.text
-          en = item.at("//span[.='ENGLISH']/../..")
-          date_rel = en.at("./following-sibling::span[contains(@id, 'cfRelDateE')]").text
-          link = en.xpath("//a[contains(@title, 'Open')]").map do |l|
-            { content: l[:href], type: l[:title].match(/PDF|Word/).to_s.downcase }
-          end
-          Hit.new({
-            ref: ref,
-            title: title,
-            keyword: keyword,
-            date_pub: date_pub,
-            date_rel: date_rel,
-            link: link
-          }, self)
-        end
+        doc = Nokogiri::HTML page_resp(form_resp, text).body
+        @array = doc.css("div.viewHover").map { |item| hit item }
       end
     end
 
@@ -84,9 +43,125 @@ module RelatonUn
       get_page request_uri, deep + 1
     end
 
+    # rubocop:disable Metrics/MethodLength
+
+    # @param form [Nokogiri::HTML::Document]
+    # @param text [String]
+    # @return [Array<String>]
+    def form_data(form, text)
+      fd = form.xpath(
+        "//input[@type!='radio']",
+        "//input[@type='radio'][@checked]",
+        "//select[@name!='view:_id1:_id2:cbLang']",
+        "//textarea",
+      ).reduce([]) do |m, i|
+        v = case i[:name]
+            when "view:_id1:_id2:txtSymbol" then text
+            when "view:_id1:_id2:cbType" then "FP"
+            when "view:_id1:_id2:cbSort" then "R"
+            when "$$xspsubmitid" then "view:_id1:_id2:_id130"
+            when "$$xspsubmitscroll" then "0|167"
+            else i[:value]
+            end
+        m << %{--#{BOUNDARY}}
+        m << %{Content-Disposition: form-data; name="#{i[:name]}"\r\n\r\n#{v}}
+      end
+      fd << %{--#{BOUNDARY}--\r\n}
+    end
+    # rubocop:enable Metrics/MethodLength
+
+    # @param form_resp [Net::HTTPOK]
+    # @param text [String]
+    # @return [Net::HTTPOK]
+    def page_resp(form_resp, text)
+      form = Nokogiri::HTML form_resp.body
+      req = Net::HTTP::Post.new form.at("//form")[:action]
+      set_headers req
+      req["Content-Type"] = "multipart/form-data, boundary=#{BOUNDARY}"
+      req.body = form_data(form, text).join("\r\n")
+      resp = @http.request req
+      get_page URI.parse(resp["location"]).request_uri
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [RelatonUn::Hit]
+    def hit(item)
+      Hit.new(hit_data(item), self)
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [Hash]
+    def hit_data(item)
+      en = item.at("//span[.='ENGLISH']/../..")
+      {
+        ref: item.at("div/div/a")&.text&.sub("\u00A0", ""),
+        symbol: symbol(item),
+        title: item.at("div/div/span")&.text,
+        keyword: item.at("div[3]/div[5]/span")&.text,
+        date_pub: date_pub(item),
+        date_rel: date_rel(en),
+        link: link(en),
+        session: session(item),
+        agenda: agenda(item),
+        distribution: distribution(item)
+      }
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [String]
+    def symbol(item)
+      item.xpath("div/div[not(contains(@class, 'hidden'))]/"\
+        "label[contains(.,'Symbol')]/following-sibling::span[1]").map &:text
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [String]
+    def date_pub(item)
+      item.at("//label[.='Publication Date: ']/following-sibling::span")&.text
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [String]
+    def date_rel(item)
+      item.at("./following-sibling::span[contains(@id, 'cfRelDateE')]")&.text
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [Array<Hash>]
+    def link(item)
+      item.xpath("//a[contains(@title, 'Open')]").map do |l|
+        {
+          content: l[:href],
+          type: l[:title].match(/PDF|Word/).to_s.downcase,
+        }
+      end
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [String]
+    def session(item)
+      item.at("//label[.='Session / Year:']/following-sibling::span")&.text
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [String]
+    def agenda(item)
+      item.at("//label[.='Agenda Item(s):']/following-sibling::span")&.text
+    end
+
+    # @param item [Nokogiri::XML::Element]
+    # @return [String]
+    def distribution(item)
+      item.at("//label[.='Distribution:']/following-sibling::span")&.text
+    end
+
+    # rubocop:disable Metrics/MethodLength
+
+    # @param req [Net::HTTP::Get, Net::HTTP::Post]
     def set_headers(req)
       set_cookie req
-      req["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+      req["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,"\
+      "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
       req["Accept-Encoding"] = "gzip, deflate, br"
       req["Cache-Control"] = "max-age=0"
       req["Connection"] = "keep-alive"
@@ -98,7 +173,9 @@ module RelatonUn
       req["Upgrade-Insecure-Requests"] = "1"
       req["User-Agent"] = AGENT
     end
+    # rubocop:enable Metrics/MethodLength
 
+    # @param req [Net::HTTP::Get, Net::HTTP::Post]
     def set_cookie(req)
       req["Cookie"] = HTTP::Cookie.cookie_value @jar.cookies(@uri)
     end

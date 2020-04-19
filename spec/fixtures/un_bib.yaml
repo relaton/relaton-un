@@ -1,16 +1,22 @@
 ---
 id: TRADE/CEFACT/2004/32
 title:
-  type: main
+- type: title-main
+  content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
+  language: en
+  script: Latn
+  format: text/plain
+- type: main
   content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
   language: en
   script: Latn
   format: text/plain
 link:
-- type: pdf
-  content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement
-- type: word
-  content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement
+- content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement
+  type: pdf
+- content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement
+  type: word
+type: standard
 docid:
   id: TRADE/CEFACT/2004/32
   type: UN
@@ -23,7 +29,7 @@ date:
 revdate: '2004-01-01'
 language: en
 script: Latn
-fetched: '2020-03-13'
+fetched: '2020-04-16'
 keyword:
 - TRADE DATA INTERCHANGE
 - CODES
@@ -33,3 +39,9 @@ keyword:
 - PROJECT EVALUATION
 - DATABASES
 - WEBSITES
+editorialgroup:
+- committee: Committee on Trade
+- committee: Centre for Trade Facilitation and Electronic Business
+session:
+  session_number: '10'
+  agenda_id: '12'

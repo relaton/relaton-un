@@ -9,9 +9,11 @@ module RelatonUn
       def search(text)
         HitCollection.new text
       rescue SocketError, Errno::EINVAL, Errno::ECONNRESET, EOFError,
-             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
-             OpenSSL::SSL::SSLError, Errno::ETIMEDOUT
-        raise RelatonBib::RequestError, "Could not access #{HitCollection::DOMAIN}"
+             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError,
+             Net::ProtocolError, Net::ReadTimeout, OpenSSL::SSL::SSLError,
+             Errno::ETIMEDOUT => e
+        raise RelatonBib::RequestError,
+              "Could not access #{HitCollection::DOMAIN}: #{e.message}"
       end
 
       # @param ref [String] document reference
@@ -23,7 +25,8 @@ module RelatonUn
         /^(UN\s)?(?<code>.*)/ =~ ref
         result = isobib_search_filter(code)
         if result
-          warn "[relaton-un] (\"#{ref}\") found #{result.fetch.docidentifier.first.id}"
+          warn "[relaton-un] (\"#{ref}\") "\
+            "found #{result.fetch.docidentifier[0].id}"
           result.fetch
         end
       end
@@ -36,7 +39,7 @@ module RelatonUn
       # @return [RelatonUn::HitCollection]
       def isobib_search_filter(code)
         result = search(code)
-        result.select { |i| i.hit[:ref] == code }.first
+        result.select { |i| i.hit[:symbol].include? code }.first
       end
     end
   end

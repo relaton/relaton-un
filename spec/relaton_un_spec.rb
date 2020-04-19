@@ -21,6 +21,7 @@ RSpec.describe RelatonUn do
   it "raise RequestError" do
     http = double "net_http"
     expect(http).to receive(:use_ssl=)
+    expect(http).to receive(:read_timeout=)
     expect(http).to receive(:request).and_raise SocketError
     expect(Net::HTTP).to receive(:new).and_return http
     expect { RelatonUn::UnBibliography.search "ref" }.to raise_error RelatonBib::RequestError
@@ -33,11 +34,22 @@ RSpec.describe RelatonUn do
       xml = result.to_xml bibdata: true
       file = "spec/fixtures/un_bib.xml"
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
-      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
-        .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
+      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8").
+        gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
       schema = Jing.new "spec/fixtures/bibdata.rng"
       errors = schema.validate file
       expect(errors).to eq []
+    end
+  end
+
+  it "get document with 2 symbols" do
+    VCR.use_cassette "trade_wp_4_1068" do
+      result = RelatonUn::UnBibliography.get "TRADE/WP.4/1068"
+      xml = result.to_xml bibdata: true
+      file = "spec/fixtures/trade_wp_4_1068.xml"
+      File.write file, xml, encoding: "UTF-8" unless File.exist? file
+      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8").
+        gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
     end
   end
 end

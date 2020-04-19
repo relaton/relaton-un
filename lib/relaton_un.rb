@@ -1,4 +1,4 @@
-require "relaton_bib"
+require "relaton_iso_bib"
 require "relaton_un/version"
 require "relaton_un/un_bibliographic_item"
 require "relaton_un/un_bibliography"
@@ -6,6 +6,8 @@ require "relaton_un/hit_collection"
 require "relaton_un/hit"
 require "relaton_un/hash_converter"
 require "relaton_un/xml_parser"
+require "relaton_un/session"
+require "relaton_un/editorialgroup"
 
 module RelatonUn
   class Error < StandardError; end
