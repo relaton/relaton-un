@@ -1,5 +1,5 @@
 <bibdata type="standard">
-  <fetched>2020-04-16</fetched>
+  <fetched>2020-04-19</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
   <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
   <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
@@ -14,6 +14,7 @@
   </date>
   <language>en</language>
   <script>Latn</script>
+  <classification type="area">UNDOC</classification>
   <keyword>TRADE DATA INTERCHANGE</keyword>
   <keyword>CODES</keyword>
   <keyword>PORTS</keyword>

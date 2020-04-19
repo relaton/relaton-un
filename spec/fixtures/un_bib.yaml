@@ -29,7 +29,10 @@ date:
 revdate: '2004-01-01'
 language: en
 script: Latn
-fetched: '2020-04-16'
+classification:
+  value: UNDOC
+  type: area
+fetched: '2020-04-19'
 keyword:
 - TRADE DATA INTERCHANGE
 - CODES

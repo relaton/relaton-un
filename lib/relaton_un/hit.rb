@@ -74,6 +74,7 @@ module RelatonUn
         session: fetch_session,
         distribution: fetch_distribution,
         editorialgroup: fetch_editorialgroup,
+        classification: fetch_classification,
       )
     end
     # rubocop:enable Metrics/MethodLength
@@ -140,6 +141,11 @@ module RelatonUn
       return unless tc.any?
 
       RelatonUn::EditorialGroup.new tc
+    end
+
+    # @return [Array<RelatonBib::Classification>]
+    def fetch_classification
+      [RelatonBib::Classification.new(type: "area", value: "UNDOC")]
     end
   end
 end
