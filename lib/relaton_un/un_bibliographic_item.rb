@@ -6,7 +6,7 @@ module RelatonUn
     ].freeze
 
     DISTRIBUTIONS = { "GEN" => "general", "LTD" => "limited",
-                      "DER" => "restricted" }.freeze
+                      "DER" => "restricted", "PRO" => "provisional" }.freeze
 
     # @return [RelatonUn::Session, NilClass]
     attr_reader :session
