@@ -1,21 +1,13 @@
 module RelatonUn
-  class XMLParser < RelatonIsoBib::XMLParser
+  class XMLParser < RelatonBib::XMLParser
     class << self
-      # @param xml [String]
-      # @return [RelatonUn::UnBibliographicItem, NilClass]
-      def from_xml(xml)
-        doc = Nokogiri::XML xml
-        doc.remove_namespaces!
-        item = doc.at("/bibitem|/bibdata")
-        if item
-          UnBibliographicItem.new(item_data(item))
-        else
-          warn "[relaton-un] WARNING: can't find bibitem or bibdata element in"\
-          " the XML"
-        end
-      end
-
       private
+
+      # @param item_hash [Hash]
+      # @return [RelatonBib::BibliographicItem]
+      def bib_item(item_hash)
+        UnBibliographicItem.new item_hash
+      end
 
       # @param item [Nokogiri::XML::Element]
       # @return [Hash]

@@ -92,7 +92,8 @@ module RelatonUn
       #   content: hit[:title], language: "en", script: "Latn",
       # )
       # [RelatonBib::TypedTitleString.new(type: "main", title: fs)]
-      [{ title_main: hit[:title], language: "en", script: "Latn" }]
+      # [{ title_main: hit[:title], language: "en", script: "Latn" }]
+      RelatonBib::TypedTitleString.from_string hit[:title], "en", "Latn"
     end
 
     # @return [Array<RelatonBib::BibliographicDate>]

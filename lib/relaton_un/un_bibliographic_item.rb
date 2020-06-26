@@ -1,5 +1,5 @@
 module RelatonUn
-  class UnBibliographicItem < RelatonIsoBib::IsoBibliographicItem
+  class UnBibliographicItem < RelatonBib::BibliographicItem
     TYPES = %w[
       recommendation plenary addendum communication corrigendum reissue agenda
       budgetary sec-gen-notes expert-report resolution
@@ -23,14 +23,18 @@ module RelatonUn
       @distribution = args.delete :distribution
       @session = args.delete :session
       super **args
+      # @doctype = args[:doctype]
     end
 
     # @param builder [Nokogiri::XML::Builder]
     # @param bibdata [TrueClasss, FalseClass, NilClass]
     def to_xml(builder = nil, **opts)
       super(builder, **opts) do |b|
-        b.distribution distribution if distribution
-        session&.to_xml b if session
+        b.ext do
+          editorialgroup&.to_xml b
+          b.distribution distribution if distribution
+          session&.to_xml b if session
+        end
       end
     end
 

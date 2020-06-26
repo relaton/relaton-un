@@ -1,5 +1,5 @@
 module RelatonUn
-  class HashConverter < RelatonIsoBib::HashConverter
+  class HashConverter < RelatonBib::HashConverter
     class << self
       # @override RelatonIsoBib::HashConverter.hash_to_bib
       # @param args [Hash]

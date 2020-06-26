@@ -1,4 +1,4 @@
-require "relaton_iso_bib"
+require "relaton_bib"
 require "relaton_un/version"
 require "relaton_un/un_bibliographic_item"
 require "relaton_un/un_bibliography"
