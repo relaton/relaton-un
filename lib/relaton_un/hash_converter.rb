@@ -9,6 +9,7 @@ module RelatonUn
         ret = super
         return if ret.nil?
 
+        ret[:submissionlanguage] = array ret[:submissionlanguage]
         session_hash_to_bib ret
         ret
       end

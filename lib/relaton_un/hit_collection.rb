@@ -103,7 +103,8 @@ module RelatonUn
         link: link(en),
         session: session(item),
         agenda: agenda(item),
-        distribution: distribution(item)
+        distribution: distribution(item),
+        job_number: job_number(item),
       }
     end
 
@@ -153,6 +154,10 @@ module RelatonUn
     # @return [String]
     def distribution(item)
       item.at("//label[.='Distribution:']/following-sibling::span")&.text
+    end
+
+    def job_number(item)
+      item.at("//span[contains(@id, 'cfJobNumE')]")&.text
     end
 
     # rubocop:disable Metrics/MethodLength

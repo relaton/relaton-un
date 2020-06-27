@@ -75,6 +75,7 @@ module RelatonUn
         distribution: fetch_distribution,
         editorialgroup: fetch_editorialgroup,
         classification: fetch_classification,
+        job_number: hit[:job_number],
       )
     end
     # rubocop:enable Metrics/MethodLength
@@ -88,11 +89,6 @@ module RelatonUn
 
     # @return [Array<RelatonBib::TypedTitleString>]
     def fetch_title
-      # fs = RelatonBib::FormattedString.new(
-      #   content: hit[:title], language: "en", script: "Latn",
-      # )
-      # [RelatonBib::TypedTitleString.new(type: "main", title: fs)]
-      # [{ title_main: hit[:title], language: "en", script: "Latn" }]
       RelatonBib::TypedTitleString.from_string hit[:title], "en", "Latn"
     end
 

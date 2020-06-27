@@ -48,3 +48,12 @@ editorialgroup:
 session:
   session_number: '10'
   agenda_id: '12'
+doctype: addendum
+submissionlanguage:
+  - en
+  - fr
+ics:
+  code: "01"
+  text: First
+distribution: general
+job_number: '10'

@@ -13,19 +13,22 @@ module RelatonUn
       # @return [Hash]
       def item_data(item)
         data = super
-        data[:session] = fetch_session item
-        data[:distribution] = item.at("distribution")&.text
+        ext = item.at "./ext"
+        return data unless ext
+
+        data[:submissionlanguage] = fetch_submissionlanguage ext
+        data[:session] = fetch_session ext
+        data[:distribution] = ext.at("distribution")&.text
+        data[:job_number] = ext.at("job_number")&.text
         data
       end
 
       # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
 
-      # @param item [Nokogiri::XML::Element]
+      # @param ext [Nokogiri::XML::Element]
       # @return [RelatonUn::Session]
-      def fetch_session(item)
-        session = item.at "./ext/session"
-        return unless session
-
+      def fetch_session(ext)
+        session = ext.at "./session"
         RelatonUn::Session.new(
           session_number: session.at("number")&.text,
           session_date: session.at("session-date")&.text,
@@ -45,8 +48,14 @@ module RelatonUn
         eg = ext.at("./editorialgroup")
         return unless eg
 
-        committee = eg&.xpath("committee")&.map &:text
+        committee = eg.xpath("committee").map &:text
         EditorialGroup.new committee
+      end
+
+      # @param ext [Nokogiri::XML::Element]
+      # @return [Array<String>]
+      def fetch_submissionlanguage(ext)
+        ext.xpath("./submissionlanguage").map(&:text)
       end
     end
   end
