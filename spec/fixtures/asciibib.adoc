@@ -1,0 +1,72 @@
+[%bibitem]
+== {blank}
+id:: TRADE/CEFACT/2004/32
+fetched:: 2020-04-19
+title::
+title.type:: title-main
+title.conten:: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
+title.language:: en
+title.script:: Latn
+title.format:: text/plain
+title::
+title.type:: main
+title.conten:: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
+title.language:: en
+title.script:: Latn
+title.format:: text/plain
+type:: standard
+docid.type:: UN
+docid.id:: TRADE/CEFACT/2004/32
+docnumber:: TRADE/CEFACT/2004/32
+language:: en
+script:: Latn
+date::
+date.type:: published
+date.on:: 2004-01-01
+date::
+date.type:: issued
+date.on:: 2004-01-01
+link::
+link.type:: pdf
+link.content:: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement
+link::
+link.type:: word
+link.content:: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement
+classification.type:: area
+classification.value:: UNDOC
+doctype:: addendum
+keyword::
+keyword.conten:: TRADE DATA INTERCHANGE
+keyword::
+keyword.conten:: CODES
+keyword::
+keyword.conten:: PORTS
+keyword::
+keyword.conten:: TRANSPORT TERMINALS
+keyword::
+keyword.conten:: TRADE FACILITATION
+keyword::
+keyword.conten:: PROJECT EVALUATION
+keyword::
+keyword.conten:: DATABASES
+keyword::
+keyword.conten:: WEBSITES
+editorialgroup.committee:: Committee on Trade
+editorialgroup.committee:: Centre for Trade Facilitation and Electronic Business
+ics.code:: 01
+ics.text:: First
+submissionlanguage:: en
+submissionlanguage:: fr
+distribution:: general
+session.session_number:: 10
+session.session_date:: 2019-02-20
+session.item_number:: IN1
+session.item_number:: IN2
+session.item_name:: INM1
+session.item_name:: INM2
+session.subitem_name:: SN1
+session.subitem_name:: SN2
+session.collaborator:: collaborator
+session.agenda_id:: 12
+session.item_footnote:: Item footnote
+job_number:: 10

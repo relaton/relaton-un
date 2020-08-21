@@ -24,7 +24,8 @@ module RelatonUn
     # @param job_number [String, nil]
     def initialize(**args)
       if args[:distribution] && !DISTRIBUTIONS.has_value?(args[:distribution])
-        warn "[relaton-un] WARNING: invalid distribution: #{args[:distribution]}"
+        warn "[relaton-un] WARNING: invalid distribution: "\
+        "#{args[:distribution]}"
       end
       @submissionlanguage = args.delete :submissionlanguage
       @distribution = args.delete :distribution
@@ -35,7 +36,7 @@ module RelatonUn
 
     # @param builder [Nokogiri::XML::Builder]
     # @param bibdata [TrueClasss, FalseClass, NilClass]
-    def to_xml(builder = nil, **opts)
+    def to_xml(builder = nil, **opts) # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/MethodLength
       super(builder, **opts) do |b|
         b.ext do
           b.doctype doctype if doctype
@@ -59,6 +60,20 @@ module RelatonUn
       hash["session"] = session.to_hash if session
       hash["job_number"] = job_number if job_number
       hash
+    end
+
+    # @param prefix [String]
+    # @return [String]
+    def to_asciibib(prefix = "") # rubocop:disable Metrics/AbcSize
+      pref = prefix.empty? ? prefix : prefix + "."
+      out = super
+      submissionlanguage.each do |sl|
+        out += "#{pref}submissionlanguage:: #{sl}\n"
+      end
+      out += "#{pref}distribution:: #{distribution}\n" if distribution
+      out += session.to_asciibib prefix if session
+      out += "#{pref}job_number:: #{job_number}\n" if job_number
+      out
     end
   end
 end

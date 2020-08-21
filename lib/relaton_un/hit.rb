@@ -59,7 +59,7 @@ module RelatonUn
     # rubocop:disable Metrics/MethodLength
 
     # @return [RelatonUn::UnBibliographicItem]
-    def un_bib_item
+    def un_bib_item # rubocop:disable Metrics/AbcSize
       UnBibliographicItem.new(
         type: "standard",
         fetched: Date.today.to_s,
@@ -75,7 +75,7 @@ module RelatonUn
         distribution: fetch_distribution,
         editorialgroup: fetch_editorialgroup,
         classification: fetch_classification,
-        job_number: hit[:job_number],
+        job_number: hit[:job_number]
       )
     end
     # rubocop:enable Metrics/MethodLength
@@ -131,7 +131,7 @@ module RelatonUn
     def fetch_editorialgroup
       tc = hit[:ref].match(/^[\S]+/).to_s.split(/\/|-/).reduce([]) do |m, v|
         if BODY[v] then m << BODY[v]
-        elsif v =~ /(AC|C|CN|CONF|GC|SC|Sub|WG).\d+|PC/ then m << v
+        elsif v.match? /(AC|C|CN|CONF|GC|SC|Sub|WG).\d+|PC/ then m << v
         else m
         end
       end.uniq

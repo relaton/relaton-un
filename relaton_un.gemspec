@@ -43,7 +43,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday"
   spec.add_dependency "http-cookie"
-  spec.add_dependency "relaton-bib", "~> 1.2.0"
+  spec.add_dependency "relaton-bib", "~> 1.3.0"
   spec.add_dependency "unf_ext", ">= 0.0.7.7"
 end
 # rubocop:enable Metrics/BlockLength

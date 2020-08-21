@@ -38,7 +38,16 @@
     <distribution>general</distribution>
     <session>
       <number>10</number>
+      <session-date>2019-02-20</session-date>
+      <item-number>IN1</item-number>
+      <item-number>IN2</item-number>
+      <item-name>INM1</item-name>
+      <item-name>INM2</item-name>
+      <subitem-name>SN1</subitem-name>
+      <subitem-name>SN2</subitem-name>
+      <collaborator>collaborator</collaborator>
       <agenda-id>12</agenda-id>
+      <item-footnote>Item footnote</item-footnote>
     </session>
     <job_number>10</job_number>
   </ext>

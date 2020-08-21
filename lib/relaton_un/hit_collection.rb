@@ -48,12 +48,12 @@ module RelatonUn
     # @param form [Nokogiri::HTML::Document]
     # @param text [String]
     # @return [Array<String>]
-    def form_data(form, text)
+    def form_data(form, text) # rubocop:disable Metrics/CyclomaticComplexity
       fd = form.xpath(
         "//input[@type!='radio']",
         "//input[@type='radio'][@checked]",
         "//select[@name!='view:_id1:_id2:cbLang']",
-        "//textarea",
+        "//textarea"
       ).reduce([]) do |m, i|
         v = case i[:name]
             when "view:_id1:_id2:txtSymbol" then text
@@ -91,7 +91,7 @@ module RelatonUn
 
     # @param item [Nokogiri::XML::Element]
     # @return [Hash]
-    def hit_data(item)
+    def hit_data(item) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
       en = item.at("//span[.='ENGLISH']/../..")
       {
         ref: item.at("div/div/a")&.text&.sub("\u00A0", ""),

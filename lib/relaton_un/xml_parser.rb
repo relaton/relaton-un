@@ -27,7 +27,7 @@ module RelatonUn
 
       # @param ext [Nokogiri::XML::Element]
       # @return [RelatonUn::Session]
-      def fetch_session(ext)
+      def fetch_session(ext) # rubocop:disable Metrics/CyclomaticComplexity
         session = ext.at "./session"
         RelatonUn::Session.new(
           session_number: session.at("number")&.text,
@@ -35,9 +35,9 @@ module RelatonUn
           item_number: session.xpath("item-number").map(&:text),
           item_name: session.xpath("item-name").map(&:text),
           subitem_name: session.xpath("subitem-name").map(&:text),
-          collaboration: session.at("collaboration")&.text,
+          collaborator: session.at("collaborator")&.text,
           agenda_id: session.at("agenda-id")&.text,
-          item_footnote: session.at("item-footnote")&.text,
+          item_footnote: session.at("item-footnote")&.text
         )
       end
       # rubocop:enable Metrics/AbcSize, Metrics/MethodLength

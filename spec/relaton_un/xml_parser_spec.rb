@@ -6,6 +6,7 @@ RSpec.describe RelatonUn::XMLParser do
   end
 
   it "warn if XML doesn't contein bibiten or bibdata" do
-    expect { RelatonUn::XMLParser.from_xml "" }.to output(/can't find bibitem/).to_stderr
+    expect { RelatonUn::XMLParser.from_xml "" }.to output(/can't find bibitem/)
+      .to_stderr
   end
 end

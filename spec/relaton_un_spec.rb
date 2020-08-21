@@ -24,7 +24,9 @@ RSpec.describe RelatonUn do
     expect(http).to receive(:read_timeout=)
     expect(http).to receive(:request).and_raise SocketError
     expect(Net::HTTP).to receive(:new).and_return http
-    expect { RelatonUn::UnBibliography.search "ref" }.to raise_error RelatonBib::RequestError
+    expect do
+      RelatonUn::UnBibliography.search "ref"
+    end.to raise_error RelatonBib::RequestError
   end
 
   it "get document" do
@@ -34,8 +36,8 @@ RSpec.describe RelatonUn do
       xml = result.to_xml bibdata: true
       file = "spec/fixtures/trade_cefact_2004_32.xml"
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
-      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8").
-        gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
+      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
+        .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
       schema = Jing.new "spec/fixtures/bibdata.rng"
       errors = schema.validate file
       expect(errors).to eq []
@@ -48,8 +50,8 @@ RSpec.describe RelatonUn do
       xml = result.to_xml bibdata: true
       file = "spec/fixtures/trade_wp_4_1068.xml"
       File.write file, xml, encoding: "UTF-8" unless File.exist? file
-      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8").
-        gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
+      expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
+        .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
     end
   end
 end

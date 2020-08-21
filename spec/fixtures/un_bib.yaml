@@ -47,7 +47,19 @@ editorialgroup:
 - committee: Centre for Trade Facilitation and Electronic Business
 session:
   session_number: '10'
+  session_date: '2019-02-20'
+  item_number:
+    - IN1
+    - IN2
+  item_name:
+    - INM1
+    - INM2
+  subitem_name:
+    - SN1
+    - SN2
+  collaborator: collaborator
   agenda_id: '12'
+  item_footnote: Item footnote
 doctype: addendum
 submissionlanguage:
   - en

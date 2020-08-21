@@ -21,5 +21,13 @@ module RelatonUn
     def to_hash
       single_element_array(committee.map { |c| { "committee" => c } })
     end
+
+    # @param prefix [String]
+    # @return [String]
+    def to_asciibib(prefix)
+      pref = prefix.empty? ? prefix : prefix + "."
+      pref += "editorialgroup"
+      committee.map { |c| "#{pref}.committee:: #{c}\n" }.join
+    end
   end
 end
