@@ -10,6 +10,11 @@ module RelatonUn
       @committee = committee
     end
 
+    # @return [true]
+    def presence?
+      true
+    end
+
     # @param builder [Nokogiri::XML::Builder]
     def to_xml(builder)
       builder.editorialgroup do |b|

@@ -4,13 +4,13 @@ id:: TRADE/CEFACT/2004/32
 fetched:: 2020-04-19
 title::
 title.type:: title-main
-title.conten:: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
+title.content:: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
 title.language:: en
 title.script:: Latn
 title.format:: text/plain
 title::
 title.type:: main
-title.conten:: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
+title.content:: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
 title.language:: en
 title.script:: Latn
 title.format:: text/plain
@@ -36,21 +36,21 @@ classification.type:: area
 classification.value:: UNDOC
 doctype:: addendum
 keyword::
-keyword.conten:: TRADE DATA INTERCHANGE
+keyword.content:: TRADE DATA INTERCHANGE
 keyword::
-keyword.conten:: CODES
+keyword.content:: CODES
 keyword::
-keyword.conten:: PORTS
+keyword.content:: PORTS
 keyword::
-keyword.conten:: TRANSPORT TERMINALS
+keyword.content:: TRANSPORT TERMINALS
 keyword::
-keyword.conten:: TRADE FACILITATION
+keyword.content:: TRADE FACILITATION
 keyword::
-keyword.conten:: PROJECT EVALUATION
+keyword.content:: PROJECT EVALUATION
 keyword::
-keyword.conten:: DATABASES
+keyword.content:: DATABASES
 keyword::
-keyword.conten:: WEBSITES
+keyword.content:: WEBSITES
 editorialgroup.committee:: Committee on Trade
 editorialgroup.committee:: Centre for Trade Facilitation and Electronic Business
 ics.code:: 01
