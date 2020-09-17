@@ -25,9 +25,10 @@ Or install it yourself as:
 
 === Search for a standard using keywords
 
-[source]
+[source,ruby]
 ----
 require 'relaton_un'
+=> true
 
 hits = RelatonUn::UnBibliography.search("TRADE/CEFACT/2004/32")
 => <RelatonUn::HitCollection:0x007fc4e6ec2018 @ref=TRADE/CEFACT/2004/32 @fetched=false>
@@ -39,23 +40,23 @@ item = hits[0].fetch
 
 === XML serialization
 
-[source]
+[source,ruby]
 ----
 item.to_xml
-=> '<bibitem id="TRADE/CEFACT/2004/32">
+=> "<bibitem id="TRADE/CEFACT/2004/32" type="standard">
       <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
       <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
       <uri type="word">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement</uri>
       <docidentifier type="UN">TRADE/CEFACT/2004/32</docidentifier>
       <docnumber>TRADE/CEFACT/2004/32</docnumber>
       ...
-    </bibitem>'
+    </bibitem>"
 ----
 With argument `bibdata: true` it ouputs XML wrapped by `bibdata` element and adds flavour `ext` element.
-[source]
+[source,ruby]
 ----
 item.to_xml bibdata: true
-=> '<bibdata type="standard">
+=> "<bibdata type="standard">
       <fetched>2020-03-13</fetched>
       <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
       <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
@@ -63,11 +64,23 @@ item.to_xml bibdata: true
       <docidentifier type="UN">TRADE/CEFACT/2004/32</docidentifier>
       <docnumber>TRADE/CEFACT/2004/32</docnumber>
       ...
-    </bibdata>'
+      <ext>
+        <editorialgroup>
+          <committee>Committee on Trade</committee>
+          <committee>Centre for Trade Facilitation and Electronic Business</committee>
+        </editorialgroup>
+        <distribution>general</distribution>
+        <session>
+          <number>10</number>
+          <agenda-id>12</agenda-id>
+        </session>
+        <job_number>G0430683</job_number>
+      </ext>
+    </bibdata>"
 ----
 
 === Get code, and year
-[source]
+[source,ruby]
 ----
 RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
 [relaton-un] ("UN TRADE/CEFACT/2004/32") fetching...
@@ -77,7 +90,7 @@ RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
 ----
 
 === Create bibliographic item from XML
-[source]
+[source,ruby]
 ----
 RelatonUn::XMLParser.from_xml File.read('spec/fixtures/un_bib.xml')
 => #<RelatonUn::UnBibliographicItem:0x007fdc5e7ab678
@@ -85,7 +98,7 @@ RelatonUn::XMLParser.from_xml File.read('spec/fixtures/un_bib.xml')
 ----
 
 === Create bibliographic item from YAML
-[source]
+[source,ruby]
 ----
 hash = YAML.load_file 'spec/fixtures/un_bib.yaml'
 => {"id"=>"TRADE/CEFACT/2004/32",
