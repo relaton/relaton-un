@@ -34,10 +34,13 @@ module RelatonUn
       super **args
     end
 
-    # @param builder [Nokogiri::XML::Builder]
-    # @param bibdata [TrueClasss, FalseClass, NilClass]
-    def to_xml(builder = nil, **opts) # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/MethodLength
-      super(builder, **opts) do |b|
+    # @param opts [Hash]
+    # @option opts [Nokogiri::XML::Builder] :builder XML builder
+    # @option opts [Boolean] :bibdata
+    # @option opts [String] :lang language
+    # @return [String] XML
+    def to_xml(**opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
+      super **opts do |b|
         b.ext do
           b.doctype doctype if doctype
           submissionlanguage&.each { |sl| b.submissionlanguage sl }
@@ -51,7 +54,7 @@ module RelatonUn
     end
 
     # @return [Hash]
-    def to_hash
+    def to_hash # rubocop:disable Metrics/AbcSize
       hash = super
       if submissionlanguage&.any?
         hash["submissionlanguage"] = single_element_array submissionlanguage
