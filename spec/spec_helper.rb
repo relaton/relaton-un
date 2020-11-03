@@ -1,14 +1,10 @@
 require "bundler/setup"
 require "simplecov"
-require "vcr"
 require "rspec/matchers"
 require "equivalent-xml"
 require "jing"
 
-VCR.configure do |conf|
-  conf.cassette_library_dir = "spec/vcr_cassettes"
-  conf.hook_into :webmock
-end
+Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
 
 SimpleCov.start do
   add_filter "/spec/"
