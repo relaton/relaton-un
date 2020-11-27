@@ -35,22 +35,14 @@ link.content:: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G043
 classification.type:: area
 classification.value:: UNDOC
 doctype:: addendum
-keyword::
-keyword.content:: TRADE DATA INTERCHANGE
-keyword::
-keyword.content:: CODES
-keyword::
-keyword.content:: PORTS
-keyword::
-keyword.content:: TRANSPORT TERMINALS
-keyword::
-keyword.content:: TRADE FACILITATION
-keyword::
-keyword.content:: PROJECT EVALUATION
-keyword::
-keyword.content:: DATABASES
-keyword::
-keyword.content:: WEBSITES
+keyword:: TRADE DATA INTERCHANGE
+keyword:: CODES
+keyword:: PORTS
+keyword:: TRANSPORT TERMINALS
+keyword:: TRADE FACILITATION
+keyword:: PROJECT EVALUATION
+keyword:: DATABASES
+keyword:: WEBSITES
 editorialgroup.committee:: Committee on Trade
 editorialgroup.committee:: Centre for Trade Facilitation and Electronic Business
 ics.code:: 01
