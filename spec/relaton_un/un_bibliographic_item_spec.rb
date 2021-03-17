@@ -8,7 +8,7 @@ RSpec.describe RelatonUn::UnBibliographicItem do
   it "return AsciiBib" do
     hash = YAML.load_file "spec/fixtures/un_bib.yaml"
     hash_bib = RelatonUn::HashConverter.hash_to_bib hash
-    item = RelatonUn::UnBibliographicItem.new hash_bib
+    item = RelatonUn::UnBibliographicItem.new **hash_bib
     bib = item.to_asciibib
     file = "spec/fixtures/asciibib.adoc"
     File.write file, bib, encoding: "UTF-8" unless File.exist? file

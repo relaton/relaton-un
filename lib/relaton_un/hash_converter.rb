@@ -18,7 +18,7 @@ module RelatonUn
 
       # @param ret [Hash]
       def session_hash_to_bib(ret)
-        ret[:session] = Session.new(ret[:session]) if ret[:session]
+        ret[:session] = Session.new(**ret[:session]) if ret[:session]
       end
 
       # @param ret [Hash]

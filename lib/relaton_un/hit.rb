@@ -109,7 +109,7 @@ module RelatonUn
 
     # @return [Array<RelatonBib::TypedUri>]
     def fetch_link
-      hit[:link].map { |l| RelatonBib::TypedUri.new l }
+      hit[:link].map { |l| RelatonBib::TypedUri.new **l }
     end
 
     # @return [Array<String>]

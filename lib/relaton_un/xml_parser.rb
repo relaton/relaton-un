@@ -6,7 +6,7 @@ module RelatonUn
       # @param item_hash [Hash]
       # @return [RelatonBib::BibliographicItem]
       def bib_item(item_hash)
-        UnBibliographicItem.new item_hash
+        UnBibliographicItem.new **item_hash
       end
 
       # @param item [Nokogiri::XML::Element]
