@@ -10,8 +10,8 @@ module RelatonUn
         HitCollection.new text
       rescue SocketError, Errno::EINVAL, Errno::ECONNRESET, EOFError,
              Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError,
-             Net::ProtocolError, Net::ReadTimeout, OpenSSL::SSL::SSLError,
-             Errno::ETIMEDOUT => e
+             Net::ProtocolError, Net::ReadTimeout, Net::OpenTimeout,
+             OpenSSL::SSL::SSLError, Errno::ETIMEDOUT => e
         raise RelatonBib::RequestError,
               "Could not access #{HitCollection::DOMAIN}: #{e.message}"
       end
@@ -22,7 +22,7 @@ module RelatonUn
       # @return [RelatonUn::UnBibliographicItem]
       def get(ref, _year = nil, _opts = {})
         warn "[relaton-un] (\"#{ref}\") fetching..."
-        /^(UN\s)?(?<code>.*)/ =~ ref
+        /^(?:UN\s)?(?<code>.*)/ =~ ref
         result = isobib_search_filter(code)
         if result
           warn "[relaton-un] (\"#{ref}\") "\

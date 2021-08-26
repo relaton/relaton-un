@@ -6,7 +6,7 @@ module RelatonUn
       # @param item_hash [Hash]
       # @return [RelatonBib::BibliographicItem]
       def bib_item(item_hash)
-        UnBibliographicItem.new **item_hash
+        UnBibliographicItem.new(**item_hash)
       end
 
       # @param item [Nokogiri::XML::Element]
@@ -27,7 +27,7 @@ module RelatonUn
 
       # @param ext [Nokogiri::XML::Element]
       # @return [RelatonUn::Session]
-      def fetch_session(ext) # rubocop:disable Metrics/CyclomaticComplexity
+      def fetch_session(ext) # rubocop:disable Metrics/CyclomaticComplexity,Metrics/PerceivedComplexity
         session = ext.at "./session"
         RelatonUn::Session.new(
           session_number: session.at("number")&.text,
@@ -37,7 +37,7 @@ module RelatonUn
           subitem_name: session.xpath("subitem-name").map(&:text),
           collaborator: session.at("collaborator")&.text,
           agenda_id: session.at("agenda-id")&.text,
-          item_footnote: session.at("item-footnote")&.text
+          item_footnote: session.at("item-footnote")&.text,
         )
       end
       # rubocop:enable Metrics/AbcSize, Metrics/MethodLength

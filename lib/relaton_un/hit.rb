@@ -75,7 +75,7 @@ module RelatonUn
         distribution: fetch_distribution,
         editorialgroup: fetch_editorialgroup,
         classification: fetch_classification,
-        job_number: hit[:job_number]
+        job_number: hit[:job_number],
       )
     end
     # rubocop:enable Metrics/MethodLength
@@ -109,7 +109,7 @@ module RelatonUn
 
     # @return [Array<RelatonBib::TypedUri>]
     def fetch_link
-      hit[:link].map { |l| RelatonBib::TypedUri.new **l }
+      hit[:link].map { |l| RelatonBib::TypedUri.new(**l) }
     end
 
     # @return [Array<String>]
@@ -128,10 +128,10 @@ module RelatonUn
     end
 
     # @return [RelatonUn::EditorialGroup, NilClass]
-    def fetch_editorialgroup
-      tc = hit[:ref].match(/^[\S]+/).to_s.split(/\/|-/).reduce([]) do |m, v|
+    def fetch_editorialgroup # rubocop:disable Metrics/AbcSize
+      tc = hit[:ref].match(/^\S+/).to_s.split(/\/|-/).reduce([]) do |m, v|
         if BODY[v] then m << BODY[v]
-        elsif v.match? /(AC|C|CN|CONF|GC|SC|Sub|WG).\d+|PC/ then m << v
+        elsif v.match?(/(AC|C|CN|CONF|GC|SC|Sub|WG).\d+|PC/) then m << v
         else m
         end
       end.uniq
