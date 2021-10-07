@@ -89,6 +89,18 @@ RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
 ...
 ----
 
+=== Typed links
+
+UN documens may have `pdf` and `word` link types.
+
+[source,ruby]
+----
+item.link
+=> [#<RelatonBib::TypedUri:0x00007f81af368250
+  @content=#<Addressable::URI:0x9ec URI:https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement>, @type="pdf">,
+ #<RelatonBib::TypedUri:0x00007f81af3630e8 @content=#<Addressable::URI:0xa00 URI:https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement>, @type="word">]
+----
+
 === Create bibliographic item from XML
 [source,ruby]
 ----
