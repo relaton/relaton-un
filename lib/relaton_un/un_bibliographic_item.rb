@@ -25,13 +25,13 @@ module RelatonUn
     def initialize(**args)
       if args[:distribution] && !DISTRIBUTIONS.has_value?(args[:distribution])
         warn "[relaton-un] WARNING: invalid distribution: "\
-        "#{args[:distribution]}"
+             "#{args[:distribution]}"
       end
       @submissionlanguage = args.delete :submissionlanguage
       @distribution = args.delete :distribution
       @session = args.delete :session
       @job_number = args.delete :job_number
-      super **args
+      super(**args)
     end
 
     # @param opts [Hash]
@@ -40,7 +40,7 @@ module RelatonUn
     # @option opts [String] :lang language
     # @return [String] XML
     def to_xml(**opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
-      super **opts do |b|
+      super(**opts) do |b|
         b.ext do
           b.doctype doctype if doctype
           submissionlanguage&.each { |sl| b.submissionlanguage sl }
@@ -68,7 +68,7 @@ module RelatonUn
     # @param prefix [String]
     # @return [String]
     def to_asciibib(prefix = "") # rubocop:disable Metrics/AbcSize
-      pref = prefix.empty? ? prefix : prefix + "."
+      pref = prefix.empty? ? prefix : "#{prefix}."
       out = super
       submissionlanguage.each do |sl|
         out += "#{pref}submissionlanguage:: #{sl}\n"

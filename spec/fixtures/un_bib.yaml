@@ -3,13 +3,17 @@ id: TRADE/CEFACT/2004/32
 title:
 - type: title-main
   content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
-  language: en
-  script: Latn
+  language:
+  - en
+  script:
+  - Latn
   format: text/plain
 - type: main
   content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
-  language: en
-  script: Latn
+  language:
+  - en
+  script:
+  - Latn
   format: text/plain
 link:
 - content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement
@@ -18,7 +22,7 @@ link:
   type: word
 type: standard
 docid:
-  id: TRADE/CEFACT/2004/32
+- id: TRADE/CEFACT/2004/32
   type: UN
 docnumber: TRADE/CEFACT/2004/32
 date:
@@ -27,10 +31,12 @@ date:
 - type: issued
   value: '2004-01-01'
 revdate: '2004-01-01'
-language: en
-script: Latn
+language:
+- en
+script:
+- Latn
 classification:
-  value: UNDOC
+- value: UNDOC
   type: area
 fetched: '2020-04-19'
 keyword:
@@ -65,7 +71,7 @@ submissionlanguage:
   - en
   - fr
 ics:
-  code: "01"
+- code: "01"
   text: First
 distribution: general
 job_number: '10'
