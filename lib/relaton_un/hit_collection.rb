@@ -12,7 +12,7 @@ module RelatonUn
     BOUNDARY = "----WebKitFormBoundaryVarT9Z7AFUzw2lma"
 
     # @param text [String] reference to search
-    def initialize(text)
+    def initialize(text) # rubocop:disable Metrics/AbcSize
       super
       @uri = URI.parse DOMAIN
       @jar = HTTP::CookieJar.new
@@ -58,13 +58,12 @@ module RelatonUn
         "//input[@type!='radio']|"\
         "//input[@type='radio'][@checked]|"\
         "//select[@name!='view:_id1:_id2:cbLang']|"\
-        "//textarea"
+        "//textarea",
       ).reduce([]) do |m, i|
         v = case i[:name]
             when "view:_id1:_id2:txtSymbol" then text
-            when "view:_id1:_id2:rgTrunc" then "R"
+            when "view:_id1:_id2:rgTrunc", "view:_id1:_id2:cbSort" then "R"
             when "view:_id1:_id2:cbType" then "FP"
-            when "view:_id1:_id2:cbSort" then "R"
             when "$$xspsubmitid" then "view:_id1:_id2:_id130"
             when "$$xspsubmitscroll" then "0|102"
             when "view:_id1" then "view:_id1"
@@ -80,7 +79,7 @@ module RelatonUn
     # @param form_resp [Net::HTTPOK]
     # @param text [String]
     # @return [Net::HTTPOK]
-    def page_resp(form_resp, text)
+    def page_resp(form_resp, text) # rubocop:disable Metrics/AbcSize
       form = Nokogiri::HTML form_resp.body
       req = Net::HTTP::Post.new form.at("//form")[:action]
       set_headers req
@@ -118,8 +117,10 @@ module RelatonUn
     # @param item [Nokogiri::XML::Element]
     # @return [String]
     def symbol(item)
-      item.xpath("div/div[not(contains(@class, 'hidden'))]/"\
-        "label[contains(.,'Symbol')]/following-sibling::span[1]").map &:text
+      item.xpath(
+        "div/div[not(contains(@class, 'hidden'))]/"\
+        "label[contains(.,'Symbol')]/following-sibling::span[1]",
+      ).map &:text
     end
 
     # @param item [Nokogiri::XML::Element]

@@ -82,9 +82,11 @@ module RelatonUn
 
     # @return [Array<RelatonBib::DocumentIdentifier>]
     def fetch_docid
-      hit[:symbol].map do |s|
+      dids = hit[:symbol].map do |s|
         RelatonBib::DocumentIdentifier.new(id: s, type: "UN")
       end
+      dids.first.instance_variable_set :@primary, true
+      dids
     end
 
     # @return [Array<RelatonBib::TypedTitleString>]

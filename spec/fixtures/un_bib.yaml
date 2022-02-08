@@ -24,6 +24,7 @@ type: standard
 docid:
 - id: TRADE/CEFACT/2004/32
   type: UN
+  primary: true
 docnumber: TRADE/CEFACT/2004/32
 date:
 - type: published

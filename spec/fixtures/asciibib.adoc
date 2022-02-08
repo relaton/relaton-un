@@ -16,6 +16,7 @@ title.script:: Latn
 title.format:: text/plain
 type:: standard
 docid.type:: UN
+docid.primary:: true
 docid.id:: TRADE/CEFACT/2004/32
 docnumber:: TRADE/CEFACT/2004/32
 language:: en

@@ -1,10 +1,10 @@
 <bibdata type="standard">
-  <fetched>2020-06-27</fetched>
+  <fetched>2022-02-08</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
   <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
   <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
   <uri type="word">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement</uri>
-  <docidentifier type="UN">TRADE/CEFACT/2004/32</docidentifier>
+  <docidentifier type="UN" primary="true">TRADE/CEFACT/2004/32</docidentifier>
   <docnumber>TRADE/CEFACT/2004/32</docnumber>
   <date type="published">
     <on>2004</on>
