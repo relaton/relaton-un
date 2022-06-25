@@ -38,9 +38,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
 
-  spec.add_dependency "faraday"
+  spec.add_dependency "faraday", "~> 1.0"
   spec.add_dependency "http-cookie"
-  spec.add_dependency "relaton-bib", "~> 1.11.0"
+  spec.add_dependency "relaton-bib", "~> 1.12.0"
   spec.add_dependency "unf_ext", ">= 0.0.7.7"
 end
 # rubocop:enable Metrics/BlockLength
