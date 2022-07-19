@@ -9,7 +9,7 @@ module RelatonUn
         ret = super
         return if ret.nil?
 
-        ret[:submissionlanguage] = array ret[:submissionlanguage]
+        ret[:submissionlanguage] = RelatonBib.array ret[:submissionlanguage]
         session_hash_to_bib ret
         ret
       end
@@ -27,7 +27,7 @@ module RelatonUn
         return unless eg
 
         committee = eg.map { |e| e[:committee] }
-        ret[:editorialgroup] = EditorialGroup.new array(committee)
+        ret[:editorialgroup] = EditorialGroup.new RelatonBib.array(committee)
       end
     end
   end
