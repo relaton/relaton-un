@@ -41,14 +41,14 @@ classification:
   type: area
 fetched: '2020-04-19'
 keyword:
-- TRADE DATA INTERCHANGE
-- CODES
-- PORTS
-- TRANSPORT TERMINALS
-- TRADE FACILITATION
-- PROJECT EVALUATION
-- DATABASES
-- WEBSITES
+- content: TRADE DATA INTERCHANGE
+- content: CODES
+- content: PORTS
+- content: TRANSPORT TERMINALS
+- content: TRADE FACILITATION
+- content: PROJECT EVALUATION
+- content: DATABASES
+- content: WEBSITES
 editorialgroup:
 - committee: Committee on Trade
 - committee: Centre for Trade Facilitation and Electronic Business
