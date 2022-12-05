@@ -1,5 +1,5 @@
-<bibdata type="standard">
-  <fetched>2022-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.1">
+  <fetched>2022-12-01</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">LEGAL ASPECTS OF ELECTRONIC DATA INTERCHANGE : REPORT ON ACTION PROGRAMME RELATING TO COMMERCIAL AND LEGAL ASPECTS OF TRADE FACILITATION / SUBMITTED BY THE RAPPORTEURS ON LEGAL QUESTIONS</title>
   <title type="main" format="text/plain" language="en" script="Latn">LEGAL ASPECTS OF ELECTRONIC DATA INTERCHANGE : REPORT ON ACTION PROGRAMME RELATING TO COMMERCIAL AND LEGAL ASPECTS OF TRADE FACILITATION / SUBMITTED BY THE RAPPORTEURS ON LEGAL QUESTIONS</title>
   <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/DER/G94/321/69/img/G9432169.pdf?OpenElement</uri>
@@ -23,7 +23,7 @@
   <keyword>LEGAL ASPECTS</keyword>
   <keyword>TRADE FACILITATION</keyword>
   <keyword>INTERNATIONAL COMMERCIAL TRANSACTIONS</keyword>
-  <ext>
+  <ext schema-version="v1.0.0">
     <editorialgroup>
       <committee>Committee on Trade</committee>
     </editorialgroup>

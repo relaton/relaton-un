@@ -1,5 +1,6 @@
 ---
 id: TRADE/CEFACT/2004/32
+schema-version: v1.2.1
 title:
 - type: title-main
   content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
@@ -76,3 +77,5 @@ ics:
   text: First
 distribution: general
 job_number: '10'
+ext:
+  schema-version: v1.0.0

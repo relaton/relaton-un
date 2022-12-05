@@ -24,14 +24,22 @@ module RelatonUn
     # @param job_number [String, nil]
     def initialize(**args)
       if args[:distribution] && !DISTRIBUTIONS.has_value?(args[:distribution])
-        warn "[relaton-un] WARNING: invalid distribution: "\
-             "#{args[:distribution]}"
+        warn "[relaton-un] WARNING: invalid distribution: #{args[:distribution]}"
       end
       @submissionlanguage = args.delete :submissionlanguage
       @distribution = args.delete :distribution
       @session = args.delete :session
       @job_number = args.delete :job_number
       super(**args)
+    end
+
+    #
+    # Fetches flavor schema version.
+    #
+    # @return [String] flavor schema version
+    #
+    def ext_schema
+      @ext_schema ||= schema_versions["relaton-model-un"]
     end
 
     # @param opts [Hash]
@@ -41,20 +49,27 @@ module RelatonUn
     # @return [String] XML
     def to_xml(**opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
       super(**opts) do |b|
-        b.ext do
+        ext = b.ext do
           b.doctype doctype if doctype
           submissionlanguage&.each { |sl| b.submissionlanguage sl }
           editorialgroup&.to_xml b
           ics&.each { |i| i.to_xml b }
           b.distribution distribution if distribution
-          session&.to_xml b if session
+          session&.to_xml b
           b.job_number job_number if job_number
         end
+        ext["schema-version"] = ext_schema unless opts[:embedded]
       end
     end
 
+    #
+    # Renders the document as a hash.
+    #
+    # @param embedded [Boolean] embedded in another document
+    #
     # @return [Hash]
-    def to_hash # rubocop:disable Metrics/AbcSize
+    #
+    def to_hash(embedded: false) # rubocop:disable Metrics/AbcSize
       hash = super
       if submissionlanguage&.any?
         hash["submissionlanguage"] = single_element_array submissionlanguage

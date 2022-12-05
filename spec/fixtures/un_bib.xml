@@ -1,4 +1,4 @@
-<bibdata type="standard">
+<bibdata type="standard" schema-version="v1.2.1">
   <fetched>2020-04-19</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
   <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
@@ -23,7 +23,7 @@
   <keyword>PROJECT EVALUATION</keyword>
   <keyword>DATABASES</keyword>
   <keyword>WEBSITES</keyword>
-  <ext>
+  <ext schema-version="v1.0.0">
     <doctype>addendum</doctype>
     <submissionlanguage>en</submissionlanguage>
     <submissionlanguage>fr</submissionlanguage>

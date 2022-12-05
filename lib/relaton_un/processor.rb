@@ -20,13 +20,13 @@ module RelatonUn
     end
 
     # @param xml [String]
-    # @return [RelatonIsoBib::IsoBibliographicItem]
+    # @return [RelatonUn::UnBibliographicItem]
     def from_xml(xml)
       ::RelatonUn::XMLParser.from_xml xml
     end
 
     # @param hash [Hash]
-    # @return [RelatonIsoBib::IsoBibliographicItem]
+    # @return [RelatonUn::UnBibliographicItem]
     def hash_to_bib(hash)
       item_hash = ::RelatonUn::HashConverter.hash_to_bib(hash)
       ::RelatonUn::UnBibliographicItem.new(**item_hash)
