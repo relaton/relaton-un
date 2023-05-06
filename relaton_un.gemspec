@@ -9,13 +9,13 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 
-  spec.summary       = "RelatonIso: retrieve CC Standards for bibliographic "\
+  spec.summary       = "RelatonIso: retrieve CC Standards for bibliographic " \
                        "use using the IsoBibliographicItem model"
-  spec.description   = "RelatonIso: retrieve CC Standards for bibliographic "\
+  spec.description   = "RelatonIso: retrieve CC Standards for bibliographic " \
                        "use using the IsoBibliographicItem model"
   spec.homepage      = "https://github.com/relaton/relaton-un"
   spec.license       = "BSD-2-Clause"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
@@ -33,13 +33,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "equivalent-xml", "~> 0.6"
-  spec.add_development_dependency "ruby-jing"
-  spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "webmock"
 
-  spec.add_dependency "faraday", "~> 1.0"
-  spec.add_dependency "http-cookie"
+  spec.add_dependency "addressable", "~> 2.8.0"
+  spec.add_dependency "faraday", "~> 2.7.0"
+  spec.add_dependency "http-cookie", "~> 1.0.5"
   spec.add_dependency "relaton-bib", "~> 1.14.0"
   spec.add_dependency "unf_ext", ">= 0.0.7.7"
 end

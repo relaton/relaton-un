@@ -25,6 +25,7 @@ module RelatonUn
       # @http.cert_store.add_file ca_file
       @http.read_timeout = 120
       if (form_resp = get_page)
+        # doc = Nokogiri::HTML page_resp(form_resp, text).body
         doc = Nokogiri::HTML page_resp(form_resp, text).body
         @array = doc.css("div.viewHover").map { |item| hit item }
       end
@@ -34,14 +35,14 @@ module RelatonUn
 
     # @param location [String]
     # @param deeep [Integer]
-    # @return [Strinf, NilClass]
+    # @return [String, nil]
     def get_page(location = "/", deep = 0)
       return if deep > 3
 
       req = Net::HTTP::Get.new location
       set_headers req
       resp = @http.request req
-      resp.get_fields("set-cookie")&.each { |v| @jar.parse v, @uri }
+      resp.get_fields("set-cookie")&.each { |v| @jar.parse v, @uri.origin }
       return resp if resp.code == "200"
 
       request_uri = URI.parse(resp["location"]).request_uri
@@ -55,16 +56,16 @@ module RelatonUn
     # @return [Array<String>]
     def form_data(form, text) # rubocop:disable Metrics/CyclomaticComplexity
       fd = form.xpath(
-        "//input[@type!='radio']|"\
-        "//input[@type='radio'][@checked]|"\
-        "//select[@name!='view:_id1:_id2:cbLang']|"\
+        "//input[@type!='radio']|" \
+        "//input[@type='radio'][@checked]|" \
+        "//select[@name!='view:_id1:_id2:cbLang']|" \
         "//textarea",
       ).reduce([]) do |m, i|
         v = case i[:name]
             when "view:_id1:_id2:txtSymbol" then text
             when "view:_id1:_id2:rgTrunc", "view:_id1:_id2:cbSort" then "R"
             when "view:_id1:_id2:cbType" then "FP"
-            when "$$xspsubmitid" then "view:_id1:_id2:_id130"
+            when "$$xspsubmitid" then "view:_id1:_id2:_id131"
             when "$$xspsubmitscroll" then "0|102"
             when "view:_id1" then "view:_id1"
             else i[:value]
@@ -86,7 +87,7 @@ module RelatonUn
       req["Content-Type"] = "multipart/form-data; boundary=#{BOUNDARY}"
       req.body = form_data(form, text).join("\r\n")
       resp = @http.request req
-      get_page URI.parse(resp["location"]).request_uri
+      get_page Addressable::URI.parse(resp["location"]).request_uri
     end
 
     # @param item [Nokogiri::XML::Element]
@@ -173,9 +174,9 @@ module RelatonUn
     # @param req [Net::HTTP::Get, Net::HTTP::Post]
     def set_headers(req) # rubocop:disable Metrics/AbcSize
       set_cookie req
-      req["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,"\
-      "image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;"\
-      "v=b3;q=0.9"
+      req["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9," \
+                      "image/avif,image/webp,image/apng,*/*;q=0.8," \
+                      "application/signed-exchange;v=b3;q=0.9"
       req["Accept-Encoding"] = "gzip, deflate, br"
       req["Accept-Language"] = "en-US;q=0.8,en;q=0.7"
       req["Cache-Control"] = "max-age=0"
@@ -193,7 +194,7 @@ module RelatonUn
 
     # @param req [Net::HTTP::Get, Net::HTTP::Post]
     def set_cookie(req)
-      req["Cookie"] = HTTP::Cookie.cookie_value @jar.cookies(@uri)
+      req["Cookie"] = HTTP::Cookie.cookie_value @jar.cookies(@uri.origin)
     end
   end
 end
