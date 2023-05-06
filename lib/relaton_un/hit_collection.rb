@@ -42,7 +42,7 @@ module RelatonUn
       req = Net::HTTP::Get.new location
       set_headers req
       resp = @http.request req
-      resp.get_fields("set-cookie")&.each { |v| @jar.parse v, @uri.origin }
+      resp.get_fields("set-cookie")&.each { |v| @jar.parse v, @uri }
       return resp if resp.code == "200"
 
       request_uri = URI.parse(resp["location"]).request_uri
@@ -194,7 +194,7 @@ module RelatonUn
 
     # @param req [Net::HTTP::Get, Net::HTTP::Post]
     def set_cookie(req)
-      req["Cookie"] = HTTP::Cookie.cookie_value @jar.cookies(@uri.origin)
+      req["Cookie"] = HTTP::Cookie.cookie_value @jar.cookies(@uri)
     end
   end
 end
