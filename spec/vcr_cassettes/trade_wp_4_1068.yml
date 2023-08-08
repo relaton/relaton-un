@@ -42,12 +42,12 @@ http_interactions:
       message: Moved Temporarily
     headers:
       Date:
-      - Sat, 06 May 2023 14:55:30 GMT
+      - Mon, 07 Aug 2023 17:57:25 GMT
       Cneonction:
       - close
       Set-Cookie:
-      - SessionID=DD8224B1F87C20562C1C539B1D729BECA84EC7B0; path=/; HttpOnly
-      - citrix_ns_id_.un.org_%2F_wat=AAAAAAWK6LHWor2LKfZCH-qYrO_cKDJoTLEStcrG_Us2v-duXICl6KjVZyrrRZOasHNRQFUV_fLxLsLeok7nQHJzAQFH&;
+      - SessionID=018896781FC755DFDAD646FAA618695C213AA685; path=/; HttpOnly
+      - citrix_ns_id_.un.org_%2F_wat=AAAAAAUDSkWGVDzb8KU3KEm8UHNsWUlnrPJtyVn9WLyXXBcpRsVNfXmFPdsZMDCoKi4PsY-6EWsYBuV53qpEMEXReAv4&;
         Domain=.un.org; Path=/; HttpOnly
       Location:
       - https://documents.un.org/names.nsf?login&username=freeods1&password=319a89e974ba120f02fcf6f4d0af4a8c&RedirectTo=/prod/ods.nsf/home.xsp
@@ -60,7 +60,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sat, 06 May 2023 14:55:28 GMT
+  recorded_at: Mon, 07 Aug 2023 17:57:23 GMT
 - request:
     method: get
     uri: https://documents.un.org/names.nsf?RedirectTo=/prod/ods.nsf/home.xsp&login&password=319a89e974ba120f02fcf6f4d0af4a8c&username=freeods1
@@ -76,7 +76,7 @@ http_interactions:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/85.0.4183.102 Safari/537.36
       Cookie:
-      - SessionID=DD8224B1F87C20562C1C539B1D729BECA84EC7B0; citrix_ns_id_.un.org_%2F_wat=AAAAAAWK6LHWor2LKfZCH-qYrO_cKDJoTLEStcrG_Us2v-duXICl6KjVZyrrRZOasHNRQFUV_fLxLsLeok7nQHJzAQFH&
+      - SessionID=018896781FC755DFDAD646FAA618695C213AA685; citrix_ns_id_.un.org_%2F_wat=AAAAAAUDSkWGVDzb8KU3KEm8UHNsWUlnrPJtyVn9WLyXXBcpRsVNfXmFPdsZMDCoKi4PsY-6EWsYBuV53qpEMEXReAv4&
       Accept-Language:
       - en-US;q=0.8,en;q=0.7
       Cache-Control:
@@ -103,7 +103,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Sat, 06 May 2023 14:55:30 GMT
+      - Mon, 07 Aug 2023 17:57:26 GMT
       Cneonction:
       - close
       Location:
@@ -111,9 +111,9 @@ http_interactions:
       X-Content-Type-Option:
       - nosniff
       Set-Cookie:
-      - LtpaToken=AAECAzY0NTY2QTYwNjQ1NkRBRTBmcmVlb2RzMXjw4m5uqk0Nq56RVakV9joYbKrK;
+      - LtpaToken=AAECAzY0RDEzMDg0NjREMUExMDRmcmVlb2RzMdV6Y/VnqesufU2LsyoQK9+Xm9HS;
         domain=.un.org; path=/
-      - citrix_ns_id_.un.org_%2F_wat=AAAAAAWPQlNrzo0xuo1JC32QxGDLQ95z_NwFhlui7sUGeAUUAWdLauLbYuNcgBBh2LKRKm1m1M098pX7_9o5BLCLzbdy&AAAAAAVCCqtwyUS8jHxAypZ4NlRoJMYM_e5Rr7jb-bnWzs8xl11TNk2WDAdQsL8TGwjqg5cH6RNOBuV7tXpd4BN4jDLs&;
+      - citrix_ns_id_.un.org_%2F_wat=AAAAAAUEERUxFqWJdxgXgam9aFYJoL2trau0pz1U0uxIp-lyM5PvLf_AcEfF0xhErPTn-xMex80uPXcij3el9vCA5E6V&AAAAAAU__BVA77JHElb1cHMXHRL4gBbdvwl1YXATvhQGMoHrxlEdk6WE7IXLxmAKM5_v7u2ZmQpB6gzRY7xJLeN0fsnQ&;
         Domain=.un.org; Path=/; HttpOnly
       Cache-Control:
       - no-cache
@@ -124,7 +124,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sat, 06 May 2023 14:55:28 GMT
+  recorded_at: Mon, 07 Aug 2023 17:57:24 GMT
 - request:
     method: get
     uri: https://documents.un.org/prod/ods.nsf/home.xsp
@@ -140,8 +140,8 @@ http_interactions:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/85.0.4183.102 Safari/537.36
       Cookie:
-      - LtpaToken=AAECAzY0NTY2QTYwNjQ1NkRBRTBmcmVlb2RzMXjw4m5uqk0Nq56RVakV9joYbKrK;
-        SessionID=DD8224B1F87C20562C1C539B1D729BECA84EC7B0; citrix_ns_id_.un.org_%2F_wat=AAAAAAWPQlNrzo0xuo1JC32QxGDLQ95z_NwFhlui7sUGeAUUAWdLauLbYuNcgBBh2LKRKm1m1M098pX7_9o5BLCLzbdy&AAAAAAVCCqtwyUS8jHxAypZ4NlRoJMYM_e5Rr7jb-bnWzs8xl11TNk2WDAdQsL8TGwjqg5cH6RNOBuV7tXpd4BN4jDLs&
+      - LtpaToken=AAECAzY0RDEzMDg0NjREMUExMDRmcmVlb2RzMdV6Y/VnqesufU2LsyoQK9+Xm9HS;
+        SessionID=018896781FC755DFDAD646FAA618695C213AA685; citrix_ns_id_.un.org_%2F_wat=AAAAAAUEERUxFqWJdxgXgam9aFYJoL2trau0pz1U0uxIp-lyM5PvLf_AcEfF0xhErPTn-xMex80uPXcij3el9vCA5E6V&AAAAAAU__BVA77JHElb1cHMXHRL4gBbdvwl1YXATvhQGMoHrxlEdk6WE7IXLxmAKM5_v7u2ZmQpB6gzRY7xJLeN0fsnQ&
       Accept-Language:
       - en-US;q=0.8,en;q=0.7
       Cache-Control:
@@ -168,15 +168,15 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 06 May 2023 14:55:31 GMT
+      - Mon, 07 Aug 2023 17:57:26 GMT
       Content-Type:
       - text/html;charset=UTF-8
       Content-Length:
-      - '24465'
+      - '24433'
       Cache-Control:
       - no-cache
       Expires:
-      - Thu, 11 May 2023 23:59:59 GMT
+      - Sat, 12 Aug 2023 23:59:59 GMT
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
@@ -186,277 +186,10 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
     body:
-      encoding: UTF-8
-      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<title>Official Document
-        System of the United Nations</title>\n<link rel=\"SHORTCUT ICON\" href=\"/prod/ods.nsf/un_fav_icon_0.png\">\n<meta
-        content=\"IE=Edge\" http-equiv=\"X-UA-Compatible\">\n<meta name=\"viewport\"
-        content=\"initial-scale=1,user-scalable=no,maximum-scale=1,height=device-height\">\n<link
-        rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Roboto%3A400%2C100%2C100italic%2C300%2C300italic%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic\">\n<link
-        rel=\"stylesheet\" type=\"text/css\" href=\"/xsp/.ibmxspres/.mini/css-1.9.7/Ebootstrap/xsptheme/xsp.css&amp;Ebootstrap/bootstrap311/css/bootstrap.css&amp;@Da&amp;Ebootstrap/xpages300.css.css\">\n<script
-        type=\"text/javascript\">var dojoConfig = {locale: 'en', parseOnLoad: true};</script>\n<script
-        type=\"text/javascript\" src=\"/xsp/.ibmxspres/dojoroot-1.9.7/dojo/dojo.js\"></script>\n<script
-        type=\"text/javascript\">dojo.registerModulePath(\"extlib\", \"/xsp/.ibmxspres/.extlib\");</script>\n<script
-        type=\"text/javascript\" src=\"/xsp/.ibmxspres/.mini/dojo-1.9.7/.en/@Je&amp;-extlib.dijit.BootstrapPickerSelect2&amp;@Ek&amp;@Ie.js\"></script>\n<script
-        type=\"text/javascript\">dojo.require(\"ibm.xsp.widget.layout.xspClientDojo\")</script>\n<script
-        type=\"text/javascript\">dojo.require(\"dojo.parser\")</script>\n<script type=\"text/javascript\"
-        src=\"/xsp/.ibmxspres/.extlib/bootstrap/jquery182/js/jquery-1.8.2.min.js\"></script>\n<script
-        type=\"text/javascript\" src=\"/xsp/.ibmxspres/.extlib/bootstrap/bootstrap311/js/bootstrap.min.js\"></script>\n<script
-        type=\"text/javascript\" src=\"/xsp/.ibmxspres/.extlib/bootstrap/xpages300.js\"></script>\n<script
-        type=\"text/javascript\">dojo.require(\"dijit.Dialog\")</script>\n<script
-        type=\"text/javascript\">dojo.require(\"extlib.dijit.Picker\")</script>\n<script
-        type=\"text/javascript\">dojo.require(\"ibm.xsp.widget.layout.DateTextBox\")</script>\n<script
-        type=\"text/javascript\">dojo.require(\"extlib.dijit.BootstrapPickerSelect2\")</script>\n<link
-        rel=\"stylesheet\" type=\"text/css\" href=\"/prod/ods.nsf/xsp/.ibmmodres/.css/main.css&amp;un.css&amp;font-awesome-4.4.0%2Fcss%2Ffont-awesome.min.css&amp;subjFixes.css\">\n<script
-        type=\"text/javascript\" src=\"/prod/ods.nsf/csjsCommon\"></script>\n</head>\n<body
-        class=\"xsp tundra\">\n<script type=\"text/javascript\">XSP.submitLatency=180.0*1000;</script>\n<form
-        id=\"view:_id1\" method=\"post\" action=\"/prod/ods.nsf/home.xsp\" enctype=\"multipart/form-data\">\n<a
-        class=\"sr-only\" href=\"#mainContent\">Skip to main content</a><div class=\"navbar
-        navbar-default navbar-fixed-top\" id=\"brand-bar\" role=\"navigation\"><div
-        class=\"container brandbar-header\"><div class=\"row\"><div class=\"col-md-4\"><a
-        id=\"view:_id1:_id2:_id9\" href=\"http://www.un.org/en/index.html\" class=\"navbar-brand\"
-        target=\"_blank\"><i class=\"fa fa-home fa-fw fa-lg paddingR\"></i>  Welcome
-        to the United Nations</a></div><div class=\"col-md-8 language-switcher\"><button
-        class=\"navbar-toggle collapsed\" data-target=\"#language-switcher\" data-toggle=\"collapse\"
-        type=\"button\"><span class=\"sr-only\">Toggle navigation</span><span class=\"icon-bar\"></span><span
-        class=\"icon-bar\"></span><span class=\"icon-bar\"></span></button><div class=\"language-title
-        visible-xs-inline\"><a data-target=\"#language-switcher\" data-toggle=\"collapse\"
-        href=\"javascript:void(0)\">Language:</a></div><div class=\"navbar-collapse
-        collapse\" id=\"language-switcher\"><nav role=\"navigation\"><ul class=\"language-switcher-locale-url
-        nav navbar-nav navbar-right\" role=\"menu\"><li class=\"ar first\"><a id=\"view:_id1:_id2:linkA\"
-        href=\"#\" class=\"language-link\">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</a></li><li
-        class=\"zh-hans\"><a id=\"view:_id1:_id2:linkC\" href=\"#\" class=\"language-link\">&#20013;&#25991;</a></li><li
-        class=\"en\"><a id=\"view:_id1:_id2:linkE\" href=\"#\" class=\"language-link
-        langOn\">English</a></li><li class=\"fr\"><a id=\"view:_id1:_id2:linkF\" href=\"#\"
-        class=\"language-link\">Fran&ccedil;ais</a></li><li class=\"ru\"><a id=\"view:_id1:_id2:linkR\"
-        href=\"#\" class=\"language-link\">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li><li
-        class=\"es\"><a id=\"view:_id1:_id2:linkS\" href=\"#\" class=\"language-link\">Espa&ntilde;ol</a></li><li
-        class=\"dropdown last\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\"
-        href=\"#\" id=\"otherLangs\">&nbsp;Other&nbsp;<span class=\"caret\"></span></a><ul
-        aria-labelledby=\"otherLangs\" class=\"dropdown-menu\" role=\"menu\"><li><a
-        id=\"view:_id1:_id2:linkG\" href=\"#\" class=\"language-link\">Deutsch</a></li></ul></li></ul></nav></div></div></div></div></div><header
-        class=\"navbar container navbar-default\" id=\"navbar\" role=\"banner\"><div
-        class=\"container\"><div class=\"navbar-header\"><a id=\"view:_id1:_id2:_id43\"
-        href=\"http://www.un.org/en/index.html\" class=\"logo navbar-btn pull-left
-        flip\" title=\"United Nations\" target=\"_blank\"><img id=\"view:_id1:_id2:_id44\"
-        src=\"/prod/ods.nsf/logo-un.png\" alt=\"\" class=\"unLogo\"></a><a id=\"view:_id1:_id2:_id45\"
-        href=\"/prod/ods.nsf/home.xsp\" class=\"name navbar-brand\" title=\"ODS Home\">Official
-        Document System</a><a href=\"http://unite.un.org\" target=\"_blank\"><img
-        alt=\"Unite\" class=\"uniteLogo\" src=\"powered-by-unite.png\"></a></div><div
-        class=\"hidden\"><span id=\"view:_id1:_id2:cfMsg\">Due to the Disaster Recovery
-        Exercise,  users may experience slowness intermittently from Thursday,  23
-        July 07:00 PM to Friday, 24 July 7:00 PM (EDT).    </span></div>\n<div style=\"font-size:8pt\"
-        class=\"maintenance\"><span id=\"view:_id1:_id2:cfUserMessage\"></span></div>\n</div></header><div
-        id=\"searchbar\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-12\"><a
-        id=\"view:_id1:_id2:linkFTSearch\" href=\"http://search.un.org/results.php?tpl=ods&amp;lang=en\"
-        class=\"unBlue\" title=\"Unite Search\" target=\"_blank\"><i class=\"fa fa-search\"></i>&nbsp;Unite
-        Search</a><a id=\"view:_id1:_id2:banner_btn_login\" href=\"#\" class=\"unBlue
-        marginLinks\" title=\"Login\"><i class=\"fa fa-unlock\"></i>&nbsp;Login</a><div
-        dojoType=\"dijit.Dialog\" href=\"/prod/ods.nsf?login&amp;redirectto=/prod/ods.nsf/home.xsp\"
-        id=\"view:_id1:_id2:showLoginDialog\" style=\"overflow:auto;\" title=\"Login!!\"></div>\n<a
-        id=\"view:_id1:_id2:linkHelp\" href=\"/prod/ods.nsf/xpHelp.xsp\" class=\"unBlue
-        marginLinks\" title=\"Help Information\"><i class=\"fa fa-info-circle\"></i>&nbsp;Help</a></div></div><div><div
-        class=\"row\"><div class=\"col-md-2 col-xs-12\"><label id=\"view:_id1:_id2:lblSymbol\"
-        for=\"view:_id1:_id2:txtSymbol\" class=\"control-label lbl\">Symbol</label></div><div
-        class=\"col-md-4 col-xs-12\"><input type=\"text\" id=\"view:_id1:_id2:txtSymbol\"
-        name=\"view:_id1:_id2:txtSymbol\" class=\"form-control form-control\" placeholder=\"Enter
-        symbol\"></div><div class=\"col-md-2 col-xs-12\"><label id=\"view:_id1:_id2:lblTrunc\"
-        for=\"view:_id1:_id2:rgTrunc\" class=\"control-label lbl\">Truncation</label></div><div
-        class=\"col-md-4 col-xs-12\"><fieldset id=\"view:_id1:_id2:rgTrunc\" class=\"radio
-        radio2\" onchangeTrigger=\"early-onclick\"><table role=\"presentation\" class=\"radio
-        radio2\">\n<tr>\n<td>\n<label for=\"view:_id1:_id2:rgTrunc:0\"><input type=\"radio\"
-        checked id=\"view:_id1:_id2:rgTrunc:0\" name=\"view:_id1:_id2:rgTrunc\" value=\"R\">Right</label></td>\n<td>\n<label
-        for=\"view:_id1:_id2:rgTrunc:1\"><input type=\"radio\" id=\"view:_id1:_id2:rgTrunc:1\"
-        name=\"view:_id1:_id2:rgTrunc\" value=\"L\">Left</label></td>\n<td>\n<label
-        for=\"view:_id1:_id2:rgTrunc:2\"><input type=\"radio\" id=\"view:_id1:_id2:rgTrunc:2\"
-        name=\"view:_id1:_id2:rgTrunc\" value=\"RL\">Right &amp; Left</label></td>\n<td>\n<label
-        for=\"view:_id1:_id2:rgTrunc:3\"><input type=\"radio\" id=\"view:_id1:_id2:rgTrunc:3\"
-        name=\"view:_id1:_id2:rgTrunc\" value=\"N\">None</label></td>\n</tr>\n</table></fieldset></div></div><div
-        class=\"row\"><div class=\"col-md-2 col-xs-12\"><label id=\"view:_id1:_id2:lblWrds\"
-        for=\"view:_id1:_id2:txtWrds\" class=\"control-label lbl\">Word(s) in the
-        title</label></div><div class=\"col-md-4 col-xs-12\"><input type=\"text\"
-        id=\"view:_id1:_id2:txtWrds\" name=\"view:_id1:_id2:txtWrds\" class=\"form-control
-        form-control\" placeholder=\"Enter Words of the title (English only)\"></div><div
-        class=\"col-md-2 col-xs-12\"><label id=\"view:_id1:_id2:lblSubj\" for=\"view:_id1:_id2:txtSubj\"
-        class=\"control-label lbl\">Subject</label></div><div class=\"col-md-4 col-xs-12\"><input
-        type=\"text\" id=\"view:_id1:_id2:txtSubj\" name=\"view:_id1:_id2:txtSubj\"
-        class=\"form-control disabled form-control\" placeholder=\"Enter Subject\"><a
-        class=\"xspPickerLink\" href=\"javascript:;\" onclick=\"return XSP.selectValue('extlib.dijit.PickerListSearch',{&quot;msep&quot;:&quot;,&quot;,&quot;dlgTitle&quot;:&quot;Select
-        from list&quot;,&quot;allowMultiple&quot;:true,&quot;trim&quot;:true,&quot;control&quot;:&quot;view:_id1:_id2:txtSubj&quot;,&quot;url&quot;:&quot;\\/prod\\/ods.nsf\\/home.xsp?$$viewid=!9150qw6m5jlk16n6ksr9lvfre!&amp;$$axtarget=view:_id1:_id2:vpSubjs&quot;})\"
-        onkeydown=\"javascript:var kc=event.keyCode?event.keyCode:event.which;if(kc==32){
-        return XSP.selectValue('extlib.dijit.PickerListSearch',{&quot;msep&quot;:&quot;,&quot;,&quot;dlgTitle&quot;:&quot;Select
-        from list&quot;,&quot;allowMultiple&quot;:true,&quot;trim&quot;:true,&quot;control&quot;:&quot;view:_id1:_id2:txtSubj&quot;,&quot;url&quot;:&quot;\\/prod\\/ods.nsf\\/home.xsp?$$viewid=!9150qw6m5jlk16n6ksr9lvfre!&amp;$$axtarget=view:_id1:_id2:vpSubjs&quot;})}\"
-        role=\"button\"><img src=\"/xsp/.ibmxspres/.extlib/icons/iconValuePicker.png\"
-        alt=\"Open Picker\"></a></div></div><div class=\"row\"><div class=\"col-md-2
-        col-xs-12\"><label id=\"view:_id1:_id2:lblPubDate\" for=\"view:_id1:_id2:dtPubDateFrom\"
-        class=\"control-label lbl\">Date of publication</label></div><div class=\"col-md-2
-        col-xs-6\"><input type=\"text\" id=\"view:_id1:_id2:dtPubDateFrom\" name=\"view:_id1:_id2:dtPubDateFrom\"
-        class=\"form-control form-control\" dojoType=\"ibm.xsp.widget.layout.DateTextBox\"
-        iconStyleClass=\"xspInputFieldDatePickerIcon\" constraints=\"{datePattern:&quot;dd/MM/yyyy&quot;,selector:&quot;date&quot;}\"></div><div
-        class=\"col-md-2 col-xs-6\"><input type=\"text\" id=\"view:_id1:_id2:dtPubDateTo\"
-        name=\"view:_id1:_id2:dtPubDateTo\" class=\"form-control form-control\" dojoType=\"ibm.xsp.widget.layout.DateTextBox\"
-        iconStyleClass=\"xspInputFieldDatePickerIcon\" constraints=\"{datePattern:&quot;dd/MM/yyyy&quot;,selector:&quot;date&quot;}\"></div><div
-        class=\"col-md-2 col-xs-12\"><label id=\"view:_id1:_id2:lblRelDate\" for=\"view:_id1:_id2:dtRelDateFrom\"
-        class=\"control-label lbl\">Date of release</label></div><div class=\"col-md-2
-        col-xs-6\"><input type=\"text\" id=\"view:_id1:_id2:dtRelDateFrom\" name=\"view:_id1:_id2:dtRelDateFrom\"
-        class=\"form-control form-control\" dojoType=\"ibm.xsp.widget.layout.DateTextBox\"
-        iconStyleClass=\"xspInputFieldDatePickerIcon\" constraints=\"{datePattern:&quot;dd/MM/yyyy&quot;,selector:&quot;date&quot;}\"></div><div
-        class=\"col-md-2 col-xs-6\"><input type=\"text\" id=\"view:_id1:_id2:dtRelDateTo\"
-        name=\"view:_id1:_id2:dtRelDateTo\" class=\"form-control form-control\" dojoType=\"ibm.xsp.widget.layout.DateTextBox\"
-        iconStyleClass=\"xspInputFieldDatePickerIcon\" constraints=\"{datePattern:&quot;dd/MM/yyyy&quot;,selector:&quot;date&quot;}\"></div></div><div
-        class=\"row\"><div class=\"col-md-2 col-xs-12\"><label id=\"view:_id1:_id2:lblJobNo\"
-        for=\"view:_id1:_id2:txtJobNo\" class=\"control-label lbl\">Job Number</label></div><div
-        class=\"col-md-4 col-xs-12\"><input type=\"text\" id=\"view:_id1:_id2:txtJobNo\"
-        name=\"view:_id1:_id2:txtJobNo\" class=\"form-control form-control\" placeholder=\"Enter
-        Job Number\"></div><div class=\"col-md-2 col-xs-6\"><label id=\"view:_id1:_id2:lblSess\"
-        for=\"view:_id1:_id2:txtSess\" class=\"control-label lbl\">Session / Year</label></div><div
-        class=\"col-md-1 col-xs-2\"><input type=\"text\" id=\"view:_id1:_id2:txtSess\"
-        name=\"view:_id1:_id2:txtSess\" class=\"form-control form-control\" placeholder=\"\"></div><div
-        class=\"col-md-2 col-xs-6\"><label id=\"view:_id1:_id2:lblAgItem\" for=\"view:_id1:_id2:txtAgItem\"
-        class=\"control-label lbl\">Agenda Item Number</label></div><div class=\"col-md-1
-        col-xs-2\"><input type=\"text\" id=\"view:_id1:_id2:txtAgItem\" name=\"view:_id1:_id2:txtAgItem\"
-        class=\"form-control form-control\" placeholder=\"\"></div></div><div class=\"row\"><div
-        class=\"col-md-6 col-xs-12\"><div class=\"col-md-4 col-xs-12 marginM15\"><label
-        id=\"view:_id1:_id2:lblFTSrch\" for=\"view:_id1:_id2:txtFTSrch\" class=\"control-label
-        lbl\">Full-text search</label></div><div class=\"col-md-8 col-xs-12 margin10\"><textarea
-        id=\"view:_id1:_id2:txtFTSrch\" name=\"view:_id1:_id2:txtFTSrch\" rows=\"2\"
-        class=\"form-control form-control\" placeholder=\"Enter text to search\"></textarea></div></div><div
-        class=\"col-md-6 col-xs-12\"><div class=\"row\"><div class=\"col-md-4 col-xs-12
-        marginM15\"><label id=\"view:_id1:_id2:lblLang\" for=\"view:_id1:_id2:cbLang\"
-        class=\"control-label lbl\">Language for full-text:</label></div><div class=\"col-md-8
-        col-xs-12 margin10\"><select id=\"view:_id1:_id2:cbLang\" name=\"view:_id1:_id2:cbLang\"
-        class=\"form-control form-control\" size=\"3\">\t<option value=\"A\">Arabic</option>\n\t<option
-        value=\"C\">Chinese</option>\n\t<option value=\"E\">English</option>\n\t<option
-        value=\"F\">French</option>\n\t<option value=\"R\">Russian</option>\n\t<option
-        value=\"S\">Spanish</option>\n</select>\n<script>new extlib.dijit.BootstrapPickerSelect2({\"allowClearing\":false,\"useRemoteData\":false,\"thisId\":\"select2PickerCombo1\",\"formatResult\":null,\"forId\":\"view:_id1:_id2:cbLang\",\"isNativeSelect\":true,\"formatSelection\":null,\"placeHolder\":null});</script>\n</div></div><div
-        class=\"row\"><div class=\"col-md-4 col-xs-12 marginM15\"><label id=\"view:_id1:_id2:lblType\"
-        for=\"view:_id1:_id2:cbType\" class=\"control-label lbl\">Type of full-text
-        search</label></div><div class=\"col-md-8 col-xs-12 margin10\"><select id=\"view:_id1:_id2:cbType\"
-        name=\"view:_id1:_id2:cbType\" class=\"form-control\" size=\"1\">\t<option
-        value=\"FP\">Find this phrase</option>\n\t<option value=\"FW\">Find all the
-        words</option>\n\t<option value=\"FA\">Find any of the words</option>\n\t<option
-        value=\"BO\">Use boolean operators</option>\n</select>\n<script>new extlib.dijit.BootstrapPickerSelect2({\"allowClearing\":false,\"useRemoteData\":false,\"thisId\":\"select2PickerCombo2\",\"formatResult\":null,\"forId\":\"view:_id1:_id2:cbType\",\"isNativeSelect\":true,\"formatSelection\":null,\"placeHolder\":null});</script>\n</div></div><div
-        class=\"row\"><div class=\"col-md-4 col-xs-12 marginM15\"><label id=\"view:_id1:_id2:lblSort\"
-        for=\"view:_id1:_id2:cbSort\" class=\"control-label lbl\">Sort</label></div><div
-        class=\"col-md-8 col-xs-12 margin10\"><select id=\"view:_id1:_id2:cbSort\"
-        name=\"view:_id1:_id2:cbSort\" class=\"form-control\" size=\"1\">\t<option
-        value=\"R\">Sort by relevance</option>\n\t<option value=\"DD\">Sort by date
-        - descending</option>\n\t<option value=\"DA\">Sort by date - ascending</option>\n\t<option
-        value=\"S\">Sort by symbol</option>\n</select>\n<script>new extlib.dijit.BootstrapPickerSelect2({\"allowClearing\":false,\"useRemoteData\":false,\"thisId\":\"select2PickerCombo3\",\"formatResult\":null,\"forId\":\"view:_id1:_id2:cbSort\",\"isNativeSelect\":true,\"formatSelection\":null,\"placeHolder\":null});</script>\n</div></div></div></div><br><div
-        class=\"row\"><div class=\"col-md-2 hideMobile\"></div><div class=\"col-md-1
-        col-xs-3\"><button class=\"btn btn-sm btnUNBlue\" type=\"button\" name=\"view:_id1:_id2:btnRefine\"
-        id=\"view:_id1:_id2:btnRefine\">Search</button></div><div class=\"col-md-1
-        col-xs-3\"><button class=\"btn btn-sm\" type=\"button\" name=\"view:_id1:_id2:btnClear\"
-        id=\"view:_id1:_id2:btnClear\">Clear</button></div><div class=\"col-md-1 col-xs-3
-        hidden\"><button class=\"btn btn-sm\" type=\"button\" name=\"view:_id1:_id2:btnSave\"
-        id=\"view:_id1:_id2:btnSave\">Save Search by...</button></div>\n</div><input
-        type=\"hidden\" id=\"view:_id1:_id2:hdnSubj\" name=\"view:_id1:_id2:hdnSubj\"
-        value=\"\"></div></div></div><div class=\"container\" id=\"mainContent\"><div
-        id=\"view:_id1:_id2:cbMain\">\n<div class=\"panelHeight\">\n<div class=\"row\"><div
-        class=\"col-md-4\"><h5><span class=\"ucase\">DAILY DOCUMENTS</span></h5><span
-        id=\"view:_id1:_id2:cbMain:cfDDs\"><p><a href=\"https://journal.un.org/\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;Daily Journal (New
-        York)</a></p> <p><a href=\"http://daccess-ods.un.org/ods/dailyListOfDocuments.htm\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;Daily Documents</a></p>
-        <p><a href=\"http://www.unog.ch/__80256ee600586f34.nsf/httpDailyBulletin_External?ReadForm\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;Daily Bulletin (Geneva)</a></p></span></div><div
-        class=\"col-md-4\"><h5><span class=\"ucase\">MOST DOWNLOADED DOCUMENTS (1-5)</span></h5><span
-        id=\"view:_id1:_id2:cbMain:cfMDDs1\"><p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/RES/70/1&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/RES/70/1</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/RES/217(III)&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/RES/217(III)</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/77/L.63&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/77/L.63</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/77/769&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/77/769</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/77/822&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/77/822</a></p></span></div><div
-        class=\"col-md-4\"><h5><span class=\"ucase\">MOST DOWNLOADED DOCUMENTS (6-10)</span></h5><span
-        id=\"view:_id1:_id2:cbMain:cfMDDs2\"><p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/ES-10/932&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/ES-10/932</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/CN.10/2023/WG.II/WP.2&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/CN.10/2023/WG.II/WP.2</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/CONF.48/14/REV.1&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/CONF.48/14/REV.1</a></p>
-        <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=A/78/6 (SECT.
-        25)&Lang=E\" target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;A/78/6
-        (SECT. 25)</a></p> <p><a href=\"http://daccess-ods.un.org/access.nsf/Get?Open&DS=S/2023/10/ADD.14&Lang=E\"
-        target=\"_blank\"><i class=\"fa fa-file\"></i>&#160;&#160;S/2023/10/ADD.14</a></p></span></div></div><p
-        class=\"pageHeader\">Official Document System of the United Nations</p><div
-        class=\"row\"><div class=\"col-md-12\"><div id=\"view:_id1:_id2:cbMain:en\">\n<div
-        id=\"view:_id1:_id2:cbMain:_id151:inputRichText1\">The Official Document System
-        (ODS) is an online database of UN documents that was first launched in 1993
-        and updated in 2016. ODS has full-text, born-digital UN documents published
-        from 1993 onward, including documents of the Security Council, the General
-        Assembly, the Economic and Social Council and their subsidiaries, as well
-        as administrative issuances and other documents. <br>\r\n<br>\r\nThe database
-        also includes scanned documents published between 1946 and 1993, including
-        all resolutions of the principal organs, all documents of the Security Council
-        and the General Assembly Official Records. Documents are available in the
-        official languages of the UN; some documents are also available in German.
-        <br>\r\n<br>\r\nODS does not have the following types of materials: documents
-        issued before 1993 that have not yet been digitized, <a href=\"http://www.un.org/press/en\"
-        target=\"_blank\">press releases</a>, <a href=\"https://shop.un.org/\" target=\"_blank\">sales
-        publications</a>, such as the Yearbook and the <a href=\"https://treaties.un.org/\"
-        target=\"_blank\">Treaty Series</a>, and documents that do not have a UN symbol.
-        <br>\r\n<br>\r\nODS is maintained by the <a href=\"https://unite.un.org/\"
-        target=\"_blank\">Office of Information and Communications Technology (OICT)</a>.
-        New documents are added by the Department for General Assembly and Conference
-        Management (DGACM). Scanned documents and metadata are contributed by the
-        Dag Hammarskjöld Library and the UN Office at Geneva Library. <br>\r\n<br>\r\nThis
-        website is best used in recent versions of all major browsers. To download
-        multiple documents, please use Google Chrome or Opera.<br>\r\n<br></div></div>\n</div></div></div>\n</div>\n</div><div
-        class=\"container footerInfo noPrint\"><div class=\"row list-inline\"><div
-        class=\"col-md-12\"><div class=\"pull-left flip footer-brand\"><a id=\"view:_id1:_id2:_id162\"
-        href=\"http://www.un.org/en/index.html\" class=\"ucase\" title=\"United Nations\"
-        target=\"_blank\">United Nations</a></div><div class=\"pull-right flip\"><p><a
-        id=\"view:_id1:_id2:link6\" href=\"/prod/ods.nsf/xfContactUs.xsp\">Contact
-        Us</a>&nbsp;|&nbsp;<a id=\"view:_id1:_id2:link1\" href=\"/prod/ods.nsf/xpHelp.xsp\">Help
-        Information</a>&nbsp;|&nbsp;<a id=\"view:_id1:_id2:link5\" href=\"http://www.un.org/en/sections/aboutun/fraud-alert/index.html\"
-        target=\"_blank\">Fraud Alert</a>&nbsp;|&nbsp;<a id=\"view:_id1:_id2:link4\"
-        href=\"http://www.un.org/en/sections/about-website/privacy-notice/index.html\"
-        target=\"_blank\">Privacy Notice</a>&nbsp;|&nbsp;<a id=\"view:_id1:_id2:link3\"
-        href=\"http://www.un.org/en/sections/about-website/terms-use/index.html\"
-        target=\"_blank\">Terms of Use</a>&nbsp;|&nbsp;<a id=\"view:_id1:_id2:link2\"
-        href=\"http://www.un.org/en/aboutun/copyright/index.html\" target=\"_blank\">Copyright
-        &copy; United Nations 2016</a></p></div></div></div></div>\n<input type=\"hidden\"
-        name=\"$$viewid\" id=\"view:_id1__VUID\" value=\"!9150qw6m5jlk16n6ksr9lvfre!\">\n<input
-        type=\"hidden\" name=\"$$xspsubmitid\">\n<input type=\"hidden\" name=\"$$xspexecid\">\n<input
-        type=\"hidden\" name=\"$$xspsubmitvalue\">\n<input type=\"hidden\" name=\"$$xspsubmitscroll\">\n<input
-        type=\"hidden\" name=\"view:_id1\" value=\"view:_id1\"></form>\n<script type=\"text/javascript\">\n\nfunction
-        view__id1__id2__id57_clientSide_onclick(thisEvent) {\ndijit.byId(\"view:_id1:_id2:showLoginDialog\").show();\n\n}\n\nfunction
-        view__id1__id2__id69_clientSide_onkeypress(thisEvent) {\nif (typeof thisEvent
-        == 'undefined' && window.event) { thisEvent = window.event; }\nif (thisEvent.keyCode
-        == dojo.keys.ENTER)\n{\n    dojo.byId(\"view:_id1:_id2:btnRefine\").click();\n
-        \   thisEvent.preventDefault();\n}\n\n}\n\nfunction view__id1__id2__id131_clientSide_onclick(thisEvent)
-        {\n// if FT, open Unite Search instead\n/*var ftSrch = XSP.getElementById(\"view:_id1:_id2:txtFTSrch\").value;\nif(ftSrch
-        != \"\") {\n\tvar vURL = \"https://search.un.org/results.php?query=\" + ftSrch
-        + \"&tpl=ods\";\n\twindow.open(vURL);\n\treturn false;\n};*/\n\n}\n\nfunction
-        view__id1__id2__id133_clientSide_onclick(thisEvent) {\nx$(\"\").val('');\nx$(\"\").select2().select2(\"val\",
-        'UN Documents');\nx$(\"view:_id1:_id2:cbLang\").select2().select2(\"val\",
-        '');\nx$(\"view:_id1:_id2:txtSymbol\").val(null);\n$('[name$=rgTrunc]:checked').prop('checked',
-        false);\nx$(\"view:_id1:_id2:dtPubDateFrom\").val('');\nx$(\"view:_id1:_id2:dtPubDateTo\").val('');\nx$(\"view:_id1:_id2:dtRelDateFrom\").val('');\nx$(\"view:_id1:_id2:dtRelDateTo\").val('');\nx$(\"view:_id1:_id2:txtWrds\").val('');\nx$(\"view:_id1:_id2:txtSubj\").val(null);\nx$(\"view:_id1:_id2:txtSess\").val('');\nx$(\"view:_id1:_id2:txtAgItem\").val('');\nx$(\"view:_id1:_id2:txtFTSrch\").val('');\nx$(\"view:_id1:_id2:cbType\").select2().select2(\"val\",
-        'Find this phrase');\nx$(\"view:_id1:_id2:txtJobNo\").val('');\n\n}\n\nfunction
-        view__id1__id2__id170_clientSide_onClientLoad(thisEvent) {\n// default field\nvar
-        input = dojo.query(\"input[type='text']\")[0]; \ninput.focus();\n\n// disable
-        subject field\n$(\".disabled\").focus(function(){\n\t\t$(this).blur();\n});\n\n}\n\nXSP.addOnLoad(function()
-        {\nXSP.attachEvent(\"view:_id1:_id2:_id24\", \"view:_id1:_id2:linkA\", \"onclick\",
-        null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id26\", \"view:_id1:_id2:linkC\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id28\", \"view:_id1:_id2:linkE\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id30\", \"view:_id1:_id2:linkF\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id32\", \"view:_id1:_id2:linkR\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id34\", \"view:_id1:_id2:linkS\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id40\", \"view:_id1:_id2:linkG\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id57\", \"view:_id1:_id2:banner_btn_login\",
-        \"onclick\", view__id1__id2__id57_clientSide_onclick, false, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id69\",
-        \"view:_id1:_id2:txtSymbol\", \"onkeypress\", view__id1__id2__id69_clientSide_onkeypress,
-        false, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id131\", \"view:_id1:_id2:btnRefine\",
-        \"onclick\", view__id1__id2__id131_clientSide_onclick, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id133\",
-        \"view:_id1:_id2:btnClear\", \"onclick\", view__id1__id2__id133_clientSide_onclick,
-        true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id135\", \"view:_id1:_id2:btnSave\",
-        \"onclick\", null, true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id170\", \"view:_id1:_id2\",
-        \"onClientLoad\", view__id1__id2__id170_clientSide_onClientLoad, false, 2);\n});
-        \n\n</script>\n</body>\n</html>"
-  recorded_at: Sat, 06 May 2023 14:55:29 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+Cjx0aXRsZT5PZmZpY2lhbCBEb2N1bWVudCBTeXN0ZW0gb2YgdGhlIFVuaXRlZCBOYXRpb25zPC90aXRsZT4KPGxpbmsgcmVsPSJTSE9SVENVVCBJQ09OIiBocmVmPSIvcHJvZC9vZHMubnNmL3VuX2Zhdl9pY29uXzAucG5nIj4KPG1ldGEgY29udGVudD0iSUU9RWRnZSIgaHR0cC1lcXVpdj0iWC1VQS1Db21wYXRpYmxlIj4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9ImluaXRpYWwtc2NhbGU9MSx1c2VyLXNjYWxhYmxlPW5vLG1heGltdW0tc2NhbGU9MSxoZWlnaHQ9ZGV2aWNlLWhlaWdodCI+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Sb2JvdG8lM0E0MDAlMkMxMDAlMkMxMDBpdGFsaWMlMkMzMDAlMkMzMDBpdGFsaWMlMkM0MDBpdGFsaWMlMkM1MDAlMkM1MDBpdGFsaWMlMkM3MDAlMkM3MDBpdGFsaWMlMkM5MDAlMkM5MDBpdGFsaWMiPgo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSIveHNwLy5pYm14c3ByZXMvLm1pbmkvY3NzLTEuOS43L0Vib290c3RyYXAveHNwdGhlbWUveHNwLmNzcyZhbXA7RWJvb3RzdHJhcC9ib290c3RyYXAzMTEvY3NzL2Jvb3RzdHJhcC5jc3MmYW1wO0BEYSZhbXA7RWJvb3RzdHJhcC94cGFnZXMzMDAuY3NzLmNzcyI+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij52YXIgZG9qb0NvbmZpZyA9IHtsb2NhbGU6ICdlbicsIHBhcnNlT25Mb2FkOiB0cnVlfTs8L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3hzcC8uaWJteHNwcmVzL2Rvam9yb290LTEuOS43L2Rvam8vZG9qby5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij5kb2pvLnJlZ2lzdGVyTW9kdWxlUGF0aCgiZXh0bGliIiwgIi94c3AvLmlibXhzcHJlcy8uZXh0bGliIik7PC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii94c3AvLmlibXhzcHJlcy8ubWluaS9kb2pvLTEuOS43Ly5lbi9ASmUmYW1wOy1leHRsaWIuZGlqaXQuQm9vdHN0cmFwUGlja2VyU2VsZWN0MiZhbXA7QEVrJmFtcDtASWUuanMiPjwvc2NyaXB0Pgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+ZG9qby5yZXF1aXJlKCJpYm0ueHNwLndpZGdldC5sYXlvdXQueHNwQ2xpZW50RG9qbyIpPC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij5kb2pvLnJlcXVpcmUoImRvam8ucGFyc2VyIik8L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3hzcC8uaWJteHNwcmVzLy5leHRsaWIvYm9vdHN0cmFwL2pxdWVyeTE4Mi9qcy9qcXVlcnktMS44LjIubWluLmpzIj48L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3hzcC8uaWJteHNwcmVzLy5leHRsaWIvYm9vdHN0cmFwL2Jvb3RzdHJhcDMxMS9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3hzcC8uaWJteHNwcmVzLy5leHRsaWIvYm9vdHN0cmFwL3hwYWdlczMwMC5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij5kb2pvLnJlcXVpcmUoImRpaml0LkRpYWxvZyIpPC9zY3JpcHQ+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij5kb2pvLnJlcXVpcmUoImV4dGxpYi5kaWppdC5QaWNrZXIiKTwvc2NyaXB0Pgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+ZG9qby5yZXF1aXJlKCJpYm0ueHNwLndpZGdldC5sYXlvdXQuRGF0ZVRleHRCb3giKTwvc2NyaXB0Pgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+ZG9qby5yZXF1aXJlKCJleHRsaWIuZGlqaXQuQm9vdHN0cmFwUGlja2VyU2VsZWN0MiIpPC9zY3JpcHQ+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Ii9wcm9kL29kcy5uc2YveHNwLy5pYm1tb2RyZXMvLmNzcy9tYWluLmNzcyZhbXA7dW4uY3NzJmFtcDtmb250LWF3ZXNvbWUtNC40LjAlMkZjc3MlMkZmb250LWF3ZXNvbWUubWluLmNzcyZhbXA7c3ViakZpeGVzLmNzcyI+CjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9wcm9kL29kcy5uc2YvY3Nqc0NvbW1vbiI+PC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHkgY2xhc3M9InhzcCB0dW5kcmEiPgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+WFNQLnN1Ym1pdExhdGVuY3k9MTgwLjAqMTAwMDs8L3NjcmlwdD4KPGZvcm0gaWQ9InZpZXc6X2lkMSIgbWV0aG9kPSJwb3N0IiBhY3Rpb249Ii9wcm9kL29kcy5uc2YvaG9tZS54c3AiIGVuY3R5cGU9Im11bHRpcGFydC9mb3JtLWRhdGEiPgo8YSBjbGFzcz0ic3Itb25seSIgaHJlZj0iI21haW5Db250ZW50Ij5Ta2lwIHRvIG1haW4gY29udGVudDwvYT48ZGl2IGNsYXNzPSJuYXZiYXIgbmF2YmFyLWRlZmF1bHQgbmF2YmFyLWZpeGVkLXRvcCIgaWQ9ImJyYW5kLWJhciIgcm9sZT0ibmF2aWdhdGlvbiI+PGRpdiBjbGFzcz0iY29udGFpbmVyIGJyYW5kYmFyLWhlYWRlciI+PGRpdiBjbGFzcz0icm93Ij48ZGl2IGNsYXNzPSJjb2wtbWQtNCI+PGEgaWQ9InZpZXc6X2lkMTpfaWQyOl9pZDkiIGhyZWY9Imh0dHA6Ly93d3cudW4ub3JnL2VuL2luZGV4Lmh0bWwiIGNsYXNzPSJuYXZiYXItYnJhbmQiIHRhcmdldD0iX2JsYW5rIj48aSBjbGFzcz0iZmEgZmEtaG9tZSBmYS1mdyBmYS1sZyBwYWRkaW5nUiI+PC9pPiAgV2VsY29tZSB0byB0aGUgVW5pdGVkIE5hdGlvbnM8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTggbGFuZ3VhZ2Utc3dpdGNoZXIiPjxidXR0b24gY2xhc3M9Im5hdmJhci10b2dnbGUgY29sbGFwc2VkIiBkYXRhLXRhcmdldD0iI2xhbmd1YWdlLXN3aXRjaGVyIiBkYXRhLXRvZ2dsZT0iY29sbGFwc2UiIHR5cGU9ImJ1dHRvbiI+PHNwYW4gY2xhc3M9InNyLW9ubHkiPlRvZ2dsZSBuYXZpZ2F0aW9uPC9zcGFuPjxzcGFuIGNsYXNzPSJpY29uLWJhciI+PC9zcGFuPjxzcGFuIGNsYXNzPSJpY29uLWJhciI+PC9zcGFuPjxzcGFuIGNsYXNzPSJpY29uLWJhciI+PC9zcGFuPjwvYnV0dG9uPjxkaXYgY2xhc3M9Imxhbmd1YWdlLXRpdGxlIHZpc2libGUteHMtaW5saW5lIj48YSBkYXRhLXRhcmdldD0iI2xhbmd1YWdlLXN3aXRjaGVyIiBkYXRhLXRvZ2dsZT0iY29sbGFwc2UiIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKSI+TGFuZ3VhZ2U6PC9hPjwvZGl2PjxkaXYgY2xhc3M9Im5hdmJhci1jb2xsYXBzZSBjb2xsYXBzZSIgaWQ9Imxhbmd1YWdlLXN3aXRjaGVyIj48bmF2IHJvbGU9Im5hdmlnYXRpb24iPjx1bCBjbGFzcz0ibGFuZ3VhZ2Utc3dpdGNoZXItbG9jYWxlLXVybCBuYXYgbmF2YmFyLW5hdiBuYXZiYXItcmlnaHQiIHJvbGU9Im1lbnUiPjxsaSBjbGFzcz0iYXIgZmlyc3QiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsaW5rQSIgaHJlZj0iIyIgY2xhc3M9Imxhbmd1YWdlLWxpbmsiPiYjMTU3NTsmIzE2MDQ7JiMxNTkzOyYjMTU4NTsmIzE1NzY7JiMxNjEwOyYjMTU3Nzs8L2E+PC9saT48bGkgY2xhc3M9InpoLWhhbnMiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsaW5rQyIgaHJlZj0iIyIgY2xhc3M9Imxhbmd1YWdlLWxpbmsiPiYjMjAwMTM7JiMyNTk5MTs8L2E+PC9saT48bGkgY2xhc3M9ImVuIj48YSBpZD0idmlldzpfaWQxOl9pZDI6bGlua0UiIGhyZWY9IiMiIGNsYXNzPSJsYW5ndWFnZS1saW5rIGxhbmdPbiI+RW5nbGlzaDwvYT48L2xpPjxsaSBjbGFzcz0iZnIiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsaW5rRiIgaHJlZj0iIyIgY2xhc3M9Imxhbmd1YWdlLWxpbmsiPkZyYW4mY2NlZGlsO2FpczwvYT48L2xpPjxsaSBjbGFzcz0icnUiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsaW5rUiIgaHJlZj0iIyIgY2xhc3M9Imxhbmd1YWdlLWxpbmsiPiYjMTA1NjsmIzEwOTE7JiMxMDg5OyYjMTA4OTsmIzEwODI7JiMxMDgwOyYjMTA4MTs8L2E+PC9saT48bGkgY2xhc3M9ImVzIj48YSBpZD0idmlldzpfaWQxOl9pZDI6bGlua1MiIGhyZWY9IiMiIGNsYXNzPSJsYW5ndWFnZS1saW5rIj5Fc3BhJm50aWxkZTtvbDwvYT48L2xpPjxsaSBjbGFzcz0iZHJvcGRvd24gbGFzdCI+PGEgY2xhc3M9ImRyb3Bkb3duLXRvZ2dsZSIgZGF0YS10b2dnbGU9ImRyb3Bkb3duIiBocmVmPSIjIiBpZD0ib3RoZXJMYW5ncyI+Jm5ic3A7T3RoZXImbmJzcDs8c3BhbiBjbGFzcz0iY2FyZXQiPjwvc3Bhbj48L2E+PHVsIGFyaWEtbGFiZWxsZWRieT0ib3RoZXJMYW5ncyIgY2xhc3M9ImRyb3Bkb3duLW1lbnUiIHJvbGU9Im1lbnUiPjxsaT48YSBpZD0idmlldzpfaWQxOl9pZDI6bGlua0ciIGhyZWY9IiMiIGNsYXNzPSJsYW5ndWFnZS1saW5rIj5EZXV0c2NoPC9hPjwvbGk+PC91bD48L2xpPjwvdWw+PC9uYXY+PC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+PGhlYWRlciBjbGFzcz0ibmF2YmFyIGNvbnRhaW5lciBuYXZiYXItZGVmYXVsdCIgaWQ9Im5hdmJhciIgcm9sZT0iYmFubmVyIj48ZGl2IGNsYXNzPSJjb250YWluZXIiPjxkaXYgY2xhc3M9Im5hdmJhci1oZWFkZXIiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpfaWQ0MyIgaHJlZj0iaHR0cDovL3d3dy51bi5vcmcvZW4vaW5kZXguaHRtbCIgY2xhc3M9ImxvZ28gbmF2YmFyLWJ0biBwdWxsLWxlZnQgZmxpcCIgdGl0bGU9IlVuaXRlZCBOYXRpb25zIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBpZD0idmlldzpfaWQxOl9pZDI6X2lkNDQiIHNyYz0iL3Byb2Qvb2RzLm5zZi9sb2dvLXVuLnBuZyIgYWx0PSIiIGNsYXNzPSJ1bkxvZ28iPjwvYT48YSBpZD0idmlldzpfaWQxOl9pZDI6X2lkNDUiIGhyZWY9Ii9wcm9kL29kcy5uc2YvaG9tZS54c3AiIGNsYXNzPSJuYW1lIG5hdmJhci1icmFuZCIgdGl0bGU9Ik9EUyBIb21lIj5PZmZpY2lhbCBEb2N1bWVudCBTeXN0ZW08L2E+PGEgaHJlZj0iaHR0cDovL3VuaXRlLnVuLm9yZyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYWx0PSJVbml0ZSIgY2xhc3M9InVuaXRlTG9nbyIgc3JjPSJwb3dlcmVkLWJ5LXVuaXRlLnBuZyI+PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImhpZGRlbiI+PHNwYW4gaWQ9InZpZXc6X2lkMTpfaWQyOmNmTXNnIj5EdWUgdG8gdGhlIERpc2FzdGVyIFJlY292ZXJ5IEV4ZXJjaXNlLCAgdXNlcnMgbWF5IGV4cGVyaWVuY2Ugc2xvd25lc3MgaW50ZXJtaXR0ZW50bHkgZnJvbSBUaHVyc2RheSwgIDIzIEp1bHkgMDc6MDAgUE0gdG8gRnJpZGF5LCAyNCBKdWx5IDc6MDAgUE0gKEVEVCkuICAgIDwvc3Bhbj48L2Rpdj4KPGRpdiBzdHlsZT0iZm9udC1zaXplOjhwdCIgY2xhc3M9Im1haW50ZW5hbmNlIj48c3BhbiBpZD0idmlldzpfaWQxOl9pZDI6Y2ZVc2VyTWVzc2FnZSI+PC9zcGFuPjwvZGl2Pgo8L2Rpdj48L2hlYWRlcj48ZGl2IGlkPSJzZWFyY2hiYXIiPjxkaXYgY2xhc3M9ImNvbnRhaW5lciI+PGRpdiBjbGFzcz0icm93Ij48ZGl2IGNsYXNzPSJjb2wtbWQtMTIiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsaW5rRlRTZWFyY2giIGhyZWY9Imh0dHA6Ly9zZWFyY2gudW4ub3JnL3Jlc3VsdHMucGhwP3RwbD1vZHMmYW1wO2xhbmc9ZW4iIGNsYXNzPSJ1bkJsdWUiIHRpdGxlPSJVbml0ZSBTZWFyY2giIHRhcmdldD0iX2JsYW5rIj48aSBjbGFzcz0iZmEgZmEtc2VhcmNoIj48L2k+Jm5ic3A7VW5pdGUgU2VhcmNoPC9hPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpiYW5uZXJfYnRuX2xvZ2luIiBocmVmPSIjIiBjbGFzcz0idW5CbHVlIG1hcmdpbkxpbmtzIiB0aXRsZT0iTG9naW4iPjxpIGNsYXNzPSJmYSBmYS11bmxvY2siPjwvaT4mbmJzcDtMb2dpbjwvYT48ZGl2IGRvam9UeXBlPSJkaWppdC5EaWFsb2ciIGhyZWY9Ii9wcm9kL29kcy5uc2Y/bG9naW4mYW1wO3JlZGlyZWN0dG89L3Byb2Qvb2RzLm5zZi9ob21lLnhzcCIgaWQ9InZpZXc6X2lkMTpfaWQyOnNob3dMb2dpbkRpYWxvZyIgc3R5bGU9Im92ZXJmbG93OmF1dG87IiB0aXRsZT0iTG9naW4hISI+PC9kaXY+CjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsaW5rSGVscCIgaHJlZj0iL3Byb2Qvb2RzLm5zZi94cEhlbHAueHNwIiBjbGFzcz0idW5CbHVlIG1hcmdpbkxpbmtzIiB0aXRsZT0iSGVscCBJbmZvcm1hdGlvbiI+PGkgY2xhc3M9ImZhIGZhLWluZm8tY2lyY2xlIj48L2k+Jm5ic3A7SGVscDwvYT48L2Rpdj48L2Rpdj48ZGl2PjxkaXYgY2xhc3M9InJvdyI+PGRpdiBjbGFzcz0iY29sLW1kLTIgY29sLXhzLTEyIj48bGFiZWwgaWQ9InZpZXc6X2lkMTpfaWQyOmxibFN5bWJvbCIgZm9yPSJ2aWV3Ol9pZDE6X2lkMjp0eHRTeW1ib2wiIGNsYXNzPSJjb250cm9sLWxhYmVsIGxibCI+U3ltYm9sPC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtNCBjb2wteHMtMTIiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6dHh0U3ltYm9sIiBuYW1lPSJ2aWV3Ol9pZDE6X2lkMjp0eHRTeW1ib2wiIGNsYXNzPSJmb3JtLWNvbnRyb2wgZm9ybS1jb250cm9sIiBwbGFjZWhvbGRlcj0iRW50ZXIgc3ltYm9sIj48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtMiBjb2wteHMtMTIiPjxsYWJlbCBpZD0idmlldzpfaWQxOl9pZDI6bGJsVHJ1bmMiIGZvcj0idmlldzpfaWQxOl9pZDI6cmdUcnVuYyIgY2xhc3M9ImNvbnRyb2wtbGFiZWwgbGJsIj5UcnVuY2F0aW9uPC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtNCBjb2wteHMtMTIiPjxmaWVsZHNldCBpZD0idmlldzpfaWQxOl9pZDI6cmdUcnVuYyIgY2xhc3M9InJhZGlvIHJhZGlvMiIgb25jaGFuZ2VUcmlnZ2VyPSJlYXJseS1vbmNsaWNrIj48dGFibGUgcm9sZT0icHJlc2VudGF0aW9uIiBjbGFzcz0icmFkaW8gcmFkaW8yIj4KPHRyPgo8dGQ+CjxsYWJlbCBmb3I9InZpZXc6X2lkMTpfaWQyOnJnVHJ1bmM6MCI+PGlucHV0IHR5cGU9InJhZGlvIiBjaGVja2VkIGlkPSJ2aWV3Ol9pZDE6X2lkMjpyZ1RydW5jOjAiIG5hbWU9InZpZXc6X2lkMTpfaWQyOnJnVHJ1bmMiIHZhbHVlPSJSIj5SaWdodDwvbGFiZWw+PC90ZD4KPHRkPgo8bGFiZWwgZm9yPSJ2aWV3Ol9pZDE6X2lkMjpyZ1RydW5jOjEiPjxpbnB1dCB0eXBlPSJyYWRpbyIgaWQ9InZpZXc6X2lkMTpfaWQyOnJnVHJ1bmM6MSIgbmFtZT0idmlldzpfaWQxOl9pZDI6cmdUcnVuYyIgdmFsdWU9IkwiPkxlZnQ8L2xhYmVsPjwvdGQ+Cjx0ZD4KPGxhYmVsIGZvcj0idmlldzpfaWQxOl9pZDI6cmdUcnVuYzoyIj48aW5wdXQgdHlwZT0icmFkaW8iIGlkPSJ2aWV3Ol9pZDE6X2lkMjpyZ1RydW5jOjIiIG5hbWU9InZpZXc6X2lkMTpfaWQyOnJnVHJ1bmMiIHZhbHVlPSJSTCI+UmlnaHQgJmFtcDsgTGVmdDwvbGFiZWw+PC90ZD4KPHRkPgo8bGFiZWwgZm9yPSJ2aWV3Ol9pZDE6X2lkMjpyZ1RydW5jOjMiPjxpbnB1dCB0eXBlPSJyYWRpbyIgaWQ9InZpZXc6X2lkMTpfaWQyOnJnVHJ1bmM6MyIgbmFtZT0idmlldzpfaWQxOl9pZDI6cmdUcnVuYyIgdmFsdWU9Ik4iPk5vbmU8L2xhYmVsPjwvdGQ+CjwvdHI+CjwvdGFibGU+PC9maWVsZHNldD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9ImNvbC1tZC0yIGNvbC14cy0xMiI+PGxhYmVsIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsYmxXcmRzIiBmb3I9InZpZXc6X2lkMTpfaWQyOnR4dFdyZHMiIGNsYXNzPSJjb250cm9sLWxhYmVsIGxibCI+V29yZChzKSBpbiB0aGUgdGl0bGU8L2xhYmVsPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC1tZC00IGNvbC14cy0xMiI+PGlucHV0IHR5cGU9InRleHQiIGlkPSJ2aWV3Ol9pZDE6X2lkMjp0eHRXcmRzIiBuYW1lPSJ2aWV3Ol9pZDE6X2lkMjp0eHRXcmRzIiBjbGFzcz0iZm9ybS1jb250cm9sIGZvcm0tY29udHJvbCIgcGxhY2Vob2xkZXI9IkVudGVyIFdvcmRzIG9mIHRoZSB0aXRsZSAoRW5nbGlzaCBvbmx5KSI+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTIgY29sLXhzLTEyIj48bGFiZWwgaWQ9InZpZXc6X2lkMTpfaWQyOmxibFN1YmoiIGZvcj0idmlldzpfaWQxOl9pZDI6dHh0U3ViaiIgY2xhc3M9ImNvbnRyb2wtbGFiZWwgbGJsIj5TdWJqZWN0PC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtNCBjb2wteHMtMTIiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6dHh0U3ViaiIgbmFtZT0idmlldzpfaWQxOl9pZDI6dHh0U3ViaiIgY2xhc3M9ImZvcm0tY29udHJvbCBkaXNhYmxlZCBmb3JtLWNvbnRyb2wiIHBsYWNlaG9sZGVyPSJFbnRlciBTdWJqZWN0Ij48YSBjbGFzcz0ieHNwUGlja2VyTGluayIgaHJlZj0iamF2YXNjcmlwdDo7IiBvbmNsaWNrPSJyZXR1cm4gWFNQLnNlbGVjdFZhbHVlKCdleHRsaWIuZGlqaXQuUGlja2VyTGlzdFNlYXJjaCcseyZxdW90O21zZXAmcXVvdDs6JnF1b3Q7LCZxdW90OywmcXVvdDtkbGdUaXRsZSZxdW90OzomcXVvdDtTZWxlY3QgZnJvbSBsaXN0JnF1b3Q7LCZxdW90O2FsbG93TXVsdGlwbGUmcXVvdDs6dHJ1ZSwmcXVvdDt0cmltJnF1b3Q7OnRydWUsJnF1b3Q7Y29udHJvbCZxdW90OzomcXVvdDt2aWV3Ol9pZDE6X2lkMjp0eHRTdWJqJnF1b3Q7LCZxdW90O3VybCZxdW90OzomcXVvdDtcL3Byb2RcL29kcy5uc2ZcL2hvbWUueHNwPyQkdmlld2lkPSE3cGQ3d3llZDMyM3hhanBtamFqeWNpZzR4ISZhbXA7JCRheHRhcmdldD12aWV3Ol9pZDE6X2lkMjp2cFN1YmpzJnF1b3Q7fSkiIG9ua2V5ZG93bj0iamF2YXNjcmlwdDp2YXIga2M9ZXZlbnQua2V5Q29kZT9ldmVudC5rZXlDb2RlOmV2ZW50LndoaWNoO2lmKGtjPT0zMil7IHJldHVybiBYU1Auc2VsZWN0VmFsdWUoJ2V4dGxpYi5kaWppdC5QaWNrZXJMaXN0U2VhcmNoJyx7JnF1b3Q7bXNlcCZxdW90OzomcXVvdDssJnF1b3Q7LCZxdW90O2RsZ1RpdGxlJnF1b3Q7OiZxdW90O1NlbGVjdCBmcm9tIGxpc3QmcXVvdDssJnF1b3Q7YWxsb3dNdWx0aXBsZSZxdW90Ozp0cnVlLCZxdW90O3RyaW0mcXVvdDs6dHJ1ZSwmcXVvdDtjb250cm9sJnF1b3Q7OiZxdW90O3ZpZXc6X2lkMTpfaWQyOnR4dFN1YmomcXVvdDssJnF1b3Q7dXJsJnF1b3Q7OiZxdW90O1wvcHJvZFwvb2RzLm5zZlwvaG9tZS54c3A/JCR2aWV3aWQ9ITdwZDd3eWVkMzIzeGFqcG1qYWp5Y2lnNHghJmFtcDskJGF4dGFyZ2V0PXZpZXc6X2lkMTpfaWQyOnZwU3VianMmcXVvdDt9KX0iIHJvbGU9ImJ1dHRvbiI+PGltZyBzcmM9Ii94c3AvLmlibXhzcHJlcy8uZXh0bGliL2ljb25zL2ljb25WYWx1ZVBpY2tlci5wbmciIGFsdD0iT3BlbiBQaWNrZXIiPjwvYT48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9ImNvbC1tZC0yIGNvbC14cy0xMiI+PGxhYmVsIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsYmxQdWJEYXRlIiBmb3I9InZpZXc6X2lkMTpfaWQyOmR0UHViRGF0ZUZyb20iIGNsYXNzPSJjb250cm9sLWxhYmVsIGxibCI+RGF0ZSBvZiBwdWJsaWNhdGlvbjwvbGFiZWw+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTIgY29sLXhzLTYiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6ZHRQdWJEYXRlRnJvbSIgbmFtZT0idmlldzpfaWQxOl9pZDI6ZHRQdWJEYXRlRnJvbSIgY2xhc3M9ImZvcm0tY29udHJvbCBmb3JtLWNvbnRyb2wiIGRvam9UeXBlPSJpYm0ueHNwLndpZGdldC5sYXlvdXQuRGF0ZVRleHRCb3giIGljb25TdHlsZUNsYXNzPSJ4c3BJbnB1dEZpZWxkRGF0ZVBpY2tlckljb24iIGNvbnN0cmFpbnRzPSJ7ZGF0ZVBhdHRlcm46JnF1b3Q7ZGQvTU0veXl5eSZxdW90OyxzZWxlY3RvcjomcXVvdDtkYXRlJnF1b3Q7fSI+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTIgY29sLXhzLTYiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6ZHRQdWJEYXRlVG8iIG5hbWU9InZpZXc6X2lkMTpfaWQyOmR0UHViRGF0ZVRvIiBjbGFzcz0iZm9ybS1jb250cm9sIGZvcm0tY29udHJvbCIgZG9qb1R5cGU9ImlibS54c3Aud2lkZ2V0LmxheW91dC5EYXRlVGV4dEJveCIgaWNvblN0eWxlQ2xhc3M9InhzcElucHV0RmllbGREYXRlUGlja2VySWNvbiIgY29uc3RyYWludHM9IntkYXRlUGF0dGVybjomcXVvdDtkZC9NTS95eXl5JnF1b3Q7LHNlbGVjdG9yOiZxdW90O2RhdGUmcXVvdDt9Ij48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtMiBjb2wteHMtMTIiPjxsYWJlbCBpZD0idmlldzpfaWQxOl9pZDI6bGJsUmVsRGF0ZSIgZm9yPSJ2aWV3Ol9pZDE6X2lkMjpkdFJlbERhdGVGcm9tIiBjbGFzcz0iY29udHJvbC1sYWJlbCBsYmwiPkRhdGUgb2YgcmVsZWFzZTwvbGFiZWw+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTIgY29sLXhzLTYiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6ZHRSZWxEYXRlRnJvbSIgbmFtZT0idmlldzpfaWQxOl9pZDI6ZHRSZWxEYXRlRnJvbSIgY2xhc3M9ImZvcm0tY29udHJvbCBmb3JtLWNvbnRyb2wiIGRvam9UeXBlPSJpYm0ueHNwLndpZGdldC5sYXlvdXQuRGF0ZVRleHRCb3giIGljb25TdHlsZUNsYXNzPSJ4c3BJbnB1dEZpZWxkRGF0ZVBpY2tlckljb24iIGNvbnN0cmFpbnRzPSJ7ZGF0ZVBhdHRlcm46JnF1b3Q7ZGQvTU0veXl5eSZxdW90OyxzZWxlY3RvcjomcXVvdDtkYXRlJnF1b3Q7fSI+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTIgY29sLXhzLTYiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6ZHRSZWxEYXRlVG8iIG5hbWU9InZpZXc6X2lkMTpfaWQyOmR0UmVsRGF0ZVRvIiBjbGFzcz0iZm9ybS1jb250cm9sIGZvcm0tY29udHJvbCIgZG9qb1R5cGU9ImlibS54c3Aud2lkZ2V0LmxheW91dC5EYXRlVGV4dEJveCIgaWNvblN0eWxlQ2xhc3M9InhzcElucHV0RmllbGREYXRlUGlja2VySWNvbiIgY29uc3RyYWludHM9IntkYXRlUGF0dGVybjomcXVvdDtkZC9NTS95eXl5JnF1b3Q7LHNlbGVjdG9yOiZxdW90O2RhdGUmcXVvdDt9Ij48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9ImNvbC1tZC0yIGNvbC14cy0xMiI+PGxhYmVsIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsYmxKb2JObyIgZm9yPSJ2aWV3Ol9pZDE6X2lkMjp0eHRKb2JObyIgY2xhc3M9ImNvbnRyb2wtbGFiZWwgbGJsIj5Kb2IgTnVtYmVyPC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtNCBjb2wteHMtMTIiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6dHh0Sm9iTm8iIG5hbWU9InZpZXc6X2lkMTpfaWQyOnR4dEpvYk5vIiBjbGFzcz0iZm9ybS1jb250cm9sIGZvcm0tY29udHJvbCIgcGxhY2Vob2xkZXI9IkVudGVyIEpvYiBOdW1iZXIiPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC1tZC0yIGNvbC14cy02Ij48bGFiZWwgaWQ9InZpZXc6X2lkMTpfaWQyOmxibFNlc3MiIGZvcj0idmlldzpfaWQxOl9pZDI6dHh0U2VzcyIgY2xhc3M9ImNvbnRyb2wtbGFiZWwgbGJsIj5TZXNzaW9uIC8gWWVhcjwvbGFiZWw+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTEgY29sLXhzLTIiPjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idmlldzpfaWQxOl9pZDI6dHh0U2VzcyIgbmFtZT0idmlldzpfaWQxOl9pZDI6dHh0U2VzcyIgY2xhc3M9ImZvcm0tY29udHJvbCBmb3JtLWNvbnRyb2wiIHBsYWNlaG9sZGVyPSIiPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC1tZC0yIGNvbC14cy02Ij48bGFiZWwgaWQ9InZpZXc6X2lkMTpfaWQyOmxibEFnSXRlbSIgZm9yPSJ2aWV3Ol9pZDE6X2lkMjp0eHRBZ0l0ZW0iIGNsYXNzPSJjb250cm9sLWxhYmVsIGxibCI+QWdlbmRhIEl0ZW0gTnVtYmVyPC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtMSBjb2wteHMtMiI+PGlucHV0IHR5cGU9InRleHQiIGlkPSJ2aWV3Ol9pZDE6X2lkMjp0eHRBZ0l0ZW0iIG5hbWU9InZpZXc6X2lkMTpfaWQyOnR4dEFnSXRlbSIgY2xhc3M9ImZvcm0tY29udHJvbCBmb3JtLWNvbnRyb2wiIHBsYWNlaG9sZGVyPSIiPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9InJvdyI+PGRpdiBjbGFzcz0iY29sLW1kLTYgY29sLXhzLTEyIj48ZGl2IGNsYXNzPSJjb2wtbWQtNCBjb2wteHMtMTIgbWFyZ2luTTE1Ij48bGFiZWwgaWQ9InZpZXc6X2lkMTpfaWQyOmxibEZUU3JjaCIgZm9yPSJ2aWV3Ol9pZDE6X2lkMjp0eHRGVFNyY2giIGNsYXNzPSJjb250cm9sLWxhYmVsIGxibCI+RnVsbC10ZXh0IHNlYXJjaDwvbGFiZWw+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTggY29sLXhzLTEyIG1hcmdpbjEwIj48dGV4dGFyZWEgaWQ9InZpZXc6X2lkMTpfaWQyOnR4dEZUU3JjaCIgbmFtZT0idmlldzpfaWQxOl9pZDI6dHh0RlRTcmNoIiByb3dzPSIyIiBjbGFzcz0iZm9ybS1jb250cm9sIGZvcm0tY29udHJvbCIgcGxhY2Vob2xkZXI9IkVudGVyIHRleHQgdG8gc2VhcmNoIj48L3RleHRhcmVhPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9ImNvbC1tZC02IGNvbC14cy0xMiI+PGRpdiBjbGFzcz0icm93Ij48ZGl2IGNsYXNzPSJjb2wtbWQtNCBjb2wteHMtMTIgbWFyZ2luTTE1Ij48bGFiZWwgaWQ9InZpZXc6X2lkMTpfaWQyOmxibExhbmciIGZvcj0idmlldzpfaWQxOl9pZDI6Y2JMYW5nIiBjbGFzcz0iY29udHJvbC1sYWJlbCBsYmwiPkxhbmd1YWdlIGZvciBmdWxsLXRleHQ6PC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtOCBjb2wteHMtMTIgbWFyZ2luMTAiPjxzZWxlY3QgaWQ9InZpZXc6X2lkMTpfaWQyOmNiTGFuZyIgbmFtZT0idmlldzpfaWQxOl9pZDI6Y2JMYW5nIiBjbGFzcz0iZm9ybS1jb250cm9sIGZvcm0tY29udHJvbCIgc2l6ZT0iMyI+CTxvcHRpb24gdmFsdWU9IkEiPkFyYWJpYzwvb3B0aW9uPgoJPG9wdGlvbiB2YWx1ZT0iQyI+Q2hpbmVzZTwvb3B0aW9uPgoJPG9wdGlvbiB2YWx1ZT0iRSI+RW5nbGlzaDwvb3B0aW9uPgoJPG9wdGlvbiB2YWx1ZT0iRiI+RnJlbmNoPC9vcHRpb24+Cgk8b3B0aW9uIHZhbHVlPSJSIj5SdXNzaWFuPC9vcHRpb24+Cgk8b3B0aW9uIHZhbHVlPSJTIj5TcGFuaXNoPC9vcHRpb24+Cjwvc2VsZWN0Pgo8c2NyaXB0Pm5ldyBleHRsaWIuZGlqaXQuQm9vdHN0cmFwUGlja2VyU2VsZWN0Mih7ImFsbG93Q2xlYXJpbmciOmZhbHNlLCJ1c2VSZW1vdGVEYXRhIjpmYWxzZSwidGhpc0lkIjoic2VsZWN0MlBpY2tlckNvbWJvMSIsImZvcm1hdFJlc3VsdCI6bnVsbCwiZm9ySWQiOiJ2aWV3Ol9pZDE6X2lkMjpjYkxhbmciLCJpc05hdGl2ZVNlbGVjdCI6dHJ1ZSwiZm9ybWF0U2VsZWN0aW9uIjpudWxsLCJwbGFjZUhvbGRlciI6bnVsbH0pOzwvc2NyaXB0Pgo8L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9ImNvbC1tZC00IGNvbC14cy0xMiBtYXJnaW5NMTUiPjxsYWJlbCBpZD0idmlldzpfaWQxOl9pZDI6bGJsVHlwZSIgZm9yPSJ2aWV3Ol9pZDE6X2lkMjpjYlR5cGUiIGNsYXNzPSJjb250cm9sLWxhYmVsIGxibCI+VHlwZSBvZiBmdWxsLXRleHQgc2VhcmNoPC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtOCBjb2wteHMtMTIgbWFyZ2luMTAiPjxzZWxlY3QgaWQ9InZpZXc6X2lkMTpfaWQyOmNiVHlwZSIgbmFtZT0idmlldzpfaWQxOl9pZDI6Y2JUeXBlIiBjbGFzcz0iZm9ybS1jb250cm9sIiBzaXplPSIxIj4JPG9wdGlvbiB2YWx1ZT0iRlAiPkZpbmQgdGhpcyBwaHJhc2U8L29wdGlvbj4KCTxvcHRpb24gdmFsdWU9IkZXIj5GaW5kIGFsbCB0aGUgd29yZHM8L29wdGlvbj4KCTxvcHRpb24gdmFsdWU9IkZBIj5GaW5kIGFueSBvZiB0aGUgd29yZHM8L29wdGlvbj4KCTxvcHRpb24gdmFsdWU9IkJPIj5Vc2UgYm9vbGVhbiBvcGVyYXRvcnM8L29wdGlvbj4KPC9zZWxlY3Q+CjxzY3JpcHQ+bmV3IGV4dGxpYi5kaWppdC5Cb290c3RyYXBQaWNrZXJTZWxlY3QyKHsiYWxsb3dDbGVhcmluZyI6ZmFsc2UsInVzZVJlbW90ZURhdGEiOmZhbHNlLCJ0aGlzSWQiOiJzZWxlY3QyUGlja2VyQ29tYm8yIiwiZm9ybWF0UmVzdWx0IjpudWxsLCJmb3JJZCI6InZpZXc6X2lkMTpfaWQyOmNiVHlwZSIsImlzTmF0aXZlU2VsZWN0Ijp0cnVlLCJmb3JtYXRTZWxlY3Rpb24iOm51bGwsInBsYWNlSG9sZGVyIjpudWxsfSk7PC9zY3JpcHQ+CjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9InJvdyI+PGRpdiBjbGFzcz0iY29sLW1kLTQgY29sLXhzLTEyIG1hcmdpbk0xNSI+PGxhYmVsIGlkPSJ2aWV3Ol9pZDE6X2lkMjpsYmxTb3J0IiBmb3I9InZpZXc6X2lkMTpfaWQyOmNiU29ydCIgY2xhc3M9ImNvbnRyb2wtbGFiZWwgbGJsIj5Tb3J0PC9sYWJlbD48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtOCBjb2wteHMtMTIgbWFyZ2luMTAiPjxzZWxlY3QgaWQ9InZpZXc6X2lkMTpfaWQyOmNiU29ydCIgbmFtZT0idmlldzpfaWQxOl9pZDI6Y2JTb3J0IiBjbGFzcz0iZm9ybS1jb250cm9sIiBzaXplPSIxIj4JPG9wdGlvbiB2YWx1ZT0iUiI+U29ydCBieSByZWxldmFuY2U8L29wdGlvbj4KCTxvcHRpb24gdmFsdWU9IkREIj5Tb3J0IGJ5IGRhdGUgLSBkZXNjZW5kaW5nPC9vcHRpb24+Cgk8b3B0aW9uIHZhbHVlPSJEQSI+U29ydCBieSBkYXRlIC0gYXNjZW5kaW5nPC9vcHRpb24+Cgk8b3B0aW9uIHZhbHVlPSJTIj5Tb3J0IGJ5IHN5bWJvbDwvb3B0aW9uPgo8L3NlbGVjdD4KPHNjcmlwdD5uZXcgZXh0bGliLmRpaml0LkJvb3RzdHJhcFBpY2tlclNlbGVjdDIoeyJhbGxvd0NsZWFyaW5nIjpmYWxzZSwidXNlUmVtb3RlRGF0YSI6ZmFsc2UsInRoaXNJZCI6InNlbGVjdDJQaWNrZXJDb21ibzMiLCJmb3JtYXRSZXN1bHQiOm51bGwsImZvcklkIjoidmlldzpfaWQxOl9pZDI6Y2JTb3J0IiwiaXNOYXRpdmVTZWxlY3QiOnRydWUsImZvcm1hdFNlbGVjdGlvbiI6bnVsbCwicGxhY2VIb2xkZXIiOm51bGx9KTs8L3NjcmlwdD4KPC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+PGJyPjxkaXYgY2xhc3M9InJvdyI+PGRpdiBjbGFzcz0iY29sLW1kLTIgaGlkZU1vYmlsZSI+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTEgY29sLXhzLTMiPjxidXR0b24gY2xhc3M9ImJ0biBidG4tc20gYnRuVU5CbHVlIiB0eXBlPSJidXR0b24iIG5hbWU9InZpZXc6X2lkMTpfaWQyOmJ0blJlZmluZSIgaWQ9InZpZXc6X2lkMTpfaWQyOmJ0blJlZmluZSI+U2VhcmNoPC9idXR0b24+PC9kaXY+PGRpdiBjbGFzcz0iY29sLW1kLTEgY29sLXhzLTMiPjxidXR0b24gY2xhc3M9ImJ0biBidG4tc20iIHR5cGU9ImJ1dHRvbiIgbmFtZT0idmlldzpfaWQxOl9pZDI6YnRuQ2xlYXIiIGlkPSJ2aWV3Ol9pZDE6X2lkMjpidG5DbGVhciI+Q2xlYXI8L2J1dHRvbj48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtMSBjb2wteHMtMyBoaWRkZW4iPjxidXR0b24gY2xhc3M9ImJ0biBidG4tc20iIHR5cGU9ImJ1dHRvbiIgbmFtZT0idmlldzpfaWQxOl9pZDI6YnRuU2F2ZSIgaWQ9InZpZXc6X2lkMTpfaWQyOmJ0blNhdmUiPlNhdmUgU2VhcmNoIGJ5Li4uPC9idXR0b24+PC9kaXY+CjwvZGl2PjxpbnB1dCB0eXBlPSJoaWRkZW4iIGlkPSJ2aWV3Ol9pZDE6X2lkMjpoZG5TdWJqIiBuYW1lPSJ2aWV3Ol9pZDE6X2lkMjpoZG5TdWJqIiB2YWx1ZT0iIj48L2Rpdj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJjb250YWluZXIiIGlkPSJtYWluQ29udGVudCI+PGRpdiBpZD0idmlldzpfaWQxOl9pZDI6Y2JNYWluIj4KPGRpdiBjbGFzcz0icGFuZWxIZWlnaHQiPgo8ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9ImNvbC1tZC00Ij48aDU+PHNwYW4gY2xhc3M9InVjYXNlIj5EQUlMWSBET0NVTUVOVFM8L3NwYW4+PC9oNT48c3BhbiBpZD0idmlldzpfaWQxOl9pZDI6Y2JNYWluOmNmRERzIj48cD48YSBocmVmPSJodHRwczovL2pvdXJuYWwudW4ub3JnLyIgdGFyZ2V0PSJfYmxhbmsiPjxpIGNsYXNzPSJmYSBmYS1maWxlIj48L2k+JiMxNjA7JiMxNjA7RGFpbHkgSm91cm5hbCAoTmV3IFlvcmspPC9hPjwvcD4gPHA+PGEgaHJlZj0iaHR0cDovL2RhY2Nlc3Mtb2RzLnVuLm9yZy9vZHMvZGFpbHlMaXN0T2ZEb2N1bWVudHMuaHRtIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9ImZhIGZhLWZpbGUiPjwvaT4mIzE2MDsmIzE2MDtEYWlseSBEb2N1bWVudHM8L2E+PC9wPiA8cD48YSBocmVmPSJodHRwOi8vd3d3LnVub2cuY2gvX184MDI1NmVlNjAwNTg2ZjM0Lm5zZi9odHRwRGFpbHlCdWxsZXRpbl9FeHRlcm5hbD9SZWFkRm9ybSIgdGFyZ2V0PSJfYmxhbmsiPjxpIGNsYXNzPSJmYSBmYS1maWxlIj48L2k+JiMxNjA7JiMxNjA7RGFpbHkgQnVsbGV0aW4gKEdlbmV2YSk8L2E+PC9wPjwvc3Bhbj48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtbWQtNCI+PGg1PjxzcGFuIGNsYXNzPSJ1Y2FzZSI+TU9TVCBET1dOTE9BREVEIERPQ1VNRU5UUyAoMS01KTwvc3Bhbj48L2g1PjxzcGFuIGlkPSJ2aWV3Ol9pZDE6X2lkMjpjYk1haW46Y2ZNRERzMSI+PHA+PGEgaHJlZj0iaHR0cDovL2RhY2Nlc3Mtb2RzLnVuLm9yZy9hY2Nlc3MubnNmL0dldD9PcGVuJkRTPUEvSFJDL1dHLjYvNDMvRlJBLzImTGFuZz1FIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9ImZhIGZhLWZpbGUiPjwvaT4mIzE2MDsmIzE2MDtBL0hSQy9XRy42LzQzL0ZSQS8yPC9hPjwvcD4gPHA+PGEgaHJlZj0iaHR0cDovL2RhY2Nlc3Mtb2RzLnVuLm9yZy9hY2Nlc3MubnNmL0dldD9PcGVuJkRTPUEvUkVTLzcwLzEmTGFuZz1FIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9ImZhIGZhLWZpbGUiPjwvaT4mIzE2MDsmIzE2MDtBL1JFUy83MC8xPC9hPjwvcD4gPHA+PGEgaHJlZj0iaHR0cDovL2RhY2Nlc3Mtb2RzLnVuLm9yZy9hY2Nlc3MubnNmL0dldD9PcGVuJkRTPUEvQ09ORi4yMzIvMjAyMy80Jkxhbmc9RSIgdGFyZ2V0PSJfYmxhbmsiPjxpIGNsYXNzPSJmYSBmYS1maWxlIj48L2k+JiMxNjA7JiMxNjA7QS9DT05GLjIzMi8yMDIzLzQ8L2E+PC9wPiA8cD48YSBocmVmPSJodHRwOi8vZGFjY2Vzcy1vZHMudW4ub3JnL2FjY2Vzcy5uc2YvR2V0P09wZW4mRFM9QS83Ny85MTcmTGFuZz1FIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9ImZhIGZhLWZpbGUiPjwvaT4mIzE2MDsmIzE2MDtBLzc3LzkxNzwvYT48L3A+IDxwPjxhIGhyZWY9Imh0dHA6Ly9kYWNjZXNzLW9kcy51bi5vcmcvYWNjZXNzLm5zZi9HZXQ/T3BlbiZEUz1BLzc4Lzk0Jkxhbmc9RSIgdGFyZ2V0PSJfYmxhbmsiPjxpIGNsYXNzPSJmYSBmYS1maWxlIj48L2k+JiMxNjA7JiMxNjA7QS83OC85NDwvYT48L3A+PC9zcGFuPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC1tZC00Ij48aDU+PHNwYW4gY2xhc3M9InVjYXNlIj5NT1NUIERPV05MT0FERUQgRE9DVU1FTlRTICg2LTEwKTwvc3Bhbj48L2g1PjxzcGFuIGlkPSJ2aWV3Ol9pZDE6X2lkMjpjYk1haW46Y2ZNRERzMiI+PHA+PGEgaHJlZj0iaHR0cDovL2RhY2Nlc3Mtb2RzLnVuLm9yZy9hY2Nlc3MubnNmL0dldD9PcGVuJkRTPUEvNzcvOTIwJkxhbmc9RSIgdGFyZ2V0PSJfYmxhbmsiPjxpIGNsYXNzPSJmYSBmYS1maWxlIj48L2k+JiMxNjA7JiMxNjA7QS83Ny85MjA8L2E+PC9wPiA8cD48YSBocmVmPSJodHRwOi8vZGFjY2Vzcy1vZHMudW4ub3JnL2FjY2Vzcy5uc2YvR2V0P09wZW4mRFM9QS83Ny85MTkmTGFuZz1FIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9ImZhIGZhLWZpbGUiPjwvaT4mIzE2MDsmIzE2MDtBLzc3LzkxOTwvYT48L3A+IDxwPjxhIGhyZWY9Imh0dHA6Ly9kYWNjZXNzLW9kcy51bi5vcmcvYWNjZXNzLm5zZi9HZXQ/T3BlbiZEUz1BL0FDLjEwOS8yMDIzL0wuMjImTGFuZz1FIiB0YXJnZXQ9Il9ibGFuayI+PGkgY2xhc3M9ImZhIGZhLWZpbGUiPjwvaT4mIzE2MDsmIzE2MDtBL0FDLjEwOS8yMDIzL0wuMjI8L2E+PC9wPiA8cD48YSBocmVmPSJodHRwOi8vZGFjY2Vzcy1vZHMudW4ub3JnL2FjY2Vzcy5uc2YvR2V0P09wZW4mRFM9QS83OC85MyZMYW5nPUUiIHRhcmdldD0iX2JsYW5rIj48aSBjbGFzcz0iZmEgZmEtZmlsZSI+PC9pPiYjMTYwOyYjMTYwO0EvNzgvOTM8L2E+PC9wPiA8cD48YSBocmVmPSJodHRwOi8vZGFjY2Vzcy1vZHMudW4ub3JnL2FjY2Vzcy5uc2YvR2V0P09wZW4mRFM9Uy8yMDIzLzEwL0FERC4yNSZMYW5nPUUiIHRhcmdldD0iX2JsYW5rIj48aSBjbGFzcz0iZmEgZmEtZmlsZSI+PC9pPiYjMTYwOyYjMTYwO1MvMjAyMy8xMC9BREQuMjU8L2E+PC9wPjwvc3Bhbj48L2Rpdj48L2Rpdj48cCBjbGFzcz0icGFnZUhlYWRlciI+T2ZmaWNpYWwgRG9jdW1lbnQgU3lzdGVtIG9mIHRoZSBVbml0ZWQgTmF0aW9uczwvcD48ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9ImNvbC1tZC0xMiI+PGRpdiBpZD0idmlldzpfaWQxOl9pZDI6Y2JNYWluOmVuIj4KPGRpdiBpZD0idmlldzpfaWQxOl9pZDI6Y2JNYWluOl9pZDE1MTppbnB1dFJpY2hUZXh0MSI+VGhlIE9mZmljaWFsIERvY3VtZW50IFN5c3RlbSAoT0RTKSBpcyBhbiBvbmxpbmUgZGF0YWJhc2Ugb2YgVU4gZG9jdW1lbnRzIHRoYXQgd2FzIGZpcnN0IGxhdW5jaGVkIGluIDE5OTMgYW5kIHVwZGF0ZWQgaW4gMjAxNi4gT0RTIGhhcyBmdWxsLXRleHQsIGJvcm4tZGlnaXRhbCBVTiBkb2N1bWVudHMgcHVibGlzaGVkIGZyb20gMTk5MyBvbndhcmQsIGluY2x1ZGluZyBkb2N1bWVudHMgb2YgdGhlIFNlY3VyaXR5IENvdW5jaWwsIHRoZSBHZW5lcmFsIEFzc2VtYmx5LCB0aGUgRWNvbm9taWMgYW5kIFNvY2lhbCBDb3VuY2lsIGFuZCB0aGVpciBzdWJzaWRpYXJpZXMsIGFzIHdlbGwgYXMgYWRtaW5pc3RyYXRpdmUgaXNzdWFuY2VzIGFuZCBvdGhlciBkb2N1bWVudHMuIDxicj4NCjxicj4NClRoZSBkYXRhYmFzZSBhbHNvIGluY2x1ZGVzIHNjYW5uZWQgZG9jdW1lbnRzIHB1Ymxpc2hlZCBiZXR3ZWVuIDE5NDYgYW5kIDE5OTMsIGluY2x1ZGluZyBhbGwgcmVzb2x1dGlvbnMgb2YgdGhlIHByaW5jaXBhbCBvcmdhbnMsIGFsbCBkb2N1bWVudHMgb2YgdGhlIFNlY3VyaXR5IENvdW5jaWwgYW5kIHRoZSBHZW5lcmFsIEFzc2VtYmx5IE9mZmljaWFsIFJlY29yZHMuIERvY3VtZW50cyBhcmUgYXZhaWxhYmxlIGluIHRoZSBvZmZpY2lhbCBsYW5ndWFnZXMgb2YgdGhlIFVOOyBzb21lIGRvY3VtZW50cyBhcmUgYWxzbyBhdmFpbGFibGUgaW4gR2VybWFuLiA8YnI+DQo8YnI+DQpPRFMgZG9lcyBub3QgaGF2ZSB0aGUgZm9sbG93aW5nIHR5cGVzIG9mIG1hdGVyaWFsczogZG9jdW1lbnRzIGlzc3VlZCBiZWZvcmUgMTk5MyB0aGF0IGhhdmUgbm90IHlldCBiZWVuIGRpZ2l0aXplZCwgPGEgaHJlZj0iaHR0cDovL3d3dy51bi5vcmcvcHJlc3MvZW4iIHRhcmdldD0iX2JsYW5rIj5wcmVzcyByZWxlYXNlczwvYT4sIDxhIGhyZWY9Imh0dHBzOi8vc2hvcC51bi5vcmcvIiB0YXJnZXQ9Il9ibGFuayI+c2FsZXMgcHVibGljYXRpb25zPC9hPiwgc3VjaCBhcyB0aGUgWWVhcmJvb2sgYW5kIHRoZSA8YSBocmVmPSJodHRwczovL3RyZWF0aWVzLnVuLm9yZy8iIHRhcmdldD0iX2JsYW5rIj5UcmVhdHkgU2VyaWVzPC9hPiwgYW5kIGRvY3VtZW50cyB0aGF0IGRvIG5vdCBoYXZlIGEgVU4gc3ltYm9sLiA8YnI+DQo8YnI+DQpPRFMgaXMgbWFpbnRhaW5lZCBieSB0aGUgPGEgaHJlZj0iaHR0cHM6Ly91bml0ZS51bi5vcmcvIiB0YXJnZXQ9Il9ibGFuayI+T2ZmaWNlIG9mIEluZm9ybWF0aW9uIGFuZCBDb21tdW5pY2F0aW9ucyBUZWNobm9sb2d5IChPSUNUKTwvYT4uIE5ldyBkb2N1bWVudHMgYXJlIGFkZGVkIGJ5IHRoZSBEZXBhcnRtZW50IGZvciBHZW5lcmFsIEFzc2VtYmx5IGFuZCBDb25mZXJlbmNlIE1hbmFnZW1lbnQgKERHQUNNKS4gU2Nhbm5lZMKgZG9jdW1lbnRzIGFuZCBtZXRhZGF0YSBhcmUgY29udHJpYnV0ZWQgYnkgdGhlIERhZyBIYW1tYXJza2rDtmxkIExpYnJhcnkgYW5kIHRoZSBVTiBPZmZpY2UgYXQgR2VuZXZhIExpYnJhcnkuIDxicj4NCjxicj4NClRoaXMgd2Vic2l0ZSBpcyBiZXN0IHVzZWQgaW4gcmVjZW50IHZlcnNpb25zIG9mIGFsbCBtYWpvciBicm93c2Vycy4gVG8gZG93bmxvYWQgbXVsdGlwbGUgZG9jdW1lbnRzLCBwbGVhc2UgdXNlIEdvb2dsZSBDaHJvbWUgb3IgT3BlcmEuPGJyPg0KPGJyPjwvZGl2PjwvZGl2Pgo8L2Rpdj48L2Rpdj48L2Rpdj4KPC9kaXY+CjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRhaW5lciBmb290ZXJJbmZvIG5vUHJpbnQiPjxkaXYgY2xhc3M9InJvdyBsaXN0LWlubGluZSI+PGRpdiBjbGFzcz0iY29sLW1kLTEyIj48ZGl2IGNsYXNzPSJwdWxsLWxlZnQgZmxpcCBmb290ZXItYnJhbmQiPjxhIGlkPSJ2aWV3Ol9pZDE6X2lkMjpfaWQxNjIiIGhyZWY9Imh0dHA6Ly93d3cudW4ub3JnL2VuL2luZGV4Lmh0bWwiIGNsYXNzPSJ1Y2FzZSIgdGl0bGU9IlVuaXRlZCBOYXRpb25zIiB0YXJnZXQ9Il9ibGFuayI+VW5pdGVkIE5hdGlvbnM8L2E+PC9kaXY+PGRpdiBjbGFzcz0icHVsbC1yaWdodCBmbGlwIj48cD48YSBpZD0idmlldzpfaWQxOl9pZDI6bGluazYiIGhyZWY9Ii9wcm9kL29kcy5uc2YveGZDb250YWN0VXMueHNwIj5Db250YWN0IFVzPC9hPiZuYnNwO3wmbmJzcDs8YSBpZD0idmlldzpfaWQxOl9pZDI6bGluazEiIGhyZWY9Ii9wcm9kL29kcy5uc2YveHBIZWxwLnhzcCI+SGVscCBJbmZvcm1hdGlvbjwvYT4mbmJzcDt8Jm5ic3A7PGEgaWQ9InZpZXc6X2lkMTpfaWQyOmxpbms1IiBocmVmPSJodHRwOi8vd3d3LnVuLm9yZy9lbi9zZWN0aW9ucy9hYm91dHVuL2ZyYXVkLWFsZXJ0L2luZGV4Lmh0bWwiIHRhcmdldD0iX2JsYW5rIj5GcmF1ZCBBbGVydDwvYT4mbmJzcDt8Jm5ic3A7PGEgaWQ9InZpZXc6X2lkMTpfaWQyOmxpbms0IiBocmVmPSJodHRwOi8vd3d3LnVuLm9yZy9lbi9zZWN0aW9ucy9hYm91dC13ZWJzaXRlL3ByaXZhY3ktbm90aWNlL2luZGV4Lmh0bWwiIHRhcmdldD0iX2JsYW5rIj5Qcml2YWN5IE5vdGljZTwvYT4mbmJzcDt8Jm5ic3A7PGEgaWQ9InZpZXc6X2lkMTpfaWQyOmxpbmszIiBocmVmPSJodHRwOi8vd3d3LnVuLm9yZy9lbi9zZWN0aW9ucy9hYm91dC13ZWJzaXRlL3Rlcm1zLXVzZS9pbmRleC5odG1sIiB0YXJnZXQ9Il9ibGFuayI+VGVybXMgb2YgVXNlPC9hPiZuYnNwO3wmbmJzcDs8YSBpZD0idmlldzpfaWQxOl9pZDI6bGluazIiIGhyZWY9Imh0dHA6Ly93d3cudW4ub3JnL2VuL2Fib3V0dW4vY29weXJpZ2h0L2luZGV4Lmh0bWwiIHRhcmdldD0iX2JsYW5rIj5Db3B5cmlnaHQgJmNvcHk7IFVuaXRlZCBOYXRpb25zIDIwMTY8L2E+PC9wPjwvZGl2PjwvZGl2PjwvZGl2PjwvZGl2Pgo8aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSIkJHZpZXdpZCIgaWQ9InZpZXc6X2lkMV9fVlVJRCIgdmFsdWU9IiE3cGQ3d3llZDMyM3hhanBtamFqeWNpZzR4ISI+CjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9IiQkeHNwc3VibWl0aWQiPgo8aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSIkJHhzcGV4ZWNpZCI+CjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9IiQkeHNwc3VibWl0dmFsdWUiPgo8aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSIkJHhzcHN1Ym1pdHNjcm9sbCI+CjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InZpZXc6X2lkMSIgdmFsdWU9InZpZXc6X2lkMSI+PC9mb3JtPgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CgpmdW5jdGlvbiB2aWV3X19pZDFfX2lkMl9faWQ1N19jbGllbnRTaWRlX29uY2xpY2sodGhpc0V2ZW50KSB7CmRpaml0LmJ5SWQoInZpZXc6X2lkMTpfaWQyOnNob3dMb2dpbkRpYWxvZyIpLnNob3coKTsKCn0KCmZ1bmN0aW9uIHZpZXdfX2lkMV9faWQyX19pZDY5X2NsaWVudFNpZGVfb25rZXlwcmVzcyh0aGlzRXZlbnQpIHsKaWYgKHR5cGVvZiB0aGlzRXZlbnQgPT0gJ3VuZGVmaW5lZCcgJiYgd2luZG93LmV2ZW50KSB7IHRoaXNFdmVudCA9IHdpbmRvdy5ldmVudDsgfQppZiAodGhpc0V2ZW50LmtleUNvZGUgPT0gZG9qby5rZXlzLkVOVEVSKQp7CiAgICBkb2pvLmJ5SWQoInZpZXc6X2lkMTpfaWQyOmJ0blJlZmluZSIpLmNsaWNrKCk7CiAgICB0aGlzRXZlbnQucHJldmVudERlZmF1bHQoKTsKfQoKfQoKZnVuY3Rpb24gdmlld19faWQxX19pZDJfX2lkMTMxX2NsaWVudFNpZGVfb25jbGljayh0aGlzRXZlbnQpIHsKLy8gaWYgRlQsIG9wZW4gVW5pdGUgU2VhcmNoIGluc3RlYWQKLyp2YXIgZnRTcmNoID0gWFNQLmdldEVsZW1lbnRCeUlkKCJ2aWV3Ol9pZDE6X2lkMjp0eHRGVFNyY2giKS52YWx1ZTsKaWYoZnRTcmNoICE9ICIiKSB7Cgl2YXIgdlVSTCA9ICJodHRwczovL3NlYXJjaC51bi5vcmcvcmVzdWx0cy5waHA/cXVlcnk9IiArIGZ0U3JjaCArICImdHBsPW9kcyI7Cgl3aW5kb3cub3Blbih2VVJMKTsKCXJldHVybiBmYWxzZTsKfTsqLwoKfQoKZnVuY3Rpb24gdmlld19faWQxX19pZDJfX2lkMTMzX2NsaWVudFNpZGVfb25jbGljayh0aGlzRXZlbnQpIHsKeCQoIiIpLnZhbCgnJyk7CngkKCIiKS5zZWxlY3QyKCkuc2VsZWN0MigidmFsIiwgJ1VOIERvY3VtZW50cycpOwp4JCgidmlldzpfaWQxOl9pZDI6Y2JMYW5nIikuc2VsZWN0MigpLnNlbGVjdDIoInZhbCIsICcnKTsKeCQoInZpZXc6X2lkMTpfaWQyOnR4dFN5bWJvbCIpLnZhbChudWxsKTsKJCgnW25hbWUkPXJnVHJ1bmNdOmNoZWNrZWQnKS5wcm9wKCdjaGVja2VkJywgZmFsc2UpOwp4JCgidmlldzpfaWQxOl9pZDI6ZHRQdWJEYXRlRnJvbSIpLnZhbCgnJyk7CngkKCJ2aWV3Ol9pZDE6X2lkMjpkdFB1YkRhdGVUbyIpLnZhbCgnJyk7CngkKCJ2aWV3Ol9pZDE6X2lkMjpkdFJlbERhdGVGcm9tIikudmFsKCcnKTsKeCQoInZpZXc6X2lkMTpfaWQyOmR0UmVsRGF0ZVRvIikudmFsKCcnKTsKeCQoInZpZXc6X2lkMTpfaWQyOnR4dFdyZHMiKS52YWwoJycpOwp4JCgidmlldzpfaWQxOl9pZDI6dHh0U3ViaiIpLnZhbChudWxsKTsKeCQoInZpZXc6X2lkMTpfaWQyOnR4dFNlc3MiKS52YWwoJycpOwp4JCgidmlldzpfaWQxOl9pZDI6dHh0QWdJdGVtIikudmFsKCcnKTsKeCQoInZpZXc6X2lkMTpfaWQyOnR4dEZUU3JjaCIpLnZhbCgnJyk7CngkKCJ2aWV3Ol9pZDE6X2lkMjpjYlR5cGUiKS5zZWxlY3QyKCkuc2VsZWN0MigidmFsIiwgJ0ZpbmQgdGhpcyBwaHJhc2UnKTsKeCQoInZpZXc6X2lkMTpfaWQyOnR4dEpvYk5vIikudmFsKCcnKTsKCn0KCmZ1bmN0aW9uIHZpZXdfX2lkMV9faWQyX19pZDE3MF9jbGllbnRTaWRlX29uQ2xpZW50TG9hZCh0aGlzRXZlbnQpIHsKLy8gZGVmYXVsdCBmaWVsZAp2YXIgaW5wdXQgPSBkb2pvLnF1ZXJ5KCJpbnB1dFt0eXBlPSd0ZXh0J10iKVswXTsgCmlucHV0LmZvY3VzKCk7CgovLyBkaXNhYmxlIHN1YmplY3QgZmllbGQKJCgiLmRpc2FibGVkIikuZm9jdXMoZnVuY3Rpb24oKXsKCQkkKHRoaXMpLmJsdXIoKTsKfSk7Cgp9CgpYU1AuYWRkT25Mb2FkKGZ1bmN0aW9uKCkgewpYU1AuYXR0YWNoRXZlbnQoInZpZXc6X2lkMTpfaWQyOl9pZDI0IiwgInZpZXc6X2lkMTpfaWQyOmxpbmtBIiwgIm9uY2xpY2siLCBudWxsLCB0cnVlLCAyKTsKWFNQLmF0dGFjaEV2ZW50KCJ2aWV3Ol9pZDE6X2lkMjpfaWQyNiIsICJ2aWV3Ol9pZDE6X2lkMjpsaW5rQyIsICJvbmNsaWNrIiwgbnVsbCwgdHJ1ZSwgMik7ClhTUC5hdHRhY2hFdmVudCgidmlldzpfaWQxOl9pZDI6X2lkMjgiLCAidmlldzpfaWQxOl9pZDI6bGlua0UiLCAib25jbGljayIsIG51bGwsIHRydWUsIDIpOwpYU1AuYXR0YWNoRXZlbnQoInZpZXc6X2lkMTpfaWQyOl9pZDMwIiwgInZpZXc6X2lkMTpfaWQyOmxpbmtGIiwgIm9uY2xpY2siLCBudWxsLCB0cnVlLCAyKTsKWFNQLmF0dGFjaEV2ZW50KCJ2aWV3Ol9pZDE6X2lkMjpfaWQzMiIsICJ2aWV3Ol9pZDE6X2lkMjpsaW5rUiIsICJvbmNsaWNrIiwgbnVsbCwgdHJ1ZSwgMik7ClhTUC5hdHRhY2hFdmVudCgidmlldzpfaWQxOl9pZDI6X2lkMzQiLCAidmlldzpfaWQxOl9pZDI6bGlua1MiLCAib25jbGljayIsIG51bGwsIHRydWUsIDIpOwpYU1AuYXR0YWNoRXZlbnQoInZpZXc6X2lkMTpfaWQyOl9pZDQwIiwgInZpZXc6X2lkMTpfaWQyOmxpbmtHIiwgIm9uY2xpY2siLCBudWxsLCB0cnVlLCAyKTsKWFNQLmF0dGFjaEV2ZW50KCJ2aWV3Ol9pZDE6X2lkMjpfaWQ1NyIsICJ2aWV3Ol9pZDE6X2lkMjpiYW5uZXJfYnRuX2xvZ2luIiwgIm9uY2xpY2siLCB2aWV3X19pZDFfX2lkMl9faWQ1N19jbGllbnRTaWRlX29uY2xpY2ssIGZhbHNlLCAyKTsKWFNQLmF0dGFjaEV2ZW50KCJ2aWV3Ol9pZDE6X2lkMjpfaWQ2OSIsICJ2aWV3Ol9pZDE6X2lkMjp0eHRTeW1ib2wiLCAib25rZXlwcmVzcyIsIHZpZXdfX2lkMV9faWQyX19pZDY5X2NsaWVudFNpZGVfb25rZXlwcmVzcywgZmFsc2UsIDIpOwpYU1AuYXR0YWNoRXZlbnQoInZpZXc6X2lkMTpfaWQyOl9pZDEzMSIsICJ2aWV3Ol9pZDE6X2lkMjpidG5SZWZpbmUiLCAib25jbGljayIsIHZpZXdfX2lkMV9faWQyX19pZDEzMV9jbGllbnRTaWRlX29uY2xpY2ssIHRydWUsIDIpOwpYU1AuYXR0YWNoRXZlbnQoInZpZXc6X2lkMTpfaWQyOl9pZDEzMyIsICJ2aWV3Ol9pZDE6X2lkMjpidG5DbGVhciIsICJvbmNsaWNrIiwgdmlld19faWQxX19pZDJfX2lkMTMzX2NsaWVudFNpZGVfb25jbGljaywgdHJ1ZSwgMik7ClhTUC5hdHRhY2hFdmVudCgidmlldzpfaWQxOl9pZDI6X2lkMTM1IiwgInZpZXc6X2lkMTpfaWQyOmJ0blNhdmUiLCAib25jbGljayIsIG51bGwsIHRydWUsIDIpOwpYU1AuYXR0YWNoRXZlbnQoInZpZXc6X2lkMTpfaWQyOl9pZDE3MCIsICJ2aWV3Ol9pZDE6X2lkMiIsICJvbkNsaWVudExvYWQiLCB2aWV3X19pZDFfX2lkMl9faWQxNzBfY2xpZW50U2lkZV9vbkNsaWVudExvYWQsIGZhbHNlLCAyKTsKfSk7IAoKPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPg==
+  recorded_at: Mon, 07 Aug 2023 17:57:24 GMT
 - request:
     method: post
     uri: https://documents.un.org/prod/ods.nsf/home.xsp
@@ -478,7 +211,7 @@ http_interactions:
         form-data; name=\"view:_id1:_id2:cbType\"\r\n\r\nFP\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
         form-data; name=\"view:_id1:_id2:cbSort\"\r\n\r\nR\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
         form-data; name=\"view:_id1:_id2:hdnSubj\"\r\n\r\n\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
-        form-data; name=\"$$viewid\"\r\n\r\n!9150qw6m5jlk16n6ksr9lvfre!\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
+        form-data; name=\"$$viewid\"\r\n\r\n!7pd7wyed323xajpmjajycig4x!\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
         form-data; name=\"$$xspsubmitid\"\r\n\r\nview:_id1:_id2:_id131\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
         form-data; name=\"$$xspexecid\"\r\n\r\n\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
         form-data; name=\"$$xspsubmitvalue\"\r\n\r\n\r\n------WebKitFormBoundaryVarT9Z7AFUzw2lma\r\nContent-Disposition:
@@ -493,8 +226,8 @@ http_interactions:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/85.0.4183.102 Safari/537.36
       Cookie:
-      - LtpaToken=AAECAzY0NTY2QTYwNjQ1NkRBRTBmcmVlb2RzMXjw4m5uqk0Nq56RVakV9joYbKrK;
-        SessionID=DD8224B1F87C20562C1C539B1D729BECA84EC7B0; citrix_ns_id_.un.org_%2F_wat=AAAAAAWPQlNrzo0xuo1JC32QxGDLQ95z_NwFhlui7sUGeAUUAWdLauLbYuNcgBBh2LKRKm1m1M098pX7_9o5BLCLzbdy&AAAAAAVCCqtwyUS8jHxAypZ4NlRoJMYM_e5Rr7jb-bnWzs8xl11TNk2WDAdQsL8TGwjqg5cH6RNOBuV7tXpd4BN4jDLs&
+      - LtpaToken=AAECAzY0RDEzMDg0NjREMUExMDRmcmVlb2RzMdV6Y/VnqesufU2LsyoQK9+Xm9HS;
+        SessionID=018896781FC755DFDAD646FAA618695C213AA685; citrix_ns_id_.un.org_%2F_wat=AAAAAAUEERUxFqWJdxgXgam9aFYJoL2trau0pz1U0uxIp-lyM5PvLf_AcEfF0xhErPTn-xMex80uPXcij3el9vCA5E6V&AAAAAAU__BVA77JHElb1cHMXHRL4gBbdvwl1YXATvhQGMoHrxlEdk6WE7IXLxmAKM5_v7u2ZmQpB6gzRY7xJLeN0fsnQ&
       Accept-Language:
       - en-US;q=0.8,en;q=0.7
       Cache-Control:
@@ -523,7 +256,7 @@ http_interactions:
       message: Moved Temporarily
     headers:
       Date:
-      - Sat, 06 May 2023 14:55:31 GMT
+      - Mon, 07 Aug 2023 17:57:27 GMT
       Cneonction:
       - close
       Location:
@@ -537,7 +270,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sat, 06 May 2023 14:55:29 GMT
+  recorded_at: Mon, 07 Aug 2023 17:57:25 GMT
 - request:
     method: get
     uri: https://documents.un.org/prod/ods.nsf/xpSearchResultsM.xsp
@@ -553,8 +286,8 @@ http_interactions:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/85.0.4183.102 Safari/537.36
       Cookie:
-      - LtpaToken=AAECAzY0NTY2QTYwNjQ1NkRBRTBmcmVlb2RzMXjw4m5uqk0Nq56RVakV9joYbKrK;
-        SessionID=DD8224B1F87C20562C1C539B1D729BECA84EC7B0; citrix_ns_id_.un.org_%2F_wat=AAAAAAWPQlNrzo0xuo1JC32QxGDLQ95z_NwFhlui7sUGeAUUAWdLauLbYuNcgBBh2LKRKm1m1M098pX7_9o5BLCLzbdy&AAAAAAVCCqtwyUS8jHxAypZ4NlRoJMYM_e5Rr7jb-bnWzs8xl11TNk2WDAdQsL8TGwjqg5cH6RNOBuV7tXpd4BN4jDLs&
+      - LtpaToken=AAECAzY0RDEzMDg0NjREMUExMDRmcmVlb2RzMdV6Y/VnqesufU2LsyoQK9+Xm9HS;
+        SessionID=018896781FC755DFDAD646FAA618695C213AA685; citrix_ns_id_.un.org_%2F_wat=AAAAAAUEERUxFqWJdxgXgam9aFYJoL2trau0pz1U0uxIp-lyM5PvLf_AcEfF0xhErPTn-xMex80uPXcij3el9vCA5E6V&AAAAAAU__BVA77JHElb1cHMXHRL4gBbdvwl1YXATvhQGMoHrxlEdk6WE7IXLxmAKM5_v7u2ZmQpB6gzRY7xJLeN0fsnQ&
       Accept-Language:
       - en-US;q=0.8,en;q=0.7
       Cache-Control:
@@ -581,15 +314,15 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 06 May 2023 14:56:46 GMT
+      - Mon, 07 Aug 2023 17:58:07 GMT
       Content-Type:
       - text/html;charset=UTF-8
       Content-Length:
-      - '44343'
+      - '43387'
       Cache-Control:
       - no-cache
       Expires:
-      - Thu, 11 May 2023 23:59:59 GMT
+      - Sat, 12 Aug 2023 23:59:59 GMT
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
@@ -695,10 +428,10 @@ http_interactions:
         type=\"text\" id=\"view:_id1:_id2:txtSubj\" name=\"view:_id1:_id2:txtSubj\"
         class=\"form-control disabled form-control\" placeholder=\"Enter Subject\"><a
         class=\"xspPickerLink\" href=\"javascript:;\" onclick=\"return XSP.selectValue('extlib.dijit.PickerListSearch',{&quot;msep&quot;:&quot;,&quot;,&quot;dlgTitle&quot;:&quot;Select
-        from list&quot;,&quot;allowMultiple&quot;:true,&quot;trim&quot;:true,&quot;control&quot;:&quot;view:_id1:_id2:txtSubj&quot;,&quot;url&quot;:&quot;\\/prod\\/ods.nsf\\/xpSearchResultsM.xsp?$$viewid=!ea2zcbxpf1fyck66hn6w4mo1l!&amp;$$axtarget=view:_id1:_id2:vpSubjs&quot;})\"
+        from list&quot;,&quot;allowMultiple&quot;:true,&quot;trim&quot;:true,&quot;control&quot;:&quot;view:_id1:_id2:txtSubj&quot;,&quot;url&quot;:&quot;\\/prod\\/ods.nsf\\/xpSearchResultsM.xsp?$$viewid=!91gwifoe3ccwtvn3nc8s1lkzl!&amp;$$axtarget=view:_id1:_id2:vpSubjs&quot;})\"
         onkeydown=\"javascript:var kc=event.keyCode?event.keyCode:event.which;if(kc==32){
         return XSP.selectValue('extlib.dijit.PickerListSearch',{&quot;msep&quot;:&quot;,&quot;,&quot;dlgTitle&quot;:&quot;Select
-        from list&quot;,&quot;allowMultiple&quot;:true,&quot;trim&quot;:true,&quot;control&quot;:&quot;view:_id1:_id2:txtSubj&quot;,&quot;url&quot;:&quot;\\/prod\\/ods.nsf\\/xpSearchResultsM.xsp?$$viewid=!ea2zcbxpf1fyck66hn6w4mo1l!&amp;$$axtarget=view:_id1:_id2:vpSubjs&quot;})}\"
+        from list&quot;,&quot;allowMultiple&quot;:true,&quot;trim&quot;:true,&quot;control&quot;:&quot;view:_id1:_id2:txtSubj&quot;,&quot;url&quot;:&quot;\\/prod\\/ods.nsf\\/xpSearchResultsM.xsp?$$viewid=!91gwifoe3ccwtvn3nc8s1lkzl!&amp;$$axtarget=view:_id1:_id2:vpSubjs&quot;})}\"
         role=\"button\"><img src=\"/xsp/.ibmxspres/.extlib/icons/iconValuePicker.png\"
         alt=\"Open Picker\"></a></div></div><div class=\"row\"><div class=\"col-md-2
         col-xs-12\"><label id=\"view:_id1:_id2:lblPubDate\" for=\"view:_id1:_id2:dtPubDateFrom\"
@@ -783,10 +516,7 @@ http_interactions:
         class=\"row\"><div class=\"col-md-11\"><a id=\"view:_id1:_id2:cbMain:_id136:rptResults:0:linkURL\"
         href=\"https://documents-dds-ny.un.org/doc/UNDOC/DER/G94/321/69/img/G9432169.pdf?OpenElement\"
         class=\"unBlue\" target=\"_blank\"><i class=\"fa fa-file\"></i>&nbsp;TRADE/WP.4/1068-TRADE/WP.4/R.1068</a></div><div
-        class=\"col-md-1\"><input id=\"view:_id1:_id2:cbMain:_id136:rptResults:0:cbDownload\"
-        type=\"checkbox\" name=\"view:_id1:_id2:cbMain:_id136:rptResults:0:cbDownload\"
-        class=\"pull-right hideFF hideIE flip\" title=\"Download files for... TRADE/WP.4/1068\"
-        onchangeTrigger=\"early-onclick\"></div></div><div class=\"row\"><div class=\"col-md-12\"><span
+        class=\"col-md-1\"></div></div><div class=\"row\"><div class=\"col-md-12\"><span
         id=\"view:_id1:_id2:cbMain:_id136:rptResults:0:cfTitle\" class=\"odsTitle\">LEGAL
         ASPECTS OF ELECTRONIC DATA INTERCHANGE : REPORT ON ACTION PROGRAMME RELATING
         TO COMMERCIAL AND LEGAL ASPECTS OF TRADE FACILITATION / SUBMITTED BY THE RAPPORTEURS
@@ -920,12 +650,10 @@ http_interactions:
         lbl\">Release Date:</label><span id=\"view:_id1:_id2:cbMain:_id136:rptResults:0:cfRelDateO\"
         class=\"odsText addLines\"></span></div></div>\n</div>\n<hr class=\"greyHR\"></div>\n</div>\n<div
         class=\"row hideFF hideIE\"><div class=\"col-md-12\"><span class=\"pull-right
-        flip\"><button class=\"btn btn-primary btnUNBlue\" type=\"button\" name=\"view:_id1:_id2:cbMain:_id136:linkDwnSel\"
-        id=\"view:_id1:_id2:cbMain:_id136:linkDwnSel\"><i class=\"fa fa-download\"></i>
-        \ Download selected documents</button></span></div></div><div class=\"row\"><div
-        class=\"col-md-12\"></div></div><div dojoType=\"dijit.Dialog\" id=\"view:_id1:_id2:cbMain:_id136:dlgDwnSel\"
-        style=\"overflow:auto;\" class=\"hideFF hideIE\" title=\"Selections\"><div
-        class=\"row\"><div class=\"col-md-6 col-xs-6 text-center\"><label id=\"view:_id1:_id2:cbMain:_id136:lblDlgLangs\"
+        flip\"></span></div></div><div class=\"row\"><div class=\"col-md-12\"></div></div><div
+        dojoType=\"dijit.Dialog\" id=\"view:_id1:_id2:cbMain:_id136:dlgDwnSel\" style=\"overflow:auto;\"
+        class=\"hideFF hideIE\" title=\"Selections\"><div class=\"row\"><div class=\"col-md-6
+        col-xs-6 text-center\"><label id=\"view:_id1:_id2:cbMain:_id136:lblDlgLangs\"
         for=\"view:_id1:_id2:cbMain:_id136:cbDlgLangs\" class=\"lbl\">Language(s)</label></div><div
         class=\"col-md-6 col-xs-6 text-center\"><label id=\"view:_id1:_id2:cbMain:_id136:lblDlgFile\"
         for=\"view:_id1:_id2:cbMain:_id136:cbDlgFiles\" class=\"lbl\">File type(s)</label></div></div><div
@@ -973,7 +701,7 @@ http_interactions:
         target=\"_blank\">Terms of Use</a>&nbsp;|&nbsp;<a id=\"view:_id1:_id2:link2\"
         href=\"http://www.un.org/en/aboutun/copyright/index.html\" target=\"_blank\">Copyright
         &copy; United Nations 2016</a></p></div></div></div></div>\n<input type=\"hidden\"
-        name=\"$$viewid\" id=\"view:_id1__VUID\" value=\"!ea2zcbxpf1fyck66hn6w4mo1l!\">\n<input
+        name=\"$$viewid\" id=\"view:_id1__VUID\" value=\"!91gwifoe3ccwtvn3nc8s1lkzl!\">\n<input
         type=\"hidden\" name=\"$$xspsubmitid\">\n<input type=\"hidden\" name=\"$$xspexecid\">\n<input
         type=\"hidden\" name=\"$$xspsubmitvalue\">\n<input type=\"hidden\" name=\"$$xspsubmitscroll\">\n<input
         type=\"hidden\" name=\"view:_id1\" value=\"view:_id1\"></form>\n<script type=\"text/javascript\">\n\nfunction
@@ -1027,9 +755,6 @@ http_interactions:
         linkDO = x$(\"view:_id1:_id2:cbMain:_id136:rptResults:0:_id346:linkDocO\").attr('href');\n\n\tvar
         links = [ linkPA, linkDA, linkPC, linkDC, linkPE, linkDE, linkPF, linkDF,
         linkPR, linkDR, linkPS, linkDS, linkPO, linkDO ];\n\tdownloadAll(links);\n}\n\n}\n\nfunction
-        view__id1__id2_cbMain__id136__id360_clientSide_onclick(thisEvent) {\n// validation
-        - make sure something is selected\nif ( !$('[id$=cbDownload]').is(':checked')
-        ){\n\talert(\"Please select one or more search results\");\n\treturn false;\n};\n\ndijit.byId(\"view:_id1:_id2:cbMain:_id136:dlgDwnSel\").show();\n\n}\n\nfunction
         view__id1__id2_cbMain__id136__id381_clientSide_onclick(thisEvent) {\n// verify
         that at least one language and file type are selected\nvar vLangChk = false;\nvar
         langFld = document.getElementsByName(\"view:_id1:_id2:cbMain:_id136:cbDlgLangs\");\nfor
@@ -1070,13 +795,11 @@ http_interactions:
         \"view:_id1:_id2:cbMain:_id136:rptResults:0:linkDwnLdAll\", \"onclick\", view__id1__id2_cbMain__id136_rptResults_0__id180_clientSide_onclick,
         false, 2);\nXSP.attachPartial(\"view:_id1:_id2:cbMain:_id136:rptResults:0:_id182\",
         \"view:_id1:_id2:cbMain:_id136:rptResults:0:linkBkmk\", null, \"onclick\",
-        function(){}, 2, \"view:_id1:_id2:cbMain:_id136:rptResults:0:linkBkmk\");\nXSP.attachEvent(\"view:_id1:_id2:cbMain:_id136:_id360\",
-        \"view:_id1:_id2:cbMain:_id136:linkDwnSel\", \"onclick\", view__id1__id2_cbMain__id136__id360_clientSide_onclick,
-        false, 2);\nXSP.attachEvent(\"view:_id1:_id2:cbMain:_id136:_id381\", \"view:_id1:_id2:cbMain:_id136:btnDlgSubmit\",
-        \"onclick\", view__id1__id2_cbMain__id136__id381_clientSide_onclick, true,
-        2);\nXSP.attachEvent(\"view:_id1:_id2:_id395\", \"view:_id1:_id2\", \"onClientLoad\",
-        view__id1__id2__id395_clientSide_onClientLoad, false, 2);\nXSP.attachEvent(\"view:_id1:_id396\",
+        function(){}, 2, \"view:_id1:_id2:cbMain:_id136:rptResults:0:linkBkmk\");\nXSP.attachEvent(\"view:_id1:_id2:cbMain:_id136:_id381\",
+        \"view:_id1:_id2:cbMain:_id136:btnDlgSubmit\", \"onclick\", view__id1__id2_cbMain__id136__id381_clientSide_onclick,
+        true, 2);\nXSP.attachEvent(\"view:_id1:_id2:_id395\", \"view:_id1:_id2\",
+        \"onClientLoad\", view__id1__id2__id395_clientSide_onClientLoad, false, 2);\nXSP.attachEvent(\"view:_id1:_id396\",
         \"view:_id1\", \"onClientLoad\", view__id1__id396_clientSide_onClientLoad,
         false, 2);\n}); \n\n</script>\n</body>\n</html>"
-  recorded_at: Sat, 06 May 2023 14:56:44 GMT
+  recorded_at: Mon, 07 Aug 2023 17:58:05 GMT
 recorded_with: VCR 6.1.0
