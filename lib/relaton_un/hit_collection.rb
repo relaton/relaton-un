@@ -24,7 +24,7 @@ module RelatonUn
       # @http.cert_store.set_default_paths
       # @http.cert_store.add_file ca_file
       if RUBY_VERSION.to_f > 3.0
-        @http.ssl_version = :TLSv1_2
+        @http.ssl_version = :TLSv1_2 # rubocop:disable Naming/VariableNumber
       end
       @http.read_timeout = 120
       if (form_resp = get_page)
