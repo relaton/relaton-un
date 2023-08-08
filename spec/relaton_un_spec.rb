@@ -22,6 +22,7 @@ RSpec.describe RelatonUn do
     http = double "net_http"
     expect(http).to receive(:use_ssl=)
     expect(http).to receive(:read_timeout=)
+    allow(http).to receive(:ssl_version=)
     expect(http).to receive(:request).and_raise SocketError
     expect(Net::HTTP).to receive(:new).and_return http
     expect do
