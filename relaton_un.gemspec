@@ -32,12 +32,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "equivalent-xml", "~> 0.6"
-
   spec.add_dependency "addressable", "~> 2.8.0"
   spec.add_dependency "faraday", "~> 2.7.0"
   spec.add_dependency "http-cookie", "~> 1.0.5"
-  spec.add_dependency "relaton-bib", "~> 1.14.0"
+  spec.add_dependency "relaton-bib", "~> 1.16.0"
   spec.add_dependency "unf_ext", ">= 0.0.7.7"
 end
 # rubocop:enable Metrics/BlockLength
