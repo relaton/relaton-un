@@ -1,6 +1,8 @@
 require "addressable"
 require "relaton_bib"
 require "relaton_un/version"
+require "relaton_un/config"
+require "relaton_un/util"
 require "relaton_un/un_bibliographic_item"
 require "relaton_un/un_bibliography"
 require "relaton_un/hit_collection"

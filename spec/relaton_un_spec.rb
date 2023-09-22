@@ -1,4 +1,6 @@
 RSpec.describe RelatonUn do
+  before { RelatonUn.instance_variable_set :@configuration, nil }
+
   it "has a version number" do
     expect(RelatonUn::VERSION).not_to be nil
   end
@@ -54,5 +56,12 @@ RSpec.describe RelatonUn do
       expect(xml).to be_equivalent_to File.read(file, encoding: "UTF-8")
         .gsub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
     end
+  end
+
+  it "not found document", vcr: "not_found" do
+    expect do
+      result = RelatonUn::UnBibliography.get "UN NOT/FOUND"
+      expect(result).to be_nil
+    end.to output(/\[relaton-un\] \(UN NOT\/FOUND\) nothing found/).to_stderr
   end
 end

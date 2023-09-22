@@ -21,13 +21,15 @@ module RelatonUn
       # @param opts [Hash] options
       # @return [RelatonUn::UnBibliographicItem]
       def get(ref, _year = nil, _opts = {})
-        warn "[relaton-un] (\"#{ref}\") fetching..."
+        Util.warn "(#{ref}) fetching..."
         /^(?:UN\s)?(?<code>.*)/ =~ ref
         result = isobib_search_filter(code)
         if result
-          warn "[relaton-un] (\"#{ref}\") "\
-            "found #{result.fetch.docidentifier[0].id}"
+          Util.warn "(#{ref}) found `#{result.fetch.docidentifier[0].id}`"
           result.fetch
+        else
+          Util.warn "(#{ref}) nothing found"
+          nil
         end
       end
 
