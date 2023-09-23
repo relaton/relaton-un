@@ -23,13 +23,24 @@ Or install it yourself as:
 
 == Usage
 
-=== Search for a standard using keywords
+=== Configuration
+
+Configuration is optional. The available option is `logger` which is a `Logger` instance. By default, the logger is `Logger.new($stderr)` with `Logger::WARN` level. To change the logger level, use `RelatonUn.configure` block.
 
 [source,ruby]
 ----
 require 'relaton_un'
 => true
 
+RelatonUn.configure do |config|
+  config.logger.level = Logger::DEBUG
+end
+----
+
+=== Search for a standard using keywords
+
+[source,ruby]
+----
 hits = RelatonUn::UnBibliography.search("TRADE/CEFACT/2004/32")
 => <RelatonUn::HitCollection:0x007fc4e6ec2018 @ref=TRADE/CEFACT/2004/32 @fetched=false>
 
@@ -69,8 +80,8 @@ item.to_xml bibdata: true
 [source,ruby]
 ----
 RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
-[relaton-un] ("UN TRADE/CEFACT/2004/32") fetching...
-[relaton-un] ("UN TRADE/CEFACT/2004/32") found TRADE/CEFACT/2004/32
+[relaton-un] (UN TRADE/CEFACT/2004/32) fetching...
+[relaton-un] (UN TRADE/CEFACT/2004/32) found `TRADE/CEFACT/2004/32`
 => #<RelatonUn::UnBibliographicItem:0x007fdc5f1c3a20
 ...
 ----
