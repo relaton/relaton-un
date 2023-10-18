@@ -6,13 +6,13 @@ require "http-cookie"
 module RelatonUn
   # Page of hit collection.
   class HitCollection < RelatonBib::HitCollection
-    AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) "\
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+    AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 " \
+            "(KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
     DOMAIN = "https://documents.un.org"
     BOUNDARY = "----WebKitFormBoundaryVarT9Z7AFUzw2lma"
 
     # @param text [String] reference to search
-    def initialize(text) # rubocop:disable Metrics/AbcSize
+    def initialize(text) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
       super
       @uri = URI.parse DOMAIN
       @jar = HTTP::CookieJar.new

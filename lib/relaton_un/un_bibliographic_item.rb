@@ -24,7 +24,7 @@ module RelatonUn
     # @param job_number [String, nil]
     def initialize(**args)
       if args[:distribution] && !DISTRIBUTIONS.has_value?(args[:distribution])
-        Util.warn "WARNING: invalid distribution: `#{args[:distribution]}`"
+        Util.warn "WARNING: Invalid distribution: `#{args[:distribution]}`"
       end
       @submissionlanguage = args.delete :submissionlanguage
       @distribution = args.delete :distribution

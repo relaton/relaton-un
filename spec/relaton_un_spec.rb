@@ -32,8 +32,8 @@ RSpec.describe RelatonUn do
     end.to raise_error RelatonBib::RequestError
   end
 
-  it "get document" do
-    VCR.use_cassette "trade_cefact_2004_32" do
+  it "get document", vcr: "trade_cefact_2004_32" do
+    expect do
       result = RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
       expect(result).to be_instance_of RelatonUn::UnBibliographicItem
       xml = result.to_xml bibdata: true
@@ -44,7 +44,10 @@ RSpec.describe RelatonUn do
       schema = Jing.new "grammars/relaton-un-compile.rng"
       errors = schema.validate file
       expect(errors).to eq []
-    end
+    end.to output(
+      include("[relaton-un] (UN TRADE/CEFACT/2004/32) Fetching from documents.un.org ...",
+              "[relaton-un] (UN TRADE/CEFACT/2004/32) Found: `TRADE/CEFACT/2004/32`"),
+    ).to_stderr
   end
 
   it "get document with 2 symbols" do
@@ -62,6 +65,6 @@ RSpec.describe RelatonUn do
     expect do
       result = RelatonUn::UnBibliography.get "UN NOT/FOUND"
       expect(result).to be_nil
-    end.to output(/\[relaton-un\] \(UN NOT\/FOUND\) nothing found/).to_stderr
+    end.to output(/\[relaton-un\] \(UN NOT\/FOUND\) Not found\./).to_stderr
   end
 end

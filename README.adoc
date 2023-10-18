@@ -80,8 +80,8 @@ item.to_xml bibdata: true
 [source,ruby]
 ----
 RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
-[relaton-un] (UN TRADE/CEFACT/2004/32) fetching...
-[relaton-un] (UN TRADE/CEFACT/2004/32) found `TRADE/CEFACT/2004/32`
+[relaton-un] (UN TRADE/CEFACT/2004/32) Fetching from documents.un.org ...
+[relaton-un] (UN TRADE/CEFACT/2004/32) Found: `TRADE/CEFACT/2004/32`
 => #<RelatonUn::UnBibliographicItem:0x007fdc5f1c3a20
 ...
 ----
