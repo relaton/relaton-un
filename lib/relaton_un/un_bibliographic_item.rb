@@ -2,11 +2,6 @@ module RelatonUn
   class UnBibliographicItem < RelatonBib::BibliographicItem
     include RelatonBib
 
-    TYPES = %w[
-      recommendation plenary addendum communication corrigendum reissue agenda
-      budgetary sec-gen-notes expert-report resolution
-    ].freeze
-
     DISTRIBUTIONS = { "GEN" => "general", "LTD" => "limited",
                       "DER" => "restricted", "PRO" => "provisional" }.freeze
 
@@ -50,7 +45,7 @@ module RelatonUn
     def to_xml(**opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
       super(**opts) do |b|
         ext = b.ext do
-          b.doctype doctype if doctype
+          doctype&.to_xml b
           submissionlanguage&.each { |sl| b.submissionlanguage sl }
           editorialgroup&.to_xml b
           ics&.each { |i| i.to_xml b }

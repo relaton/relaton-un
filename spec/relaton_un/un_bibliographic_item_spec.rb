@@ -2,7 +2,7 @@ RSpec.describe RelatonUn::UnBibliographicItem do
   it "warn if distribution is invalid" do
     expect do
       RelatonUn::UnBibliographicItem.new distribution: "INV"
-    end.to output(/\[relaton-un\] WARNING: Invalid distribution/).to_stderr
+    end.to output(/\[relaton-un\] WARNING: Invalid distribution/).to_stderr_from_any_process
   end
 
   it "return AsciiBib" do

@@ -35,7 +35,7 @@ link.type:: word
 link.content:: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement
 classification.type:: area
 classification.value:: UNDOC
-doctype:: addendum
+doctype.type:: addendum
 keyword:: TRADE DATA INTERCHANGE
 keyword:: CODES
 keyword:: PORTS

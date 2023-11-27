@@ -1,34 +1,38 @@
 module RelatonUn
-  class HashConverter < RelatonBib::HashConverter
-    class << self
-      # @override RelatonIsoBib::HashConverter.hash_to_bib
-      # @param args [Hash]
-      # @param nested [TrueClass, FalseClass]
-      # @return [Hash]
-      def hash_to_bib(args)
-        ret = super
-        return if ret.nil?
+  module HashConverter
+    include RelatonBib::HashConverter
+    extend self
+    # @override RelatonIsoBib::HashConverter.hash_to_bib
+    # @param args [Hash]
+    # @param nested [TrueClass, FalseClass]
+    # @return [Hash]
+    def hash_to_bib(args)
+      ret = super
+      return if ret.nil?
 
-        ret[:submissionlanguage] = RelatonBib.array ret[:submissionlanguage]
-        session_hash_to_bib ret
-        ret
-      end
+      ret[:submissionlanguage] = RelatonBib.array ret[:submissionlanguage]
+      session_hash_to_bib ret
+      ret
+    end
 
-      private
+    private
 
-      # @param ret [Hash]
-      def session_hash_to_bib(ret)
-        ret[:session] = Session.new(**ret[:session]) if ret[:session]
-      end
+    # @param ret [Hash]
+    def session_hash_to_bib(ret)
+      ret[:session] = Session.new(**ret[:session]) if ret[:session]
+    end
 
-      # @param ret [Hash]
-      def editorialgroup_hash_to_bib(ret)
-        eg = ret[:editorialgroup]
-        return unless eg
+    # @param ret [Hash]
+    def editorialgroup_hash_to_bib(ret)
+      eg = ret[:editorialgroup]
+      return unless eg
 
-        committee = eg.map { |e| e[:committee] }
-        ret[:editorialgroup] = EditorialGroup.new RelatonBib.array(committee)
-      end
+      committee = eg.map { |e| e[:committee] }
+      ret[:editorialgroup] = EditorialGroup.new RelatonBib.array(committee)
+    end
+
+    def create_doctype(**args)
+      DocumentType.new(**args)
     end
   end
 end
