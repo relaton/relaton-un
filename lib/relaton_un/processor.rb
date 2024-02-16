@@ -16,7 +16,7 @@ module RelatonUn
     # @param opts [Hash]
     # @return [RelatonUn::UnBibliographicItem]
     def get(code, date, opts)
-      ::RelatonUn::UnBibliography.get(code, date, opts)
+      # ::RelatonUn::UnBibliography.get(code, date, opts)
     end
 
     # @param xml [String]
