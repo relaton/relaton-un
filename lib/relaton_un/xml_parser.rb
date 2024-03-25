@@ -57,6 +57,10 @@ module RelatonUn
       def fetch_submissionlanguage(ext)
         ext.xpath("./submissionlanguage").map(&:text)
       end
+
+      def create_doctype(type)
+        DocumentType.new type: type.text, abbreviation: type[:abbreviation]
+      end
     end
   end
 end
