@@ -10,21 +10,33 @@ module RelatonUn
       ret = super
       return if ret.nil?
 
-      ret[:submissionlanguage] = RelatonBib.array ret[:submissionlanguage]
+      hash_to_bib_submissions ret
       session_hash_to_bib ret
+      ret[:distribution] = ret[:ext][:distribution] if ret.dig(:ext, :distribution)
+      ret[:job_number] = ret[:ext][:job_number] if ret.dig(:ext, :job_number)
       ret
     end
 
     private
 
+    def hash_to_bib_submissions(ret)
+      sm = ret.dig(:ext, :submissionlanguage) || ret[:submissionlanguage] # @TODO remove args[:submissionlanguage] after all gems are updated
+      return unless sm
+
+      ret[:submissionlanguage] = RelatonBib.array sm
+    end
+
     # @param ret [Hash]
     def session_hash_to_bib(ret)
-      ret[:session] = Session.new(**ret[:session]) if ret[:session]
+      session = ret.dig(:ext, :session) || ret[:session] # @TODO remove ret[:session] after all gems are updated
+      return unless session
+
+      ret[:session] = Session.new(**session)
     end
 
     # @param ret [Hash]
     def editorialgroup_hash_to_bib(ret)
-      eg = ret[:editorialgroup]
+      eg = ret.dig(:ext, :editorialgroup) || ret[:editorialgroup] # @TODO remove ret[:editorialgroup] after all gems are updated
       return unless eg
 
       committee = eg.map { |e| e[:committee] }

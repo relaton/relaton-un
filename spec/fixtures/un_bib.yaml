@@ -50,33 +50,33 @@ keyword:
 - content: PROJECT EVALUATION
 - content: DATABASES
 - content: WEBSITES
-editorialgroup:
-- committee: Committee on Trade
-- committee: Centre for Trade Facilitation and Electronic Business
-session:
-  session_number: '10'
-  session_date: '2019-02-20'
-  item_number:
-    - IN1
-    - IN2
-  item_name:
-    - INM1
-    - INM2
-  subitem_name:
-    - SN1
-    - SN2
-  collaborator: collaborator
-  agenda_id: '12'
-  item_footnote: Item footnote
-doctype:
-  type: addendum
-submissionlanguage:
-  - en
-  - fr
-ics:
-- code: "01"
-  text: First
-distribution: general
-job_number: '10'
 ext:
   schema-version: v1.0.0
+  doctype:
+    type: addendum
+  submissionlanguage:
+    - en
+    - fr
+  ics:
+  - code: "01"
+    text: First
+  distribution: general
+  job_number: '10'
+  editorialgroup:
+  - committee: Committee on Trade
+  - committee: Centre for Trade Facilitation and Electronic Business
+  session:
+    session_number: '10'
+    session_date: '2019-02-20'
+    item_number:
+      - IN1
+      - IN2
+    item_name:
+      - INM1
+      - INM2
+    subitem_name:
+      - SN1
+      - SN2
+    collaborator: collaborator
+    agenda_id: '12'
+    item_footnote: Item footnote

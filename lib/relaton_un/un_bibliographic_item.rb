@@ -67,12 +67,16 @@ module RelatonUn
     def to_hash(embedded: false) # rubocop:disable Metrics/AbcSize
       hash = super
       if submissionlanguage&.any?
-        hash["submissionlanguage"] = single_element_array submissionlanguage
+        hash["ext"]["submissionlanguage"] = single_element_array submissionlanguage
       end
-      hash["distribution"] = distribution if distribution
-      hash["session"] = session.to_hash if session
-      hash["job_number"] = job_number if job_number
+      hash["ext"]["distribution"] = distribution if distribution
+      hash["ext"]["session"] = session.to_hash if session
+      hash["ext"]["job_number"] = job_number if job_number
       hash
+    end
+
+    def has_ext?
+      super || submissionlanguage&.any? || distribution || session || job_number
     end
 
     # @param prefix [String]
