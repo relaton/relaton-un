@@ -4,7 +4,6 @@ require_relative "session"
 module Relaton
   module Un
     class Ext < Bib::Ext
-      attribute :schema_version, method: :get_schema_version
       attribute :doctype, Doctype
       attribute :submissionlanguage, :string, collection: true
       attribute :distribution, :string, values: %w[general limited restricted provisional]
@@ -18,9 +17,14 @@ module Relaton
         map_element "job_number", to: :job_number
       end
 
-      def get_schema_version
-        Relaton.schema_versions["relaton-model-un"]
+      key_value do
+        map "submissionlanguage", to: :submissionlanguage
+        map "distribution", to: :distribution
+        map "session", to: :session
+        map "job_number", to: :job_number
       end
+
+      def get_schema_version = Relaton.schema_versions["relaton-model-un"]
     end
   end
 end
