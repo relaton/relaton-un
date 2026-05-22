@@ -1,8 +1,8 @@
 = Relaton for UN documents
 
-RelatonCalconnect is a Ruby gem that implements the https://github.com/metanorma/metanorma-model-iso#iso-bibliographic-item[IsoBibliographicItem model].
+RelatonUn is a Ruby gem that implements the https://github.com/metanorma/metanorma-model-iso#iso-bibliographic-item[IsoBibliographicItem model].
 
-You can use it to retrieve metadata of Calconnect Standards from https://standards.calconnect.org, and access such metadata through the `CcBibliographicItem` object.
+You can use it to retrieve metadata of UN documents from https://documents.un.org, and access such metadata through the `Relaton::Un::Item` object.
 
 == Installation
 
@@ -27,14 +27,14 @@ Or install it yourself as:
 
 [source,ruby]
 ----
-require 'relaton_un'
+require 'relaton/un'
 => true
 
-hits = RelatonUn::UnBibliography.search("TRADE/CEFACT/2004/32")
-=> <RelatonUn::HitCollection:0x007fc4e6ec2018 @ref=TRADE/CEFACT/2004/32 @fetched=false>
+hits = Relaton::Un::Bibliography.search("TRADE/CEFACT/2004/32")
+=> <Relaton::Un::HitCollection:0x00000000001660 @ref=TRADE/CEFACT/2004/32 @fetched=false>
 
-item = hits[0].fetch
-=> #<RelatonUn::UnBibliographicItem:0x007fc4e6ac3138
+item = hits[0].item
+=> #<Relaton::Un::Item:0x000000012385aa60
 ...
 ----
 
@@ -43,24 +43,43 @@ item = hits[0].fetch
 [source,ruby]
 ----
 item.to_xml
-=> "<bibitem id="TRADE-CEFACT-2004-32" type="standard" schema-version="v1.2.1">
-      <fetched>2022-12-05</fetched>
-      ...
+=> "<bibitem id="TRADECEFACT200432" type="standard" schema-version="v1.4.1">
+      <fetched>2026-03-03</fetched>
+      <title language="en" script="Latn" type="title-main"/>
+      <title language="en" script="Latn" type="main"/>
+      <uri type="pdf">https://documents.un.org/api/symbol/access?j=G0430683&amp;t=pdf</uri>
+      <docidentifier type="UN" primary="true">TRADE/CEFACT/2004/32</docidentifier>
+      <docnumber>TRADE/CEFACT/2004/32</docnumber>
+      <date type="published">
+        <on>2004-03-18</on>
+      </date>
+      <language>en</language>
+      <script>Latn</script>
     </bibitem>"
 ----
 With argument `bibdata: true` it outputs XML wrapped by `bibdata` element and adds flavor `ext` element.
 [source,ruby]
 ----
 item.to_xml bibdata: true
-=> "<bibdata type="standard" schema-version="v1.2.1">
-      <fetched>2022-12-05</fetched>
-      ...
+=> "<bibdata type="standard" schema-version="v1.4.1">
+      <fetched>2026-03-03</fetched>
+      <title language="en" script="Latn" type="title-main"/>
+      <title language="en" script="Latn" type="main"/>
+      <uri type="pdf">https://documents.un.org/api/symbol/access?j=G0430683&amp;t=pdf</uri>
+      <docidentifier type="UN" primary="true">TRADE/CEFACT/2004/32</docidentifier>
+      <docnumber>TRADE/CEFACT/2004/32</docnumber>
+      <date type="published">
+        <on>2004-03-18</on>
+      </date>
+      <language>en</language>
+      <script>Latn</script>
       <ext schema-version="v1.0.0">
-        <editorialgroup>
-          <committee>Committee on Trade</committee>
-          <committee>Centre for Trade Facilitation and Electronic Business</committee>
-        </editorialgroup>
-        ...
+        <distribution>general</distribution>
+        <session>
+          <number>10</number>
+          <agenda-id>12</agenda-id>
+        </session>
+        <job_number>G0430683</job_number>
       </ext>
     </bibdata>"
 ----
@@ -68,46 +87,39 @@ item.to_xml bibdata: true
 === Get code, and year
 [source,ruby]
 ----
-RelatonUn::UnBibliography.get "UN TRADE/CEFACT/2004/32"
-[relaton-un] (UN TRADE/CEFACT/2004/32) Fetching from documents.un.org ...
-[relaton-un] (UN TRADE/CEFACT/2004/32) Found: `TRADE/CEFACT/2004/32`
-=> #<RelatonUn::UnBibliographicItem:0x007fdc5f1c3a20
+Relaton::Un::Bibliography.get "UN TRADE/CEFACT/2004/32"
+[relaton-un] INFO: (UN TRADE/CEFACT/2004/32) Fetching from documents.un.org ...
+[relaton-un] INFO: (UN TRADE/CEFACT/2004/32) Found: `TRADE/CEFACT/2004/32`
+=> #<Relaton::Un::ItemData:0x0000000127d9c448
 ...
 ----
 
 === Typed links
 
-UN documens may have `pdf` and `word` link types.
+UN documens may have `pdf` and `word` source link types.
 
 [source,ruby]
 ----
-item.link
-=> [#<RelatonBib::TypedUri:0x00007f81af368250
-  @content=#<Addressable::URI:0x9ec URI:https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement>, @type="pdf">,
- #<RelatonBib::TypedUri:0x00007f81af3630e8 @content=#<Addressable::URI:0xa00 URI:https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement>, @type="word">]
+item.source[0].type
+=> "pdf"
+
+item.source[0].content
+=> "https://documents.un.org/api/symbol/access?j=G0430683&t=pdf"
 ----
 
 === Create bibliographic item from XML
 [source,ruby]
 ----
-RelatonUn::XMLParser.from_xml File.read('spec/fixtures/un_bib.xml')
-=> #<RelatonUn::UnBibliographicItem:0x007fdc5e7ab678
+Relaton::Un::Bibdata.from_xml File.read('spec/fixtures/bibdata.xml')
+=> #<Relaton::Bib::ItemData:0x000000012772a448
 ...
 ----
 
 === Create bibliographic item from YAML
 [source,ruby]
 ----
-hash = YAML.load_file 'spec/fixtures/un_bib.yaml'
-=> {"id"=>"TRADE/CEFACT/2004/32",
-...
-
-bib_hash = RelatonUn::HashConverter.hash_to_bib hash
-=> {:id=>"TRADE/CEFACT/2004/32",
-...
-
-RelatonUn::UnBibliographicItem.new **bib_hash
-=> #<RelatonUn::UnBibliographicItem:0x007fdc5e061908
+Relaton::Un::Item.from_yaml File.read('spec/fixtures/item.yaml')
+=> #<Relaton::Un::ItemData:0x0000000127d7a140
 ...
 ----
 

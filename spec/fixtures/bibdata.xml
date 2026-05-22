@@ -1,7 +1,7 @@
 <bibdata type="standard" schema-version="v1.5.6">
   <fetched>2020-04-19</fetched>
-  <title type="title-main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
-  <title type="main" format="text/plain" language="en" script="Latn">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
+  <title language="en" script="Latn" type="title-main">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
+  <title language="en" script="Latn" type="main">SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT</title>
   <uri type="pdf">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement</uri>
   <uri type="word">https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement</uri>
   <docidentifier type="UN" primary="true">TRADE/CEFACT/2004/32</docidentifier>
@@ -12,29 +12,42 @@
   <date type="issued">
     <on>2004-01-01</on>
   </date>
-  <language>en</language>
   <script>Latn</script>
   <classification type="area">UNDOC</classification>
-  <keyword>TRADE DATA INTERCHANGE</keyword>
-  <keyword>CODES</keyword>
-  <keyword>PORTS</keyword>
-  <keyword>TRANSPORT TERMINALS</keyword>
-  <keyword>TRADE FACILITATION</keyword>
-  <keyword>PROJECT EVALUATION</keyword>
-  <keyword>DATABASES</keyword>
-  <keyword>WEBSITES</keyword>
-  <ext schema-version="v1.0.0">
+  <keyword>
+    <vocab>TRADE DATA INTERCHANGE</vocab>
+  </keyword>
+  <keyword>
+    <vocab>CODES</vocab>
+  </keyword>
+  <keyword>
+    <vocab>PORTS</vocab>
+  </keyword>
+  <keyword>
+    <vocab>TRANSPORT TERMINALS</vocab>
+  </keyword>
+  <keyword>
+    <vocab>TRADE FACILITATION</vocab>
+  </keyword>
+  <keyword>
+    <vocab>PROJECT EVALUATION</vocab>
+  </keyword>
+  <keyword>
+    <vocab>DATABASES</vocab>
+  </keyword>
+  <keyword>
+    <vocab>WEBSITES</vocab>
+  </keyword>
+  <ext schema-version="v1.0.2">
     <doctype>addendum</doctype>
-    <submissionlanguage>en</submissionlanguage>
-    <submissionlanguage>fr</submissionlanguage>
-    <editorialgroup>
-      <committee>Committee on Trade</committee>
-      <committee>Centre for Trade Facilitation and Electronic Business</committee>
-    </editorialgroup>
+    <subdoctype>subdoctype</subdoctype>
+    <flavor>un</flavor>
     <ics>
       <code>01</code>
       <text>First</text>
     </ics>
+    <submissionlanguage>en</submissionlanguage>
+    <submissionlanguage>fr</submissionlanguage>
     <distribution>general</distribution>
     <session>
       <number>10</number>

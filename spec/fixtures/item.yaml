@@ -1,59 +1,60 @@
 ---
-id: TRADE/CEFACT/2004/32
-schema-version: v1.5.6
+id: TRADECEFACT200432
+schema_version: v1.5.6
 title:
 - type: title-main
   content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
+  language: en
+  script: Latn
 - type: main
   content: SECRETARIAT REVIEW OF UN/LOCODE, 19 DECEMBER 2003 / SUBMITTED BY THE SECRETARIAT
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
+  language: en
+  script: Latn
+source:
 - content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/pdf/G0430683.pdf?OpenElement
   type: pdf
 - content: https://documents-dds-ny.un.org/doc/UNDOC/GEN/G04/306/83/doc/G0430683.DOC?OpenElement
   type: word
 type: standard
-docid:
-- id: TRADE/CEFACT/2004/32
+docidentifier:
+- content: TRADE/CEFACT/2004/32
   type: UN
   primary: true
 docnumber: TRADE/CEFACT/2004/32
 date:
 - type: published
-  value: '2004-01-01'
+  at: '2004-01-01'
 - type: issued
-  value: '2004-01-01'
-revdate: '2004-01-01'
-language:
-- en
+  at: '2004-01-01'
 script:
 - Latn
 classification:
-- value: UNDOC
+- content: UNDOC
   type: area
 fetched: '2020-04-19'
 keyword:
-- content: TRADE DATA INTERCHANGE
-- content: CODES
-- content: PORTS
-- content: TRANSPORT TERMINALS
-- content: TRADE FACILITATION
-- content: PROJECT EVALUATION
-- content: DATABASES
-- content: WEBSITES
+- vocab:
+    content: TRADE DATA INTERCHANGE
+- vocab:
+    content: CODES
+- vocab:
+    content: PORTS
+- vocab:
+    content: TRANSPORT TERMINALS
+- vocab:
+    content: TRADE FACILITATION
+- vocab:
+    content: PROJECT EVALUATION
+- vocab:
+    content: DATABASES
+- vocab:
+    content: WEBSITES
 ext:
-  schema-version: v1.0.0
+  schema_version: v1.0.2
   doctype:
-    type: addendum
+    content: addendum
+  subdoctype: subdoctype
+  flavor: un
   submissionlanguage:
     - en
     - fr
@@ -61,12 +62,8 @@ ext:
   - code: "01"
     text: First
   distribution: general
-  job_number: '10'
-  editorialgroup:
-  - committee: Committee on Trade
-  - committee: Centre for Trade Facilitation and Electronic Business
   session:
-    session_number: '10'
+    number: '10'
     session_date: '2019-02-20'
     item_number:
       - IN1
@@ -80,3 +77,4 @@ ext:
     collaborator: collaborator
     agenda_id: '12'
     item_footnote: Item footnote
+  job_number: '10'
